@@ -30,6 +30,11 @@ class ProfilePage extends React.Component{
       log1hour: null,
       log10min: null,
       log1min: null,
+      mem24hours: null,
+      mem1week: null,
+      mem1hour: null,
+      mem10min: null,
+      mem1min: null,
       intervalId: null,
       img_json:null
     };
@@ -57,19 +62,20 @@ class ProfilePage extends React.Component{
 }
 
 
-  reloadIMG(){
-    console.log("Reload IMG...");
+  reloadIMG(e){
+    //e.preventDefault();
+    //console.log("Reload IMG...");
     this.setState({
       cpu24hours: 'http://localhost/S/O?' + new Date().getTime(),
       cpu1week: 'http://localhost/S/P?' + new Date().getTime(),
       cpu1hour: 'http://localhost/S/R?' + new Date().getTime(),
       cpu10min: 'http://localhost/S/S?' + new Date().getTime(),
       cpu1min: 'http://localhost/S/Q?' + new Date().getTime(),
-      click24hours: 'http://localhost/S/T?' + new Date().getTime(),
-      click1week: 'http://localhost/S/U?' + new Date().getTime(),
-      click1hour: 'http://localhost/S/V?' + new Date().getTime(),
-      click10min: 'http://localhost/S/M?' + new Date().getTime(),
-      click1min: 'http://localhost/S/W?' + new Date().getTime(),
+      click24hours: 'http://localhost/S/a?' + new Date().getTime(),
+      click1week: 'http://localhost/S/9?' + new Date().getTime(),
+      click1hour: 'http://localhost/S/8?' + new Date().getTime(),
+      click10min: 'http://localhost/S/7?' + new Date().getTime(),
+      click1min: 'http://localhost/S/6?' + new Date().getTime(),
       qps24hours: 'http://localhost/S/X?' + new Date().getTime(),
       qps1week: 'http://localhost/S/Y?' + new Date().getTime(),
       qps1hour: 'http://localhost/S/Z?' + new Date().getTime(),
@@ -79,7 +85,12 @@ class ProfilePage extends React.Component{
       log1week: 'http://localhost/S/2?' + new Date().getTime(),
       log1hour: 'http://localhost/S/4?' + new Date().getTime(),
       log10min: 'http://localhost/S/5?' + new Date().getTime(),
-      log1min: 'http://localhost/S/3?' + new Date().getTime()
+      log1min: 'http://localhost/S/3?' + new Date().getTime(),
+      mem24hours: 'http://localhost/S/f?' + new Date().getTime(),
+      mem1week: 'http://localhost/S/e?' + new Date().getTime(),
+      mem1hour: 'http://localhost/S/d?' + new Date().getTime(),
+      mem10min: 'http://localhost/S/c?' + new Date().getTime(),
+      mem1min: 'http://localhost/S/b?' + new Date().getTime()
     })
   }
 
@@ -155,6 +166,11 @@ class ProfilePage extends React.Component{
         log1hour={this.state.log1hour}
         log10min={this.state.log10min}
         log1min={this.state.log1min}
+        mem24hours={this.state.mem24hours}
+        mem1week={this.state.mem1week}
+        mem1hour={this.state.mem1hour}
+        mem10min={this.state.mem10min}
+        mem1min={this.state.mem1min}
         img_json={this.state.img_json}
       />
     );

@@ -6,7 +6,7 @@ import React from 'react';
 import Auth from '../Auth/Auth';
 import NewsCard from '../NewsCard/NewsCard'
 import SearchModal from './SearchModal'
-import { Button, Col, Preloader, Row } from 'react-materialize';
+import { Button, Col, Preloader, Row, Chip, Icon } from 'react-materialize';
 
 
 class NewsPanel extends React.Component{
@@ -36,10 +36,10 @@ class NewsPanel extends React.Component{
   handleScroll() {
     let scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
     if ((window.innerHeight + scrollY) >= (document.body.offsetHeight - 500)) {
-      // this.setState({
-      //   loading:true
-      // })
-      // this.forceUpdate();
+       this.setState({
+         loading:true
+       })
+      //this.forceUpdate();
       this.state.searchNews?this.inputHandler():this.loadMoreNews();
     }
   }
@@ -87,8 +87,8 @@ class NewsPanel extends React.Component{
 
         this.setState({ // set state use setState, react will update UI
           news: this.state.news? this.state.news.concat(news) : news,
-          pageNum: this.state.pageNum + 1
-          //loading:false
+          pageNum: this.state.pageNum + 1,
+          loading:false
         });
       });
   }
@@ -107,14 +107,15 @@ class NewsPanel extends React.Component{
 
   inputHandler(e){
     if(typeof(e)!='undefined')
-      if(e.target!=null){
-        this.state.searchPageNum = 1;  //reset pageNum for new search
+      if(e.target!=null){   //reset search status
+        this.toTop();
+        this.state.loadedAll=false
+        this.state.searchPageNum = 1;
         this.state.searchText = e.target.value;
         this.state.searchNews = null;
       }
     //console.log('input handler this.state.searchText: ' + this.state.searchText);
     //console.log('length of text ' +  this.state.searchText.length);
-
     this.handleSearch();
   }
 
@@ -134,7 +135,7 @@ class NewsPanel extends React.Component{
   }
 
   handleSearch(){
-    if(this.state.searchText.length===0)  //avoid empty string value search
+    if(this.state.searchText.length===0 || this.state.loadedAll)  //avoid empty string value search
       return;
 
     this.sendSearchNewsEvent();
@@ -156,17 +157,23 @@ class NewsPanel extends React.Component{
     fetch(request)
       .then((res) => res.json())
       .then((news) => {
-        console.log(news);
+        console.log(news+" length: "+news.length);
         if(!news || news.length ===0){
+          this.setState({
+            loading:false,
+            loadedAll:true
+          })
           return;
         }
 
         this.setState({ // set state use setState, react will update UI
           searchNews: this.state.searchNews? this.state.searchNews.concat(news) : news,
-          searchPageNum: this.state.searchPageNum + 1
-          //loading:false
+          searchPageNum: this.state.searchPageNum + 1,
+          loading:false
         });
       });
+
+      this.handleCloseModal();
   }
 
   reloadPage(){
@@ -210,6 +217,7 @@ class NewsPanel extends React.Component{
       );
     });
 
+    if(!this.state.loading){
     return(
       <div className="container-fluid">
         <div className='list-group'>
@@ -217,6 +225,39 @@ class NewsPanel extends React.Component{
         </div>
       </div>
     );
+  }else if(this.state.loadedAll) {
+    return(
+      <div className="container-fluid">
+        <div className='list-group'>
+          {news_list}
+          <Row>
+          <Col s={4}></Col>
+          <Col s={4}>
+          <Chip className='light-blue'>
+          <Icon>report_problem</Icon>
+          No More News...
+          </Chip>
+          </Col>
+          <Col s={4}></Col>
+          </Row>
+        </div>
+      </div>);
+    }else{
+    return(
+      <div className="container-fluid">
+        <div className='list-group'>
+          {news_list}
+          <Row>
+          <Col s={5}></Col>
+          <Col s={2}>
+          <Preloader flashing size='big'/>
+          </Col>
+          <Col s={5}></Col>
+          </Row>
+        </div>
+      </div>
+    );
+  }
   }
 
   renderSearchNews() {
@@ -231,13 +272,47 @@ class NewsPanel extends React.Component{
       );
     });
 
-    return(
-      <div className="container-fluid">
+
+      if(!this.state.loading){
+      return(
+        <div className="container-fluid">
         <div className='list-group'>
           {news_list}
         </div>
-      </div>
-    );
+      </div>);
+    }else if(this.state.loadedAll) {
+      return(
+        <div className="container-fluid">
+          <div className='list-group'>
+            {news_list}
+            <Row>
+            <Col s={4}></Col>
+            <Col s={4}>
+            <Chip className='light-blue'>
+            <Icon>report_problem</Icon>
+            No More News...
+            </Chip>
+            </Col>
+            <Col s={4}></Col>
+            </Row>
+          </div>
+        </div>);
+      }
+      else{
+        return(
+          <div className="container-fluid">
+          <div className='list-group'>
+            {news_list}
+            <Row>
+            <Col s={5}></Col>
+            <Col s={2}>
+            <Preloader flashing size='big'/>
+            </Col>
+            <Col s={5}></Col>
+            </Row>
+          </div>
+        </div>);
+      }
   }
 
   render() {

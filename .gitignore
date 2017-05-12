@@ -1,0 +1,23 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# trained model file
+news_topic_modeling_service/model/
+
+# testing
+/coverage
+
+# production
+build/
+
+#pyc
+*.pyc
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

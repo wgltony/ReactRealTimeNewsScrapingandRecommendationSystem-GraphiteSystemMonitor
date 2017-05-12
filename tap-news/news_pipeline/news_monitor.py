@@ -53,8 +53,9 @@ while True:
                 redis_client.expire(news_digest, NEWS_TIME_OUT_IN_SECONDS)
                 cloudAMQP_client.sendMessage(news)
         log_client.logger.info("Fetched %d new news." % nums_of_new_news)
-        #Sprint "Fetched %d new news." % nums_of_new_news
+        #print "Fetched %d new news." % nums_of_new_news
     except Exception as e:
+        print e
         log_client.logger.error(str(e))
         pass
 

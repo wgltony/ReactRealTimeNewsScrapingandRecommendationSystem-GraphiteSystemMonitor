@@ -24,6 +24,11 @@ const ProfileForm = ({
   log1hour,
   log10min,
   log1min,
+  mem24hours,
+  mem1week,
+  mem1hour,
+  mem10min,
+  mem1min,
   img_json
 }) => (
   <div className="container">
@@ -89,6 +94,26 @@ const ProfileForm = ({
         </CollapsibleItem>
         </Collapsible>
         </Tab>
+        <Tab title="Memory">
+        <h5>Memory:</h5>
+        <Collapsible popout>
+        <CollapsibleItem header='1 Minute' icon='info_outline' expanded>
+          <MediaBox alt='' src={mem1min} width='100%'/>
+        </CollapsibleItem>
+        <CollapsibleItem header='10 Minutes' icon='info_outline' expanded>
+          <MediaBox alt='' src={mem10min} width='100%'/>
+        </CollapsibleItem>
+        <CollapsibleItem header='1 Hour' icon='info_outline' expanded>
+          <MediaBox alt='' src={mem1hour} width='100%'/>
+        </CollapsibleItem>
+        <CollapsibleItem header='24 Hours' icon='info_outline' expanded>
+          <MediaBox alt='' src={mem24hours} width='100%'/>
+        </CollapsibleItem>
+        <CollapsibleItem header='1 Week' icon='info_outline' expanded>
+          <MediaBox alt='' src={mem1week} width='100%'/>
+        </CollapsibleItem>
+        </Collapsible>
+        </Tab>
         <Tab title="System Log">
         <h5>System Log:</h5>
         <Collapsible popout>
@@ -137,6 +162,11 @@ ProfileForm.propTypes = {
   log1hour: PropTypes.object.isRequired,
   log10min: PropTypes.object.isRequired,
   log1min: PropTypes.object.isRequired,
+  mem24hours: PropTypes.object.isRequired,
+  mem1week: PropTypes.object.isRequired,
+  mem1hour: PropTypes.object.isRequired,
+  mem10min: PropTypes.object.isRequired,
+  mem1min: PropTypes.object.isRequired,
   img_json: PropTypes.object.isRequired
 };
 

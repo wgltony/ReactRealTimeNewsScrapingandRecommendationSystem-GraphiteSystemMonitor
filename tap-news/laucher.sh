@@ -10,10 +10,13 @@ python news_fetcher.py &
 python news_deduper.py &
 
 cd ../backend_server
+python graphite_log_client.py &
 python service.py &
 python backend_log_monitor_service.py &
 python node_log_monitor.py &
 python topic_modeling_service_log_monitor.py &
+cd ../elasticsearch_server
+python news_index_client.py &
 cd ../web_server/client
 npm run build &
 cd ../server

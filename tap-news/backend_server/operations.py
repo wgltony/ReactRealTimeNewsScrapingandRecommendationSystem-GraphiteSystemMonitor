@@ -5,6 +5,7 @@ import random
 import redis
 import sys
 import yaml
+import statsd
 
 
 from bson.json_util import dumps
@@ -52,7 +53,9 @@ def getNewsSummariesForUser(user_id, page_num):
     page_num = int(page_num)
     begin_index = (page_num - 1) * NEWS_LIST_BATCH_SIZE
     end_index = page_num * NEWS_LIST_BATCH_SIZE
-
+    # print 'getNewsSummariesForUser, pageNum: %s' % page_num
+    # print 'begin_index: %s' % begin_index
+    # print 'end_index: %s' % end_index
     #the final lisr of news to be returned
     sliced_news = []
 
@@ -131,18 +134,19 @@ def getPreferenceForUser(user_id):
 
 
 def logDataForGraphite(process_name):
-    graphitelog_cloudAMQP_client.sendMessage(process_name);
-    #log_client.logger.debug('Send monitor data [%s] to graphite......' % process_name)
-    #print 'Send monitor data [%s] to graphite......' % process_name
-    # counter = statsd.Counter(process_name)
-    # counter+=1
+    #print 'process_name: %s' % process_name
+    #graphitelog_cloudAMQP_client.sendMessage(process_name);
+    counter = statsd.Counter(process_name)
+    counter+=1
 
 def getSearchNewsSummariesForUser(user_id, page_num, search_key):
     #connect to our cluster
     page_num = int(page_num)
     begin_index = (page_num - 1) * NEWS_LIST_BATCH_SIZE
     end_index = page_num * NEWS_LIST_BATCH_SIZE
-
+    # print 'getSearchNewsSummariesForUser, pageNum: %s' % page_num
+    # print 'begin_index: %s' % begin_index
+    # print 'end_index: %s' % end_index
     #the final lisr of news to be returned
     sliced_news = []
     #Get preference for the user_id
@@ -155,9 +159,9 @@ def getSearchNewsSummariesForUser(user_id, page_num, search_key):
         #print "end_index %s" % end_index
         news_digests = pickle.loads(redis_client.get(search_key))
         #print '9999999999999999999999999999999999999news_digests %s' % news_digests
-        sliced_news_digests = news_digests[begin_index:end_index]
         #print '000000000000000000000000000000000redis sliced_news begin_index end_index: %s %s %s' % (sliced_news_digests,begin_index,end_index)
-        sliced_news = list(db[NEWS_TABLE_NAME].find({'digest':{'$in':sliced_news_digests}}).sort([('publishedAt', -1)]))
+        tmp_total_news = list(db[NEWS_TABLE_NAME].find({'digest':{'$in':news_digests}}).sort([('publishedAt', -1)]))
+        sliced_news = tmp_total_news[begin_index:end_index]
     else:
         result = es.search(index="news", body={"size":80, "query": {"more_like_this":
                                 { "fields" : ["title", "description"],

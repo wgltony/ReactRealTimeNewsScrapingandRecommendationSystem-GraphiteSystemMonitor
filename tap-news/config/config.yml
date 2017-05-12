@@ -15,6 +15,7 @@ default:
 
   backend_server:
     operations:
+      SLEEP_TIME_IN_SECONDS: 0.1
       ELASTICSEARCH_HOST: localhost
       ELASTICSEARCH_PORT: 9200
       REDIS_HOST: localhost
@@ -85,6 +86,8 @@ default:
 
   news_pipeline:
     news_deduper:
+      ELASTICSEARCH_INDEX_TASK_QUEUE_URL: amqp://sgelovuw:3h6RltERSR8Bzt2n9iQcjAz3vMcwWVRM@wombat.rmq.cloudamqp.com/sgelovuw
+      ELASTICSEARCH_INDEX_TASK_QUEUE_NAME: elasticsearch-index-task-queue
       DEDUPE_NEWS_TASK_QUEUE_URL: amqp://rhhjdxlu:-Rdztx2uQGfoOV8Um7rFPeX1lj7bgUqc@wombat.rmq.cloudamqp.com/rhhjdxlu
       DEDUPE_NEWS_TASK_QUEUE_NAME: tap-news-dedupe-news-task-queue
       SLEEP_TIME_IN_SECONDS: 1
@@ -113,5 +116,17 @@ default:
                     'techcrunch',
                     'usa-today',
                     'ars-technica',
-                    'fortune'
+                    'fortune',
+                    'bloomerg',
+                    'time',
+                    'focus',
+                    'cnbc',
+                    'bild',
+                    'business-insider'
                     ]
+  elasticsearch:
+    ELASTICSEARCH_INDEX_TASK_QUEUE_URL: amqp://sgelovuw:3h6RltERSR8Bzt2n9iQcjAz3vMcwWVRM@wombat.rmq.cloudamqp.com/sgelovuw
+    ELASTICSEARCH_INDEX_TASK_QUEUE_NAME: elasticsearch-index-task-queue
+    SLEEP_TIME_IN_SECONDS: 1
+    ELASTICSEARCH_HOST: localhost
+    ELASTICSEARCH_PORT: 9200

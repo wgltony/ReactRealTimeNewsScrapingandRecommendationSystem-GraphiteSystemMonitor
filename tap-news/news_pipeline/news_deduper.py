@@ -24,13 +24,18 @@ import log_client
 DEDUPE_NEWS_TASK_QUEUE_URL = config['news_deduper']['DEDUPE_NEWS_TASK_QUEUE_URL']
 DEDUPE_NEWS_TASK_QUEUE_NAME = config['news_deduper']['DEDUPE_NEWS_TASK_QUEUE_NAME']
 
+ELASTICSEARCH_INDEX_TASK_QUEUE_URL = config['news_deduper']['ELASTICSEARCH_INDEX_TASK_QUEUE_URL']
+ELASTICSEARCH_INDEX_TASK_QUEUE_NAME = config['news_deduper']['ELASTICSEARCH_INDEX_TASK_QUEUE_NAME']
+
 SLEEP_TIME_IN_SECONDS = config['news_deduper']['SLEEP_TIME_IN_SECONDS']
 
 NEWS_TABLE_NAME = config['news_deduper']['NEWS_TABLE_NAME']
 
 SAME_NEWS_SIMILARITY_THRESHOLD = config['news_deduper']['SAME_NEWS_SIMILARITY_THRESHOLD']
 
-cloudAMQP_client = CloudAMQPClient(DEDUPE_NEWS_TASK_QUEUE_URL, DEDUPE_NEWS_TASK_QUEUE_NAME)
+dedupe_cloudAMQP_client = CloudAMQPClient(DEDUPE_NEWS_TASK_QUEUE_URL, DEDUPE_NEWS_TASK_QUEUE_NAME)
+
+elasticsearch_index_cloudAMQP_client = CloudAMQPClient(ELASTICSEARCH_INDEX_TASK_QUEUE_URL, ELASTICSEARCH_INDEX_TASK_QUEUE_NAME)
 
 from bs4 import BeautifulSoup
 import re
@@ -81,8 +86,6 @@ def data_clean( raw_review ):
 
 
 
-
-
 def handle_message(msg):
     #print '======================Handle Message sklearn================================='
     if msg is None or not isinstance(msg, dict):
@@ -103,7 +106,7 @@ def handle_message(msg):
     published_at_day_begin = datetime.datetime(published_at.year, published_at.month, published_at.day-1, 0,0,0,0)
     published_at_day_end = published_at_day_begin + datetime.timedelta(days=2)
 
-    print 'from %s to %s' % (published_at_day_begin, published_at_day_end)
+    #print 'from %s to %s' % (published_at_day_begin, published_at_day_end)
 
     db = mongodb_client.get_db()
     recent_news_list = list(db[NEWS_TABLE_NAME].find({'publishedAt':{'$gte':published_at_day_begin, '$lt':published_at_day_end}}))
@@ -136,17 +139,17 @@ def handle_message(msg):
         topic = news_topic_modeling_service_client.classify(data)
         task['class'] = topic
 
+    #print 'send news to db and elasticsearch queue... %s' % msg
     db[NEWS_TABLE_NAME].replace_one({'digest': task['digest']}, task, upsert=True)
-
+    elasticsearch_index_cloudAMQP_client.sendMessage("1+1=?")
 
 while True:
-    if cloudAMQP_client is not None:
-        #print 'get message from queue'
-        msg = cloudAMQP_client.getMessage()
+    if dedupe_cloudAMQP_client is not None:
+        msg = dedupe_cloudAMQP_client.getMessage()
         if msg is not None:
             try:
                 handle_message(msg)
             except Exception as e:
                 log_client.logger.error(str(e))
                 pass
-        cloudAMQP_client.sleep(SLEEP_TIME_IN_SECONDS)
+        dedupe_cloudAMQP_client.sleep(SLEEP_TIME_IN_SECONDS)
