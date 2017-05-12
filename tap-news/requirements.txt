@@ -1,0 +1,16 @@
+python-jsonrpc
+pymongo
+pika
+requests
+redis
+lxml
+sklearn
+scipy
+newspaper
+pandas
+tensorflow
+watchdog
+python-statsd
+docker
+BeautifulSoup4
+pyinotify

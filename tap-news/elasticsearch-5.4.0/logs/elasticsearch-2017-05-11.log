@@ -1,0 +1,179 @@
+[2017-05-11T00:15:25,417][WARN ][o.e.m.j.JvmGcMonitorService] [idAwBkj] [gc][young][6894][3] duration [3.3s], collections [1]/[10.4s], total [3.3s]/[3.4s], memory [296.9mb]->[38.2mb]/[1.9gb], all_pools {[young] [255.4mb]->[8.5mb]/[266.2mb]}{[survivor] [33mb]->[14.1mb]/[33.2mb]}{[old] [8.4mb]->[16.2mb]/[1.6gb]}
+[2017-05-11T00:15:25,394][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-11T00:15:25,459][INFO ][o.e.m.j.JvmGcMonitorService] [idAwBkj] [gc][6894] overhead, spent [3.3s] collecting in the last [10.4s]
+[2017-05-11T00:15:25,591][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-11T00:15:25,592][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-11T00:15:25,635][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-11T17:00:58,333][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T17:00:58,419][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [26.7gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-11T17:00:58,420][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T17:00:58,439][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-11T17:00:58,439][INFO ][o.e.n.Node               ] version[5.4.0], pid[11419], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-11T17:00:59,256][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-11T17:00:59,256][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-11T17:00:59,256][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-11T17:00:59,256][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-11T17:00:59,256][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-11T17:00:59,256][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-11T17:00:59,257][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-11T17:00:59,257][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-11T17:00:59,257][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-11T17:00:59,257][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-11T17:00:59,258][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-11T17:01:01,006][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-11T17:01:01,605][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T17:01:01,605][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-11T17:01:01,891][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-11T17:01:01,912][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-11T17:01:04,989][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{7nhcdiDhRo2T6LwS3tDiOQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T17:01:05,041][INFO ][o.e.h.n.Netty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-11T17:01:05,045][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-11T17:01:05,236][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [1] indices into cluster_state
+[2017-05-11T17:01:05,624][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][3]] ...]).
+[2017-05-11T17:43:00,143][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-11T17:43:01,291][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-11T17:43:01,292][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-11T17:43:01,307][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-11T17:49:56,619][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T17:49:56,707][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [26.7gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-11T17:49:56,707][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T17:49:56,733][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-11T17:49:56,733][INFO ][o.e.n.Node               ] version[5.4.0], pid[6090], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-11T17:49:57,508][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-11T17:49:57,509][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-11T17:49:57,509][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-11T17:49:57,509][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-11T17:49:57,509][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-11T17:49:57,509][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-11T17:49:57,509][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-11T17:49:57,509][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-11T17:49:57,510][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-11T17:49:57,510][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-11T17:49:57,511][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-11T17:49:58,987][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-11T17:49:59,556][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T17:49:59,556][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-11T17:49:59,770][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-11T17:49:59,782][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-11T17:50:02,856][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{SLhkwWN6TGWspQfAgmOEtA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T17:50:02,923][INFO ][o.e.h.n.Netty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-11T17:50:02,932][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-11T17:50:03,113][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [1] indices into cluster_state
+[2017-05-11T17:50:03,542][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][0]] ...]).
+[2017-05-11T18:31:03,236][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-11T18:31:03,330][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-11T18:31:03,330][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-11T18:31:03,342][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-11T18:32:07,450][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T18:32:07,533][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [26.6gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-11T18:32:07,534][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T18:32:07,555][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-11T18:32:07,556][INFO ][o.e.n.Node               ] version[5.4.0], pid[16599], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-11T18:32:08,532][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-11T18:32:08,532][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-11T18:32:08,533][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-11T18:32:08,533][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-11T18:32:08,533][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-11T18:32:08,533][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-11T18:32:08,534][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-11T18:32:08,534][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-11T18:32:08,534][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-11T18:32:08,534][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-11T18:32:08,535][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-11T18:32:10,294][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-11T18:32:10,898][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T18:32:10,899][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-11T18:32:11,077][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-11T18:32:11,083][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-11T18:32:14,165][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{4yX5xO7HRj2LPTFpn1ymIg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T18:32:14,219][INFO ][o.e.h.n.Netty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-11T18:32:14,225][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-11T18:32:14,414][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [1] indices into cluster_state
+[2017-05-11T18:32:14,827][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][0]] ...]).
+[2017-05-11T19:23:46,650][INFO ][o.e.m.j.JvmGcMonitorService] [idAwBkj] [gc][2853] overhead, spent [310ms] collecting in the last [1.1s]
+[2017-05-11T19:24:59,826][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-11T19:24:59,894][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-11T19:24:59,894][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-11T19:24:59,906][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-11T20:06:14,236][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T20:06:14,315][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [26.6gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-11T20:06:14,315][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T20:06:14,332][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-11T20:06:14,332][INFO ][o.e.n.Node               ] version[5.4.0], pid[3677], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-11T20:06:15,021][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-11T20:06:15,021][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-11T20:06:15,021][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-11T20:06:15,021][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-11T20:06:15,021][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-11T20:06:15,021][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-11T20:06:15,022][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-11T20:06:15,022][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-11T20:06:15,022][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-11T20:06:15,022][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-11T20:06:15,022][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-11T20:06:16,654][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-11T20:06:17,171][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T20:06:17,171][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-11T20:06:17,414][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-11T20:06:17,420][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-11T20:06:20,478][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{eyhC37yEQ9Gw0IcLX3R_3w}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T20:06:20,541][INFO ][o.e.h.n.Netty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-11T20:06:20,553][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-11T20:06:20,680][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [1] indices into cluster_state
+[2017-05-11T20:06:20,979][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][3]] ...]).
+[2017-05-11T21:44:34,121][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-11T21:44:34,523][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-11T21:44:34,523][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-11T21:44:34,571][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-11T21:49:14,156][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T21:49:14,235][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [26.6gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-11T21:49:14,235][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T21:49:14,254][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-11T21:49:14,254][INFO ][o.e.n.Node               ] version[5.4.0], pid[4392], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-11T21:49:14,999][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-11T21:49:15,000][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-11T21:49:15,000][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-11T21:49:16,608][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-11T21:49:17,141][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T21:49:17,141][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-11T21:49:17,341][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-11T21:49:17,348][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-11T21:49:20,404][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{O7Ar6vzeRe-G1RaDmuXmNQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T21:49:20,432][INFO ][o.e.h.n.Netty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-11T21:49:20,440][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-11T21:49:20,585][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [1] indices into cluster_state
+[2017-05-11T21:49:20,887][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][1]] ...]).
+[2017-05-11T23:55:25,459][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T23:55:25,542][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [26.6gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-11T23:55:25,542][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T23:55:25,561][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-11T23:55:25,562][INFO ][o.e.n.Node               ] version[5.4.0], pid[5620], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-11T23:55:26,267][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-11T23:55:26,267][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-11T23:55:26,267][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-11T23:55:26,267][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-11T23:55:26,267][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-11T23:55:26,267][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-11T23:55:26,267][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-11T23:55:26,268][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-11T23:55:26,268][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-11T23:55:26,268][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-11T23:55:26,268][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-11T23:55:27,845][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-11T23:55:28,364][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T23:55:28,364][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-11T23:55:28,550][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-11T23:55:28,557][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-11T23:55:31,627][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{EIIzwwbOT7GmyIdoTgo3Fw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T23:55:31,655][INFO ][o.e.h.n.Netty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-11T23:55:31,659][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-11T23:55:31,800][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [1] indices into cluster_state
+[2017-05-11T23:55:32,081][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][4]] ...]).

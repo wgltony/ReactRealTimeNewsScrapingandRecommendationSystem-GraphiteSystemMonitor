@@ -1,0 +1,265 @@
+[2017-05-10T17:18:20,359][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-10T17:18:20,542][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [27.1gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-10T17:18:20,542][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-10T17:18:20,543][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-10T17:18:20,544][INFO ][o.e.n.Node               ] version[5.4.0], pid[89051], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/9-internal/9-internal+0-2016-04-14-195246.buildd.src]
+[2017-05-10T17:18:22,166][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-10T17:18:22,167][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-10T17:18:22,168][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-10T17:18:23,181][ERROR][o.e.b.ElasticsearchUncaughtExceptionHandler] [] fatal error in thread [main], exiting
+java.lang.ExceptionInInitializerError: null
+	at org.apache.lucene.analysis.miscellaneous.StemmerOverrideFilter$Builder.build(StemmerOverrideFilter.java:205) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.apache.lucene.analysis.nl.DutchAnalyzer.<init>(DutchAnalyzer.java:133) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.apache.lucene.analysis.nl.DutchAnalyzer.<init>(DutchAnalyzer.java:106) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.elasticsearch.indices.analysis.PreBuiltAnalyzers$20.create(PreBuiltAnalyzers.java:246) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.indices.analysis.PreBuiltAnalyzers.getAnalyzer(PreBuiltAnalyzers.java:487) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry$PrebuiltAnalysis.<init>(AnalysisRegistry.java:407) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry$PrebuiltAnalysis.<init>(AnalysisRegistry.java:392) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry.<init>(AnalysisRegistry.java:62) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.indices.analysis.AnalysisModule.<init>(AnalysisModule.java:177) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessDeclaredMembers")
+	at java.security.AccessControlContext.checkPermission(AccessControlContext.java:468) ~[?:?]
+	at java.security.AccessController.checkPermission(AccessController.java:894) ~[?:?]
+	at java.lang.SecurityManager.checkPermission(SecurityManager.java:541) ~[?:?]
+	at java.lang.Class.checkMemberAccess(Class.java:2584) ~[?:?]
+	at java.lang.Class.getDeclaredFields(Class.java:2092) ~[?:?]
+	at org.apache.lucene.util.RamUsageEstimator$1.run(RamUsageEstimator.java:339) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.RamUsageEstimator$1.run(RamUsageEstimator.java:336) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.apache.lucene.util.RamUsageEstimator.shallowSizeOfInstance(RamUsageEstimator.java:336) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.RamUsageEstimator.shallowSizeOf(RamUsageEstimator.java:313) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.fst.ByteSequenceOutputs.<clinit>(ByteSequenceOutputs.java:154) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	... 21 more
+[2017-05-10T17:20:00,372][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:106) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:204) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.4.0.jar:5.4.0]
+[2017-05-10T17:20:00,378][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:127) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+Caused by: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:106) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:204) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) ~[elasticsearch-5.4.0.jar:5.4.0]
+	... 6 more
+[2017-05-10T17:22:07,985][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-10T17:22:08,045][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [27.1gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-10T17:22:08,046][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-10T17:22:08,048][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-10T17:22:08,048][INFO ][o.e.n.Node               ] version[5.4.0], pid[90221], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/9-internal/9-internal+0-2016-04-14-195246.buildd.src]
+[2017-05-10T17:22:08,709][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-10T17:22:08,709][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-10T17:22:08,710][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-10T17:22:08,710][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-10T17:22:08,710][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-10T17:22:08,710][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-10T17:22:08,710][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-10T17:22:08,710][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-10T17:22:08,710][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-10T17:22:08,710][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-10T17:22:08,711][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-10T17:22:09,345][ERROR][o.e.b.ElasticsearchUncaughtExceptionHandler] [] fatal error in thread [main], exiting
+java.lang.ExceptionInInitializerError: null
+	at org.apache.lucene.analysis.miscellaneous.StemmerOverrideFilter$Builder.build(StemmerOverrideFilter.java:205) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.apache.lucene.analysis.nl.DutchAnalyzer.<init>(DutchAnalyzer.java:133) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.apache.lucene.analysis.nl.DutchAnalyzer.<init>(DutchAnalyzer.java:106) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.elasticsearch.indices.analysis.PreBuiltAnalyzers$20.create(PreBuiltAnalyzers.java:246) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.indices.analysis.PreBuiltAnalyzers.getAnalyzer(PreBuiltAnalyzers.java:487) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry$PrebuiltAnalysis.<init>(AnalysisRegistry.java:407) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry$PrebuiltAnalysis.<init>(AnalysisRegistry.java:392) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry.<init>(AnalysisRegistry.java:62) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.indices.analysis.AnalysisModule.<init>(AnalysisModule.java:177) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessDeclaredMembers")
+	at java.security.AccessControlContext.checkPermission(AccessControlContext.java:468) ~[?:?]
+	at java.security.AccessController.checkPermission(AccessController.java:894) ~[?:?]
+	at java.lang.SecurityManager.checkPermission(SecurityManager.java:541) ~[?:?]
+	at java.lang.Class.checkMemberAccess(Class.java:2584) ~[?:?]
+	at java.lang.Class.getDeclaredFields(Class.java:2092) ~[?:?]
+	at org.apache.lucene.util.RamUsageEstimator$1.run(RamUsageEstimator.java:339) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.RamUsageEstimator$1.run(RamUsageEstimator.java:336) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.apache.lucene.util.RamUsageEstimator.shallowSizeOfInstance(RamUsageEstimator.java:336) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.RamUsageEstimator.shallowSizeOf(RamUsageEstimator.java:313) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.fst.ByteSequenceOutputs.<clinit>(ByteSequenceOutputs.java:154) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	... 21 more
+[2017-05-10T17:24:58,776][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-10T17:24:58,835][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [27.1gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-10T17:24:58,835][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-10T17:24:58,836][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-10T17:24:58,837][INFO ][o.e.n.Node               ] version[5.4.0], pid[91651], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/9-internal/9-internal+0-2016-04-14-195246.buildd.src]
+[2017-05-10T17:24:59,511][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-10T17:24:59,511][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-10T17:24:59,512][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-10T17:24:59,512][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-10T17:24:59,512][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-10T17:24:59,512][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-10T17:24:59,512][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-10T17:24:59,513][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-10T17:24:59,513][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-10T17:24:59,513][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-10T17:24:59,514][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-10T17:24:59,953][ERROR][o.e.b.ElasticsearchUncaughtExceptionHandler] [] fatal error in thread [main], exiting
+java.lang.ExceptionInInitializerError: null
+	at org.apache.lucene.analysis.miscellaneous.StemmerOverrideFilter$Builder.build(StemmerOverrideFilter.java:205) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.apache.lucene.analysis.nl.DutchAnalyzer.<init>(DutchAnalyzer.java:133) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.apache.lucene.analysis.nl.DutchAnalyzer.<init>(DutchAnalyzer.java:106) ~[lucene-analyzers-common-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:41:02]
+	at org.elasticsearch.indices.analysis.PreBuiltAnalyzers$20.create(PreBuiltAnalyzers.java:246) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.indices.analysis.PreBuiltAnalyzers.getAnalyzer(PreBuiltAnalyzers.java:487) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry$PrebuiltAnalysis.<init>(AnalysisRegistry.java:407) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry$PrebuiltAnalysis.<init>(AnalysisRegistry.java:392) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.analysis.AnalysisRegistry.<init>(AnalysisRegistry.java:62) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.indices.analysis.AnalysisModule.<init>(AnalysisModule.java:177) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.node.Node.<init>(Node.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap$6.<init>(Bootstrap.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:242) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessDeclaredMembers")
+	at java.security.AccessControlContext.checkPermission(AccessControlContext.java:468) ~[?:?]
+	at java.security.AccessController.checkPermission(AccessController.java:894) ~[?:?]
+	at java.lang.SecurityManager.checkPermission(SecurityManager.java:541) ~[?:?]
+	at java.lang.Class.checkMemberAccess(Class.java:2584) ~[?:?]
+	at java.lang.Class.getDeclaredFields(Class.java:2092) ~[?:?]
+	at org.apache.lucene.util.RamUsageEstimator$1.run(RamUsageEstimator.java:339) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.RamUsageEstimator$1.run(RamUsageEstimator.java:336) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.apache.lucene.util.RamUsageEstimator.shallowSizeOfInstance(RamUsageEstimator.java:336) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.RamUsageEstimator.shallowSizeOf(RamUsageEstimator.java:313) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	at org.apache.lucene.util.fst.ByteSequenceOutputs.<clinit>(ByteSequenceOutputs.java:154) ~[lucene-core-6.5.0.jar:6.5.0 4b16c9a10c3c00cafaf1fc92ec3276a7bc7b8c95 - jimczi - 2017-03-21 20:40:22]
+	... 21 more
+[2017-05-10T17:25:43,963][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:106) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:204) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.4.0.jar:5.4.0]
+[2017-05-10T17:25:43,970][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:127) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:114) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:122) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cli.Command.main(Command.java:88) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+Caused by: java.lang.RuntimeException: can not run elasticsearch as root
+	at org.elasticsearch.bootstrap.Bootstrap.initializeNatives(Bootstrap.java:106) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:204) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:360) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:123) ~[elasticsearch-5.4.0.jar:5.4.0]
+	... 6 more
+[2017-05-10T17:42:39,404][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-10T17:42:39,480][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [26.2gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-10T17:42:39,480][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-10T17:42:39,481][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-10T17:42:39,482][INFO ][o.e.n.Node               ] version[5.4.0], pid[96111], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-10T17:42:40,174][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-10T17:42:40,174][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-10T17:42:40,174][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-10T17:42:40,174][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-10T17:42:40,174][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-10T17:42:40,174][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-10T17:42:40,175][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-10T17:42:40,175][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-10T17:42:40,175][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-10T17:42:40,175][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-10T17:42:40,175][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-10T17:42:41,541][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-10T17:42:42,033][INFO ][o.e.n.Node               ] initialized
+[2017-05-10T17:42:42,033][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-10T17:42:42,309][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-10T17:42:42,315][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-10T17:42:45,394][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{3GIl0RuQTYWlcUlUeHtbHA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-10T17:42:45,428][INFO ][o.e.h.n.Netty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-10T17:42:45,439][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-10T17:42:45,447][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [0] indices into cluster_state
+[2017-05-10T18:13:12,080][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-10T18:13:12,111][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-10T18:13:12,111][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-10T18:13:12,122][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-10T22:12:39,720][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-10T22:12:39,872][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [26.6gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-10T22:12:39,873][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-10T22:12:39,905][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-10T22:12:39,905][INFO ][o.e.n.Node               ] version[5.4.0], pid[5194], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-10T22:12:41,616][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-10T22:12:41,621][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-10T22:12:41,621][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-10T22:12:41,622][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-10T22:12:41,622][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-10T22:12:41,622][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-10T22:12:41,622][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-10T22:12:41,622][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-10T22:12:41,622][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-10T22:12:41,623][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-10T22:12:41,624][INFO ][o.e.p.PluginsService     ] [idAwBkj] no plugins loaded
+[2017-05-10T22:12:43,906][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-10T22:12:44,683][INFO ][o.e.n.Node               ] initialized
+[2017-05-10T22:12:44,683][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-10T22:12:45,061][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-10T22:12:45,080][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-10T22:12:48,172][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{EBWN37v3QfutU8dKVbh8xw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-10T22:12:48,249][INFO ][o.e.h.n.Netty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-10T22:12:48,253][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-10T22:12:48,517][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [1] indices into cluster_state
+[2017-05-10T22:12:48,913][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][1]] ...]).
