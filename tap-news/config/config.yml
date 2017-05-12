@@ -15,6 +15,8 @@ default:
 
   backend_server:
     operations:
+      ELASTICSEARCH_HOST: localhost
+      ELASTICSEARCH_PORT: 9200
       REDIS_HOST: localhost
       REDIS_PORT: 6379
       NEWS_TABLE_NAME: news
@@ -22,6 +24,8 @@ default:
       NEWS_LIMITS: 200
       NEWS_LIST_BATCH_SIZE: 10
       USER_NEWS_TIME_OUT_IN_SECONDS: 60
+      LOG_GRAPHITE_TASK_QUEUE_URL: amqp://simmntah:ty5o9alqJxW0zNfnuUkfBdtUn74oqm9g@wombat.rmq.cloudamqp.com/simmntah
+      LOG_GRAPHITE_TASK_QUEUE_NAME: tap-news-log-graphite-task-queue
       # Line 71
       LOG_CLICKS_TASK_QUEUE_URL: amqp://lbihfado:MdRGPi10PvHeRl4C9YN4nujwSpCqMAoi@wombat.rmq.cloudamqp.com/lbihfado
       LOG_CLICKS_TASK_QUEUE_NAME: tap-news-log-clicks-task-queue

@@ -5199,3 +5199,14 @@
 [2017-05-12 02:09:34.082] [INFO] rpc_client - undefined
 [2017-05-12 02:09:34.136] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
 [2017-05-12 02:09:34.235] [INFO] rpc_client - undefined
+[2017-05-12 10:46:09.999] [INFO] rpc_client - undefined
+[2017-05-12 10:46:10.320] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 10:46:10.340] [INFO] rpc_client - undefined
+[2017-05-12 10:46:10.320] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 10:46:10.360] [INFO] rpc_client - undefined
+[2017-05-12 10:46:10.380] [INFO] rpc_client - undefined
+[2017-05-12 10:46:10.571] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 10:46:10.623] [INFO] rpc_client - undefined
+[2017-05-12 10:46:19.552] [INFO] rpc_client - undefined
+[2017-05-12 10:46:30.762] [INFO] rpc_client - undefined
+[2017-05-12 10:46:31.294] [INFO] rpc_client - undefined

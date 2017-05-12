@@ -5,13 +5,11 @@ import random
 import redis
 import sys
 import yaml
-import statsd
+
 
 from bson.json_util import dumps
 from datetime import datetime
 from elasticsearch import Elasticsearch
-
-es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
 stream = open("../config/config.yml", "r")
 load = yaml.load(stream)
@@ -24,6 +22,8 @@ import mongodb_client
 import news_recommendation_service_client
 from cloudAMQP_client import CloudAMQPClient
 import log_client
+
+es = Elasticsearch([{'host': config['operations']['ELASTICSEARCH_HOST'], 'port': config['operations']['ELASTICSEARCH_PORT']}])
 
 REDIS_HOST = config['operations']['REDIS_HOST']
 REDIS_PORT = config['operations']['REDIS_PORT']
@@ -38,8 +38,12 @@ USER_NEWS_TIME_OUT_IN_SECONDS = config['operations']['USER_NEWS_TIME_OUT_IN_SECO
 LOG_CLICKS_TASK_QUEUE_URL = config['operations']['LOG_CLICKS_TASK_QUEUE_URL']
 LOG_CLICKS_TASK_QUEUE_NAME = config['operations']['LOG_CLICKS_TASK_QUEUE_NAME']
 
+LOG_GRAPHITE_TASK_QUEUE_URL = config['operations']['LOG_GRAPHITE_TASK_QUEUE_URL']
+LOG_GRAPHITE_TASK_QUEUE_NAME = config['operations']['LOG_GRAPHITE_TASK_QUEUE_NAME']
+
 redis_client = redis.StrictRedis(REDIS_HOST, REDIS_PORT, db=0)
-cloudAMQP_client = CloudAMQPClient(LOG_CLICKS_TASK_QUEUE_URL, LOG_CLICKS_TASK_QUEUE_NAME)
+clickLog_cloudAMQP_client = CloudAMQPClient(LOG_CLICKS_TASK_QUEUE_URL, LOG_CLICKS_TASK_QUEUE_NAME)
+graphitelog_cloudAMQP_client = CloudAMQPClient(LOG_GRAPHITE_TASK_QUEUE_URL, LOG_GRAPHITE_TASK_QUEUE_NAME)
 db = mongodb_client.get_db()
 
 #load news list
@@ -113,7 +117,7 @@ def logNewsClickForUser(user_id, news_id):
 
     # Send log task to machine learning service for prediction
     message = {'userId': user_id, 'newsId': news_id, 'timestamp': str(datetime.utcnow())}
-    cloudAMQP_client.sendMessage(message);
+    clickLog_cloudAMQP_client.sendMessage(message);
 
 
 # TODO: save preference to database, get preference from database
@@ -127,10 +131,11 @@ def getPreferenceForUser(user_id):
 
 
 def logDataForGraphite(process_name):
+    graphitelog_cloudAMQP_client.sendMessage(process_name);
     #log_client.logger.debug('Send monitor data [%s] to graphite......' % process_name)
     #print 'Send monitor data [%s] to graphite......' % process_name
-    counter = statsd.Counter(process_name)
-    counter+=1
+    # counter = statsd.Counter(process_name)
+    # counter+=1
 
 def getSearchNewsSummariesForUser(user_id, page_num, search_key):
     #connect to our cluster
