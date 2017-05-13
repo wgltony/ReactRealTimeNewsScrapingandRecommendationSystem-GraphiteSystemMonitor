@@ -44681,3 +44681,1215 @@ Use tf.losses.add_loss instead.
 [2017-05-12 17:40:49,355 - server.py:89 - INFO -   <module>() ]: Model loaded
 [2017-05-12 17:40:49,359 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
 [2017-05-12 17:40:49,359 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 17:45:31,842 - server.py:108 - INFO -   classify() ]: [[ 3992     0     0  2577  4303  8338     0     0   664     0     0  9313
+      0     0     0 10107     0  7118     0  3539     0  1293     0     0
+    664  8338     0  3256    41  5016     0  5990     0     0     0     0
+      0     0     0     0     0     0  5666     0   785     0  7118  1450
+      0     0     0     0     0     0     0     0     0    41     0     0
+    664     0   270     0     0     0  9313     0  8030     0  7118  1450
+      0     0  5666     0     0  4005     0     0  5990     0     0  5666
+      0     0  5666     0    41     0  7118  2692     0     0     0     0
+      0     0     0  1841    41     0   195     0  7118     0     0     0
+      0  3992     0     0     0     0     0     0     0     0  1171     0
+      0     0     0  8030   178  7118     0  9313     0     0    46     0
+      0     0     0     0     0     0     0     0     0     0  5666     0
+      0     0  9313     0     0     0     0  8338     0     0     0  3490
+      0     0     0     0     0     0  5666     0  3256  2228     0     0
+      0     0   178     0     0     0  7118  5650  3539     0  1293  5295
+   3579     0     0     0  5666     0     0     0     0  7493     0     0
+   5665     0     0     0    41  1134     0     0     0     0  5990     0
+   2906     0     0     0     0  5666     0     0     0    41     0     0
+      0  3078  2137  8030     0  3579  1556     0     0     0     0  7118
+   1450     0     0    41     0     0     0  5295     0     0     0     0
+      0     0     0  3490     0     0  7118   139     0     0     0     0
+     41     0     0     0  5990     0     0  5665   103     0     0    41
+   5016     0     0     0  5666     0     0     0     0  3372     0  5665
+      0  1515     0     0    41     0     0     0     0     0     0     0
+      0     0  5665     0     0     0     0    41     0  1262     0  7118
+   1450     0     0     0     0     0     0     0     0  2906     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0  5665     0     0     0  8030     0     0     0
+   5295    41     0     0     0     0     0     0     0     0     0     0
+   7118  1450     0  5666   664   424     0     0     0     0     0    41
+   5016     0    41     0     0     0  7118  1450     0     0     0  5666
+   1515     0     0     0     0     0  5666     0]]
+[2017-05-12 17:45:31,850 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 17:45:31,943 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 17:45:31,958 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 17:45:32,092 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 17:45:32,543 - server.py:113 - INFO -   classify() ]: 4
+[2017-05-12 17:45:36,263 - server.py:108 - INFO -   classify() ]: [[   0    0    0 2692 3246    0    0    0 2299    0    0    0    0    0
+     0    0    0    0   41    0    0    0    0    0    0    0    0    0
+  4005 8545 3826    0    0 1958 5665 5666    0    0    0    0    0    0
+     0    0    0  929 5990    0    0    0 5666    0 9313    0    0    0
+     0    0    0  149    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 17:45:36,265 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 17:45:36,318 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 17:45:36,336 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 17:45:36,358 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 17:45:36,843 - server.py:113 - INFO -   classify() ]: 5
+[2017-05-12 17:45:42,537 - server.py:108 - INFO -   classify() ]: [[ 4303     0     0  4005     0     0     0  3123     0     0     0     0
+   7849     0     0     0     0     0     0     0     0     0     0  7118
+      0  5665  9200     0     0     0     0     0     0  1262     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0    41     0   619     0     0     0     0    41     0     0
+      0     0     0  7849     0     0     0     0     0     0     0     0
+      0     0     0  5666     0  3513     0     0  6723     0     0  3677
+      0     0     0     0  3391     0     0     0     0     0     0     0
+      0     0     0     0    41     0  4005     0  5666     0  1171     0
+      0     0     0     0  2137     0     0     0     0    41     0     0
+     41   171     0   619  5665     0     0     0     0     0     0     0
+   2577  4303    41     0   975    41     0  3391     0  9313    48     0
+     91   406     0     0     0     0     0  6347     0     0     0     0
+   6347     0     0  3239     0     0     0     0     0     0     0     0
+   5747     0  5665     0 10024     0     0     0     0     0     0     0
+      0  4303     0     0     0  4303     0     0     0  3239     0     0
+      0     0    41     0     0     0     0     0     0     0     0     0
+      0  4005  2577     0     0     0     0     0     0     0  5666     0
+      0     0     0     0     0     0     0  3391  5665     0     0     0
+      0   178    41     0   424  3677     0     0     0     0     0     0
+      0     0  2577     0     0     0     0     0     0     0     0     0
+   5666   724     0     0     0    41     0     0  5666     0     0  5666
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0  1156     0     0     0     0     0    41  1262     0  5666     0
+      0     0  1156     0     0  3391     0     0     0   310  2137  1262
+      0     0     0     0     0     0  7118     0     0    41     0  4005
+   5666     0     0     0  5321  6848  9942     0  2382     0  5990  3239
+      0     0     0  5666     0   749     0     0     0     0     0     0
+   5666     0     0     0  3677     0     0   178     0     0     0  8030
+      0     0     0     0     0     0     0     0     0  2137     0     0
+      0     0     0  9313     0     0   424     0     0     0  3391     0
+      0     0     0  5990     0     0  3391     0]]
+[2017-05-12 17:45:42,539 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 17:45:42,606 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 17:45:42,628 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 17:45:42,654 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 17:45:43,141 - server.py:113 - INFO -   classify() ]: 4
+[2017-05-12 17:45:52,230 - server.py:108 - INFO -   classify() ]: [[ 1439  1393  5868   190     0  1398     0   533   533  4129  4292  4129
+   2394  2331  1151   209   126  1398   209  1439  2615  7253  1439  1151
+    209   126     0  1440     0   214   209  8487  4341  1151  2706  7703
+    887  1439     0     0  5161  1439   534   535  4485   923  9255   351
+    209  5868   190  1180    91  1434  1398   625  1336   126   190   209
+   1440  4341  1151  2706  2435  1752   532    31     0  2679   239  1106
+   1256   534   535  1266  1439   355  1967    91  1434   126   190   209
+   1440   214  8491  1504  1871  3356  1504    35     0  1368  4808     0
+    282  1439   287  2689  2679  2254     0  4519  1151   209   126  1398
+      0     0  1232   702  1393  5868  1027  6605  1439  1487  2189  6520
+    825 10397   825  3207    91     0    65   702   586     0   317  3670
+   1439    24  2925  1393  1440   190  1151   209  1398   292  1151   719
+   1220  1610   726  1775  1134   642  1180   394  1434  1441   206  4903
+   4341  1151  2706  6835     0  8487   662  1441  1434  1441   157  2965
+   1393  5868  1148  1395  1396  1194   157    65  2684   445  3734  1905
+      0  1398  3756   515  6590   690   195   726  3798   726  1215     0
+    287    31  1780  7805  2212     0     0    11  2394   913  4327  4328
+   4329     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0]]
+[2017-05-12 17:45:52,232 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 17:45:52,281 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 17:45:52,297 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 17:45:52,318 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 17:45:52,648 - server.py:113 - INFO -   classify() ]: 13
+[2017-05-12 17:45:58,823 - server.py:108 - INFO -   classify() ]: [[ 1439   828  1143  3445  2190   351     0  1439  1439  1439  1439  1439
+   1439  1439  1439   288   239   236   534   535   906  1454  1266  1439
+   2769   859     0   771   246   190   297  3534    31  1151   719   544
+   1116  2679   859    88  1440   605     0   209  1151   209   126     0
+   1398   278  1466  1266  8487   719  1399  3002  1102  3122  1401  7328
+      0   642  1180     0  1398     0     0    90   866   126   384  3261
+   1440   605  7988     0   726   702  8491   986   753   209  1440   190
+   1180  1398  1367   625  1965   209   126    88  4808  2689  3570   719
+   1884  1106  3314     0  2016  4808     0  1891     0   544  1439  3521
+   2679  1238     0  1658  1440   190     0   209   923   987  6520   825
+  10397   825  1610   279   923  5336  1962   719   296   297  1364  1507
+      0   296  5445  1626   521   802  1856     0   287  1282   394   339
+    758    19  1715  1439  3195     0  1706  2490  7917   896   297   532
+    410  1440     0  1180     0  1398   355  5322  1873    19  1765  1439
+   4505    53  1880  2610  3351  1349   129  2190  1241  1398   118  1883
+    351     0  1398  2777  3598   279  2604    35  1446  1029   246  1684
+   3061   246  7163   248  3399    48  1647  1626  1439   129   716  1398
+   3428  3574  1446  1029  1439  1367  4943   873  2679  1398   195   129
+   1733     0  1398   923  1786  1688   719   279   112   987   923  1344
+    719  1482   382  5816  1521   653  4943  1561     0  7463  1034  1200
+      0   303     0     0   987  3374   213  4059     0   987  9483   282
+   3374   653   287  6475   282   987  1504  1330  7568  3374  5851   923
+    160  2196  2045  1439   327   795   923   186  3659     0  1393  1398
+   1521  1439   479  1336   381   279  1874   858  1225  1647     0  7392
+      0  4477   409  1548   719  2016  2068  1593  7150     0  5989   520
+   1046   520     0  3428   923   591  1647    65  2684  1647  3131  3431
+    370  2419     0  4434   367   132   434     0  1151  1180  2706  1516
+    944  1398   282  1116  5336   316   282  2549   728  1531   866   146
+   1398  9688  1487  1098   940  4257  1439   279   246  2061  1398   129
+   4934   246   279  1200   206    59  1193  3565   248   863   157  1193
+      0   477  1794  2196  2196   411  2189   795  3819   469   532   485
+    132  1439  2689   719   479  1552   923  1440]]
+[2017-05-12 17:45:58,825 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 17:45:58,906 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 17:45:58,932 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 17:45:58,960 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 17:45:59,388 - server.py:113 - INFO -   classify() ]: 3
+[2017-05-12 18:03:41,311 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7f0f35c34210>
+[2017-05-12 18:03:41,316 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:03:41,774 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:03:41,775 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:03:42,491 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:03:42,531 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:03:42,603 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:03:49,453 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:03:49,456 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:03:49,456 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:03:49,458 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:03:49,458 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:04:36,831 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7faa8a7ae210>
+[2017-05-12 18:04:36,831 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:04:37,052 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:04:37,053 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:04:37,349 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:04:37,405 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:04:37,450 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:04:47,058 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:04:47,061 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:04:47,062 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:04:47,063 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:04:47,063 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:15:17,350 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7f2be6874210>
+[2017-05-12 18:15:17,353 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:15:17,392 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:15:17,392 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:15:17,630 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:15:17,650 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:15:17,675 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:15:18,457 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:15:18,462 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:15:18,462 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:15:18,465 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:15:18,465 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:15:44,091 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7f8ca74b4210>
+[2017-05-12 18:15:44,100 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:15:44,122 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:15:44,122 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:15:44,198 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:15:44,229 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:15:44,267 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:15:44,995 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:15:44,998 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:15:44,999 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:15:45,001 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:15:45,001 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:16:12,956 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7fd55d2da210>
+[2017-05-12 18:16:12,957 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:16:12,974 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:16:12,974 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:16:13,048 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:16:13,065 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:16:13,091 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:16:13,880 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:16:13,884 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:16:13,884 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:16:13,887 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:16:13,887 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:16:15,663 - server.py:108 - INFO -   classify() ]: [[1723 1733 2822    0    0  486 1560    0 2822    0    0 3901 7937 2524
+  4118 1731 2835 1233    0 4485 1134    0 2822    0  486    0 3798 2798
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 18:16:15,665 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:16:15,742 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:16:15,772 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:16:15,870 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:16:16,331 - server.py:113 - INFO -   classify() ]: 4
+[2017-05-12 18:16:19,926 - server.py:108 - INFO -   classify() ]: [[3992  872 2757 1204    0 1145  674 3594  625  877  638   91 2783 5871
+  9965 2909 2218 2097    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 18:16:19,928 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:16:19,977 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:16:19,995 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:16:20,019 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:16:20,418 - server.py:113 - INFO -   classify() ]: 4
+[2017-05-12 18:16:24,936 - server.py:108 - INFO -   classify() ]: [[ 256 1417  959 2188 4248 1046 5339 3589 1046    0  859  712  691  814
+  2030    0  712  691    0 7610 3208    0 4831 5570 3809  186  403  250
+  1871 4089 1027 2513    0 3667  652  256 4830 4831 4832 1550 1046 1550
+  2030    0  256 1417  959    0 1213  343 1006  256  940    0 3894 5449
+  3196  411 1541  164  913 2348 1539  250    0 3667  652  256 4830 4831
+  4832 1550 1046 1550 2030    0 1626 1417  959  494 3696 9563    0 2822
+  2651  256    0 2092 4399  243    0 2786 2175    0 2042 1626  591    0
+  3667  652  256 4830 4831 4832 1550 1046 1550 2030 3502  411 1728    7
+    74 3502  477  674  195 2651 1417  959 1409 2175 1111 5449 5490 3894
+  4758 7089 5075    0 3667  652  256 4830 4831 4832 1550 1046 1550 2030
+     0  256  959 2651 5525 7089 3894 5449 4856 3928 1417 2614  243 1206
+     0    0    0 1979 7057 5211 4343 6128 5544  165 8073 2042  504    0
+  3667  652  256 4830 4831 4832 1550 1046 1550 2030    0  386  181  990
+  2226  691    0  527   10  561 1110   72 1417    0    0 1046 1731 1394
+   671  494 5160    0  245 1509 3847 2602  243    0 7089 2221 1849 9373
+  1417    0 3667  652  256 4830 4831 4832 1550 1046 1550 2030 5676  256
+  1417  959 5676  256 2614    0 7750    0 1979  151 1313 8923 4399 1111
+  4856 2602  243 3894 5449    0    0 3667  652  256 4830 4831 4832 1550
+  1046 1550 2030    0  256 1417  959 5525    0 4399 5338    0  275 7610
+  1417 1111  256 1437 2903    0    0 2017 1509    0 7312    0 3667  652
+   256 4830 4831 4832 1550 1046 1550 2030  234 1046 1731  691  234 1434
+  2175    0 1111 4399  243 2972    0 1541    0    0 2221  142 5160    0
+  3667  652  256 4830 4831 4832 1550 1046 1550    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 18:16:24,937 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:16:24,996 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:16:25,012 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:16:25,031 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:16:25,458 - server.py:113 - INFO -   classify() ]: 4
+[2017-05-12 18:16:36,676 - server.py:108 - INFO -   classify() ]: [[ 1266  4843  1723   671  4488 10105  3798  1838   869  3603   312     0
+   4751  2835  1851     0  4751  4668  2577  4488     0  4843 10105   578
+    112     0  1041  3228   627  1527   312  3208   295   852  3142  1195
+      0  4488     0     0  3847  7740   609  4256  5077  4147   881   243
+   4843 10105     0  4751   986  2785   724  1520     0    31  1431  1304
+      0     0   269  4843  1856  1409     0     0   312   380  1100  2615
+   3228   186  4147  2001   143  3381  2831    70   371  1572  2577     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0]]
+[2017-05-12 18:16:36,678 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:16:36,727 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:16:36,744 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:16:36,763 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:16:37,161 - server.py:113 - INFO -   classify() ]: 13
+[2017-05-12 18:16:42,756 - server.py:108 - INFO -   classify() ]: [[  12    0    0   26    0  485    0   12    0    0   26    0  485 3218
+     0    0 1188   12    0    0 1437    0    0    0  784 2549   54   54
+  1847    0    0   26 5147  760  240 8284   26 4794 1382    0  877 6647
+     0    0  411 9624 1919 2689    0    0    0  287    0 1658 3218 2111
+  4794 3218  269 7253 3747    0    0    0    0 3102 5211    0 7287 3355
+  3297   64  203 8365 2946    0  342 5754 1880 7541   65  344  476    0
+  1313 5211   12  912  844    0 1132    0  239 3218 1548  190   56  203
+    56 1979    0    0  197    0  617  339 1671    0 2834 3605   65 3041
+     0 1498  203  617  158  444 4384 3153    0 2384 2621 1847    0    0
+  1829 3812 8084    0    0    0  200 5314    0 5049    0    0 1979 1713
+   503  504    0 6330    0  577    0    0    0  227 1671    0 2834  339
+   197 2549    0  617 3605   65 3041    0  521  203  158  444    0  250
+   784 2546 3812 1208    0  592    0 4372 3595  876 3747  143 2436    0
+     0 9698 1005 2360  479 1690 3374 2604  287  214  206  825  143    0
+  1690   29 6930  600 1027 2124    0 2779    0  403 3974 3570 2689  849
+  1847    0    0   24 5147 2163 1110  186    0 1591 3566 1235    0  768
+  4413 2689 2779    0    0    0  674 3106 5147    0  200    0    0  764
+  3153 1671    0 2834  339  197    0  617 3605   65 3041  411 9624    0
+   837 3594 3595    0 2163 1110 3554 2100    0  186 2100    0  521   38
+  4794 1235 3566 2096  712   94   76 5985 9624 1585    0    0 2460    0
+  5049    0  687 2867 1847    0    0 2779    0    0    0 4027 1573 1690
+  2188    0 5049 9698 2360    0 5302 1582    0 1957    0 5170  143 1599
+  2866 5308   16 1690  782 5985    0 3628 4372    0    0 3802  197 2549
+     0  617  287    0 2834 1288 3605   65 3041  521  203  158 2546  444
+  2779    0  963 1508 1926    0  427   54   76    0    0 1743 1432    0
+    10 1690 1599  164 1304 1847 1690 1233    0    0 1775 1134    0    0
+  1292 3208 2466 2467 5119 3028  963 1508 1926   10 7751    0    0 2023
+     0  143]]
+[2017-05-12 18:16:42,758 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:16:42,808 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:16:42,824 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:16:42,844 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:16:43,192 - server.py:113 - INFO -   classify() ]: 4
+[2017-05-12 18:16:47,687 - server.py:108 - INFO -   classify() ]: [[1226 1647    0 1895 1274  765    0  569 5146 1698  857 6676 3805 4477
+  2151 2150  532    0  143 1446  125 8718 9490    0 3591  568  375  479
+  1274  765 2150 4477 2689 4320  726  568  409 1698  857 6676  758    0
+  3591 3633  960 4477 2151 2150  429 4016 6676 8587 1138 5858  444 2124
+  1638  287  726 4102 2689 2124 1266 1647 6676  292 1979 3633  498 2938
+  1257 3261  293 2154   46 1638  287  373 3208 1647 6676  833 4697  293
+  5858  872 1746  771  203  389   48  372 2137 2237    0 7000 4751  477
+   214 1895 5858  282 1638  287  532  485  203   56  285 3441    0    0
+   758    0 9170   21 5858  568    0    0 2150 1274  765 2150 7703   11
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 18:16:47,689 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:16:47,747 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:16:47,769 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:16:47,795 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:16:48,220 - server.py:113 - INFO -   classify() ]: 6
+[2017-05-12 18:17:57,852 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7fc9a8834210>
+[2017-05-12 18:17:57,852 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:17:57,881 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:17:57,881 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:17:57,962 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:17:57,987 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:17:58,019 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:17:58,673 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:17:58,676 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:17:58,676 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:17:58,687 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:17:58,687 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:20:45,179 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7f86b3eb4210>
+[2017-05-12 18:20:45,180 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:20:45,202 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:20:45,202 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:20:45,292 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:20:45,312 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:20:45,343 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:20:46,064 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:20:46,069 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:20:46,069 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:20:46,071 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:20:46,071 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:23:59,971 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7f3338234210>
+[2017-05-12 18:23:59,972 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:23:59,998 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:23:59,998 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:24:00,091 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:24:00,117 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:24:00,144 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:24:00,874 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:24:00,878 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:24:00,879 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:24:00,882 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:24:00,882 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:26:10,363 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7f6c482b4210>
+[2017-05-12 18:26:10,364 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:26:10,392 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:26:10,392 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:26:10,505 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:26:10,532 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:26:10,566 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:26:11,318 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:26:11,326 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:26:11,326 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:26:11,330 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:26:11,330 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:31:12,469 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7f7880ef0210>
+[2017-05-12 18:31:12,470 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:31:12,498 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:31:12,498 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:31:12,660 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:31:12,685 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:31:12,717 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:31:13,630 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:31:13,632 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:31:13,632 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:31:13,635 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:31:13,635 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:31:19,401 - server.py:108 - INFO -   classify() ]: [[2809 2835 5438 2100 2952  784  501    0 2783  360 4408 4794  269 3210
+  2282 2783  485 4825  693 6909    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 18:31:19,404 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:31:19,448 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:31:19,462 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:31:19,535 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:31:19,909 - server.py:113 - INFO -   classify() ]: 5
+[2017-05-12 18:31:23,504 - server.py:108 - INFO -   classify() ]: [[1958  784 2175 6776  768 1626 4320 4820    0  686  380 2472    0   15
+  4078  923  521 2822 4820 8208 1233    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 18:31:23,506 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:31:23,572 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:31:23,589 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:31:23,620 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:31:24,010 - server.py:113 - INFO -   classify() ]: 4
+[2017-05-12 18:31:28,567 - server.py:108 - INFO -   classify() ]: [[  239   270  3033  1969     0  1113  3817    65  1684  2777     0  1512
+   1340    74    54   100   887     0     0  1501   411   246   239   544
+   1969  3241   852  1780  3033    64   249   534   535  8854  7568  4391
+    239  5982  2529  4243 10089    47  2855   913     0   107  3024  3801
+     48  3891   140 10144  3350  4391  2435  3417   768  6786  7338   314
+      0   437  1213    26   370  1871   581  1969  3033  1647  2098   390
+    399  3147   391   764  2192  6319     0   479  3097  3033  1969  8737
+   1228  1229  2107   539     0  3097    88  6432  1874  2859  1192   373
+    239  3203  2045   268  4505  1524  1874   522  1031   437  4922   877
+   3024  2468   671   659  3033  1969   769    99   717   718   719   544
+   3276    94   605   467  3332  3337  3891  3659  1104    14  2537  8813
+   1333     0   877  4243  1051  4027  1501  3424  1663   135  1664   615
+    544  1104  1218  1298    52   548   394  7808    52     0   311  1524
+   5808   924  1235   437  1931  7580  2076  2221   485  2857   535  3265
+   1099  1109    35   367   625   277  7536   239   866  3195  2750   367
+    300   327     0   612   445     0    20  5746  1261  2692  1262  1263
+   2404     0    53   145  2610  3041   239     0  3024  8175   877  2805
+    387   397    91  2334   784  3271  8632  1521   239  5545  2111  1370
+    605    46   270   365  4504     0  2612  1358  1340  1613  8155   339
+   8094  9279   239  1755  3193  1192  1379  6242  1683  6313  2221    65
+    296   112     0   239  2566  1686  1684     0  2777   926   797     0
+   4326     0   674   239  1288  1269   476  5537     0   287  3847  2777
+      0  4629    15  4629   186   295  5844   723  4930   485  2217   203
+    659   348  2217  4629  2221   686  1276     0   239  9594  6313    31
+    239  6659  2247  1538  3228  1874   386   923   259  3467  3317  3024
+    107  3228  4124     0  3263  3106   728   200   728  3829  3024   682
+   1100     0  2757   123   370   382  8495  1684  2029   239    82  2524
+   6321   239  3635  3033  1683  2855   502  3417  4587   339   397   239
+   1894  3033  2709   521   236  1229   239   671   194   847  3276  3024
+    239  3798  1117  4243   214   143  3648  4847  1905  3024     0  3783
+    549    74   312  1233   411     0   143   648   239  4650   642   477
+    239   143   769   769   213   417   437   586]]
+[2017-05-12 18:31:28,570 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:31:28,632 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:31:28,652 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:31:28,676 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:31:29,109 - server.py:113 - INFO -   classify() ]: 6
+[2017-05-12 18:31:34,790 - server.py:108 - INFO -   classify() ]: [[  12 1966 8866   55    0 1966 8866   55 2689 1718 1759  386  304   99
+   290  719   16  399 1919 3180    0 2979 3063 5287 4084 3127  874 4286
+  1372  362 6196 2537 2980  437 4618 7586 1687 3960   64 1234 1288 6242
+  3431  714 8866   55    0 3186  814  254  290 3339  287  173 5245 9752
+   719  515 8866 2680 4308 3888 2533 9429 1364 8866  290 1329 4336  516
+   287 2190   55 3463 6196  311   30  434 3802 8866 5048 5287 3127  711
+  3458 1840  521 5335 1713  290 1691  304  721 1031 4713  335  712 8866
+   282 3802 5287 1107  370    0 3724  126 5627 2786 1547 1449  412  115
+  6031 1161 1186  399  479  837 5209  792   55 4521  877 3063 9336  290
+   719 2533  924 1395  200 5020 6683 2988 1663  773 4691 4692  435  287
+   373 7586 1270 1256  123 1639 5516 6022 1246  101 2689 2045   70 1731
+  1569 4320   78 7957    0 3002 3010 3724 1209  953 3612 6520 2069 2534
+   290 2979  493    0  287 5616 6561  688 7957 3925   16  854 9291    0
+   237  816  287 1156  290 1561 2981    0   91 3752    0    0 1131 2255
+  1591 1691 1098 4010 9336 9510 1291 1224 2698  126  290 1329  287    0
+   445   55 2293 2537 2980 1733 1687 2493 3207 1125   38 8488 2991 1046
+  3010 9432 1615 1372 8819  784 1291 2013 3063  287 3931 2001 1472  167
+  1336  622  342 4568 1234 1472  792 2158 1660 1759  386 2980  355 2293
+  2533   55    0  126  373 1291 3327  287 2689 1367 2061 3356 7014  718
+  1919    0    0  312  622 2061 3356  252 3327 6686  622 1224  167 3954
+   445  362 1581    0 2979  718 8488 2991  190 1590   64   65  873 2543
+     0 2493  287 4618 7586 3421 2373 1288 2435   65   72 2537  869  784
+  6288 3339 1997 1965  854   74  592 8488 2991  859  342    0 5226 2492
+  8866 3822    0  304  399  719 3339 1127 2657 7586 1639  622 1288  591
+  1082   55 2508 1765 2134  256 2296  659 3931 1291  839  167  287  408
+     0 2016 1372 1593 8866 1561    0 2296  659 1870  784  924 2134 1449
+  3971   55 2979  209 4587 1145  127  399    0 4395    0 1580 1687 2493
+  5926 2516]]
+[2017-05-12 18:31:34,792 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:31:34,846 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:31:34,862 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:31:34,881 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:31:35,187 - server.py:113 - INFO -   classify() ]: 3
+[2017-05-12 18:31:40,833 - server.py:108 - INFO -   classify() ]: [[    0     0     0     0  2048 10441     0     0     0     0  5666  3215
+      0     0     0   875     0     0     0     0  2048 10441     0     0
+      0     0  5666  3215     0     0     0   875     0     0     0     0
+   3239     0     0  5666     0     0     0     0     0     0     0    41
+      0  2577  4303    41     0  9313     0     0    41     0     0  2577
+   4303    41     0     0   785     0     0     0     0     0     0    41
+    325   471    41     0     0     0  9313   912     0    41     0   178
+      0  5665  1262     0     0     0    41     0     0    41     0  5676
+     41     0     0     0     0     0     0    41     0     0     0     0
+      0     0     0     0     0     0     0     0     0  7118     0     0
+   7118     0     0     0     0  5665  5666     0     0     0     0     0
+      0     0     0  2692  4179   178    41     0     0  5665  1262     0
+   4005  3239     0     0     0    41     0     0  7748     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0  7118     0  2577  4303 10441     0     0     0     0     0
+     41     0     0     0     0     0  7118     0     0     0     0     0
+      0     0  5666     0     0     0     0     0     0     0     0     0
+      0  4005  5666     0  5666     0     0     0     0     0     0     0
+      0   178  8030     0     0     0     0  7463     0     0     0    41
+      0     0     0     0     0    41   875     0     0     0  7118     0
+      0  2577  4303     0     0     0     0  2048 10441     0     0  8030
+      0     0     0     0     0     0     0     0     0     0     0     0
+   8030     0    41     0     0  5676     0     0     0     0     0  4928
+      0     0  8030     0  2137 10033     0  7118     0     0     0     0
+      0     0     0  7118     0     0     0     0     0     0     0     0
+  10441     0     0     0     0     0     0     0     0  7118     0     0
+      0     0  2577  4303    41     0     0     0     0     0     0    41
+      0     0    41     0  9313   844     0     0 10441     0     0  2932
+      0     0     0     0   293  3960     0     0   178   139    41     0
+   1415     0     0     0     0     0   178   139    41     0  1415     0
+      0     0     0     0     0     0     0     0  1346     0     0   785
+      0     0     0     0     0     0     0     0]]
+[2017-05-12 18:31:40,835 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:31:40,893 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:31:40,910 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:31:40,932 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:31:41,499 - server.py:113 - INFO -   classify() ]: 13
+[2017-05-12 18:31:46,016 - server.py:108 - INFO -   classify() ]: [[ 578    0 1169 2348    0    0    0    0    0    0    0    0    0 5990
+     0    0    0    0    0 7118 2736    0    0    0 5665 1169 2348    0
+  5666    0    0    0    0    0    0 5990    0    0 2399    0    0 2735
+  5990    0    0    0    0 4035    0    0    0    0    0 4005    0   41
+    19 1996  178    0    0    0 9313    0    0    0  178    0    0    0
+  5665    0    0    0    0    0    0    0 5666    0    0    0    0 5990
+     0    0    0    0 2577    0    0    0    0    0    0    0    0    0
+     0    0    0    0 2692    0    0  139    0    0    0    0    0    0
+     0    0    0    0 5990    0    0    0  185    0    0    0    0    0
+     0    0    0    0 5666    0    0    0 2137 6347    0    0    0    0
+     0    0    0    0    0    0    0    0    0 3490 5666    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+  3239    0    0 7118    0    0    0    0    0    0    0    0 5666    0
+     0    0    0    0    0    0    0 7118 1171    0    0 2874    0    0
+     0    0    0    0    0    0    0    0    0    0    0 7118    0    0
+     0    0    0    0    0 3490    0    0    0    0    0    0    0   41
+     0    0    0    0   41 1262    0 3414 2228    0    0  609    0    0
+     0    0    0    0    0    0    0    0    0    0    0  664    0    0
+     0    0 7118 1171 2577 4303    0 2577 4303 7118 2577    0   97    0
+     0  178 5666 1391   41    0    0    0    0 5666    0 7118    0    0
+     0    0 7118 1171    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0 2735    0 3239    0    0    0 7118
+  1171    0    0  189    0 7118 6347  259    0    0 7118    0    0    0
+     0    0    0    0    0 5990    0    0    0    0 6347    0    0    0
+  1346    0    0    0    0    0    0    0    0    0    0    0 5666    0
+  5665    0    0 1171    0    0    0    0 7118    0    0 9313    0    0
+     0    0    0    0 4005    0    0   41 2692    0    0    0    0    0
+  5666  139]]
+[2017-05-12 18:31:46,017 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:31:46,061 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:31:46,080 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:31:46,103 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:32:23,885 - server.py:63 - INFO - restoreVars() ]: <tensorflow.contrib.learn.python.learn.preprocessing.text.VocabularyProcessor object at 0x7f07cc556210>
+[2017-05-12 18:32:23,885 - server.py:64 - INFO - restoreVars() ]: Vars updated.
+[2017-05-12 18:32:23,902 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:32:23,903 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:79: calling evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:32:24,000 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:32:24,037 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:32:24,061 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:32:24,680 - estimator.py:329 - WARNING - _write_dict_to_summary() ]: Skipping summary for global_step, must be a float or np.float32.
+[2017-05-12 18:32:24,685 - server.py:80 - INFO -  loadModel() ]: Model updated.
+[2017-05-12 18:32:24,685 - server.py:89 - INFO -   <module>() ]: Model loaded
+[2017-05-12 18:32:24,687 - server.py:129 - INFO -   <module>() ]: Starting predicting server ...
+[2017-05-12 18:32:24,688 - server.py:130 - INFO -   <module>() ]: URL: http://localhost:6060
+[2017-05-12 18:32:25,540 - server.py:108 - INFO -   classify() ]: [[1963 2068 1692   30   70 2068 2432 1647  239  854    0 2068  399   30
+  1688 1963  720  833 3649   70 2068 2432 1207  246  288  239 1666 1268
+   912 1552 2689 2105  724 2090 1647  399  390  390  865  385  854 2409
+   328   32  986  380  386 3262 2408  239  397 1305 1268  912  190  339
+  2132  390 1256 2493 1963 2068   52  922 4010  390  121  287 2490  355
+   370  859  520    0 3433  143 2090 2762 2759  317  239 3228 4124 4172
+  1843  339  534  535 3327 2086  896  287  246 1965  385    0  397 3363
+  3363  236 1096 1965 3521 3981 1134  485 1379 3262  534  535    0 4309
+  1270 1305 1256  123 1110 1111 3296  190  339    0 3259 2394 2432  339
+  1268  912 5973    0 1305  857    0 5758 1305 3577 3323    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 18:32:25,542 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:32:25,594 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:32:25,610 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:32:25,694 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:32:26,056 - server.py:113 - INFO -   classify() ]: 3
+[2017-05-12 18:32:30,710 - server.py:108 - INFO -   classify() ]: [[1651    0 1628  164    0 1651    0 1628  164  501  206  504 3041  310
+   520 6507   21  164 1651  912 8716    0 8809 1098 1628 1847 2906    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+     0    0]]
+[2017-05-12 18:32:30,712 - deprecation.py:280 - WARNING -   new_func() ]: From server.py:111: calling predict (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+[2017-05-12 18:32:30,765 - deprecation.py:117 - WARNING -   new_func() ]: From ../trainer/news_cnn_model.py:48: softmax_cross_entropy (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.softmax_cross_entropy instead. Note that the order of the logits and labels arguments has been changed.
+[2017-05-12 18:32:30,789 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:398: compute_weighted_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.compute_weighted_loss instead.
+[2017-05-12 18:32:30,807 - deprecation.py:117 - WARNING -   new_func() ]: From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/losses/python/losses/loss_ops.py:151: add_loss (from tensorflow.contrib.losses.python.losses.loss_ops) is deprecated and will be removed after 2016-12-30.
+Instructions for updating:
+Use tf.losses.add_loss instead.
+[2017-05-12 18:32:31,207 - server.py:113 - INFO -   classify() ]: 13

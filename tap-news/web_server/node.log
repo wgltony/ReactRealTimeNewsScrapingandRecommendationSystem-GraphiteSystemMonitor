@@ -1069,3 +1069,140 @@
 [2017-05-12 17:41:47.857] [INFO] rpc_client - undefined
 [2017-05-12 17:41:47.862] [INFO] rpc_client - undefined
 [2017-05-12 17:41:47.876] [INFO] rpc_client - rpc:getSearchNewsSummariesForUser id: wgltony@hotmail.com page: 4 search_key:apple
+[2017-05-12 17:59:09.703] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 17:59:09.707] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 17:59:09.854] [INFO] rpc_client - undefined
+[2017-05-12 17:59:09.854] [INFO] rpc_client - undefined
+[2017-05-12 17:59:09.858] [INFO] rpc_client - undefined
+[2017-05-12 17:59:09.918] [INFO] rpc_client - undefined
+[2017-05-12 18:05:24.201] [INFO] rpc_client - undefined
+[2017-05-12 18:05:24.710] [INFO] rpc_client - undefined
+[2017-05-12 18:05:24.711] [INFO] rpc_client - undefined
+[2017-05-12 18:05:24.717] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:05:24.717] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:05:24.742] [INFO] rpc_client - undefined
+[2017-05-12 18:05:24.848] [INFO] rpc_client - undefined
+[2017-05-12 18:05:24.982] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:05:48.895] [INFO] rpc_client - undefined
+[2017-05-12 18:05:48.895] [INFO] rpc_client - undefined
+[2017-05-12 18:05:48.908] [INFO] rpc_client - undefined
+[2017-05-12 18:05:48.913] [INFO] rpc_client - rpc:getSearchNewsSummariesForUser id: wgltony@hotmail.com page: 1 search_key:apple
+[2017-05-12 18:05:58.930] [INFO] rpc_client - undefined
+[2017-05-12 18:05:58.931] [INFO] rpc_client - undefined
+[2017-05-12 18:05:58.936] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:05:58.936] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:05:58.940] [INFO] rpc_client - undefined
+[2017-05-12 18:05:58.955] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 2
+[2017-05-12 18:06:04.431] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:06:04.436] [INFO] rpc_client - undefined
+[2017-05-12 18:06:04.431] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:06:04.437] [INFO] rpc_client - undefined
+[2017-05-12 18:06:04.439] [INFO] rpc_client - undefined
+[2017-05-12 18:06:04.453] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 3
+[2017-05-12 18:06:50.432] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:06:50.432] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:06:50.442] [INFO] rpc_client - undefined
+[2017-05-12 18:06:50.445] [INFO] rpc_client - undefined
+[2017-05-12 18:06:50.451] [INFO] rpc_client - undefined
+[2017-05-12 18:06:50.454] [INFO] rpc_client - undefined
+[2017-05-12 18:16:31.596] [INFO] rpc_client - undefined
+[2017-05-12 18:16:31.890] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:16:31.892] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:16:31.929] [INFO] rpc_client - undefined
+[2017-05-12 18:16:31.931] [INFO] rpc_client - undefined
+[2017-05-12 18:16:31.933] [INFO] rpc_client - undefined
+[2017-05-12 18:16:31.984] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:16:32.058] [INFO] rpc_client - undefined
+[2017-05-12 18:16:53.409] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:16:53.409] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:16:53.427] [INFO] rpc_client - undefined
+[2017-05-12 18:16:53.428] [INFO] rpc_client - undefined
+[2017-05-12 18:16:53.431] [INFO] rpc_client - undefined
+[2017-05-12 18:16:53.433] [INFO] rpc_client - undefined
+[2017-05-12 18:17:06.955] [INFO] rpc_client - undefined
+[2017-05-12 18:17:06.955] [INFO] rpc_client - undefined
+[2017-05-12 18:17:06.959] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:17:06.959] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:17:06.970] [INFO] rpc_client - undefined
+[2017-05-12 18:17:06.983] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 2
+[2017-05-12 18:18:16.738] [INFO] rpc_client - undefined
+[2017-05-12 18:18:17.098] [INFO] rpc_client - undefined
+[2017-05-12 18:18:17.110] [INFO] rpc_client - undefined
+[2017-05-12 18:18:17.170] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:18:17.170] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:18:17.197] [INFO] rpc_client - undefined
+[2017-05-12 18:18:17.393] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:18:17.425] [INFO] rpc_client - undefined
+[2017-05-12 18:18:35.583] [INFO] rpc_client - undefined
+[2017-05-12 18:18:35.586] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:18:35.589] [INFO] rpc_client - undefined
+[2017-05-12 18:18:35.586] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:18:35.592] [INFO] rpc_client - undefined
+[2017-05-12 18:18:35.611] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 2
+[2017-05-12 18:21:09.196] [INFO] rpc_client - undefined
+[2017-05-12 18:21:09.910] [INFO] rpc_client - undefined
+[2017-05-12 18:21:09.911] [INFO] rpc_client - undefined
+[2017-05-12 18:21:09.933] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:21:09.934] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:21:10.191] [INFO] rpc_client - undefined
+[2017-05-12 18:21:10.459] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:21:10.536] [INFO] rpc_client - undefined
+[2017-05-12 18:21:23.109] [INFO] rpc_client - undefined
+[2017-05-12 18:21:23.110] [INFO] rpc_client - undefined
+[2017-05-12 18:21:23.112] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:21:23.112] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:21:23.117] [INFO] rpc_client - undefined
+[2017-05-12 18:21:23.134] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 2
+[2017-05-12 18:21:24.745] [INFO] rpc_client - undefined
+[2017-05-12 18:21:24.747] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:21:24.749] [INFO] rpc_client - undefined
+[2017-05-12 18:21:24.747] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:21:24.756] [INFO] rpc_client - undefined
+[2017-05-12 18:21:24.771] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 2
+[2017-05-12 18:21:43.968] [INFO] rpc_client - undefined
+[2017-05-12 18:21:53.835] [INFO] rpc_client - undefined
+[2017-05-12 18:21:54.138] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:21:54.139] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:21:54.158] [INFO] rpc_client - undefined
+[2017-05-12 18:21:54.170] [INFO] rpc_client - undefined
+[2017-05-12 18:21:54.174] [INFO] rpc_client - undefined
+[2017-05-12 18:21:54.304] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:22:05.941] [INFO] rpc_client - undefined
+[2017-05-12 18:25:12.947] [INFO] rpc_client - undefined
+[2017-05-12 18:25:13.542] [INFO] rpc_client - undefined
+[2017-05-12 18:25:13.544] [INFO] rpc_client - undefined
+[2017-05-12 18:25:13.629] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:25:13.629] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:25:13.732] [INFO] rpc_client - undefined
+[2017-05-12 18:25:13.826] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:25:13.859] [INFO] rpc_client - undefined
+[2017-05-12 18:27:23.579] [INFO] rpc_client - undefined
+[2017-05-12 18:27:23.855] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:27:23.875] [INFO] rpc_client - undefined
+[2017-05-12 18:27:23.856] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:27:23.877] [INFO] rpc_client - undefined
+[2017-05-12 18:27:23.895] [INFO] rpc_client - undefined
+[2017-05-12 18:27:23.954] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:27:24.065] [INFO] rpc_client - undefined
+[2017-05-12 18:27:37.772] [INFO] rpc_client - undefined
+[2017-05-12 18:27:37.773] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:27:37.777] [INFO] rpc_client - undefined
+[2017-05-12 18:27:37.773] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:27:37.782] [INFO] rpc_client - undefined
+[2017-05-12 18:27:37.798] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 2
+[2017-05-12 18:31:31.037] [INFO] rpc_client - undefined
+[2017-05-12 18:31:31.357] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:31:31.358] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:31:31.384] [INFO] rpc_client - undefined
+[2017-05-12 18:31:31.386] [INFO] rpc_client - undefined
+[2017-05-12 18:31:31.391] [INFO] rpc_client - undefined
+[2017-05-12 18:31:31.445] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:31:31.523] [INFO] rpc_client - undefined
+[2017-05-12 18:33:02.024] [INFO] rpc_client - undefined
+[2017-05-12 18:33:02.348] [INFO] auth_checker.js - auth_checker: req: [object Object]
+[2017-05-12 18:33:02.363] [INFO] rpc_client - undefined
+[2017-05-12 18:33:02.349] [INFO] auth_checker.js - auth_checker: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OGYxMDE5YzdhNjUxNDJjOTg4ZmY0MmMiLCJpYXQiOjE0OTQ0NzM1ODZ9.DTgVyKL4rrJBN090s0pfgokYgV6qVNKc_1OhW3U0CvU
+[2017-05-12 18:33:02.364] [INFO] rpc_client - undefined
+[2017-05-12 18:33:02.377] [INFO] rpc_client - undefined
+[2017-05-12 18:33:02.429] [INFO] rpc_client - rpc:getNewsSummariesForUser id: wgltony@hotmail.com page: 1
+[2017-05-12 18:33:02.501] [INFO] rpc_client - undefined
