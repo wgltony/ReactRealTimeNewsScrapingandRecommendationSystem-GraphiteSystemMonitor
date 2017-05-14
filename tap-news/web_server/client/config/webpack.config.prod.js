@@ -51,7 +51,8 @@ module.exports = {
     serverUrl: Config.web_server.url+':'+Config.web_server.port,
     userClickMetric: Config.web_server.Metrics.newsClick,
     loadNewsMetric: Config.web_server.Metrics.newsLoad,
-    searchNewsMetric: Config.web_server.Metrics.newsSearch
+    searchNewsMetric: Config.web_server.Metrics.newsSearch,
+    graphiteServerUrl: Config.graphiteServerUrl
   })
 },
   // Don't attempt to continue if there are any errors.

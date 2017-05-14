@@ -36,103 +36,128 @@ const ProfileForm = ({
       <Tabs className='tab-demo z-depth-1'>
         <Tab title="QPS" active>
         <h5>Request Per Second:</h5>
-        <Collapsible popout>
-        <CollapsibleItem header='1 Minute' icon='info_outline' expanded>
-          <MediaBox alt='' src={qps1min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='10 Minutes' icon='info_outline' expanded>
-          <MediaBox alt='' src={qps10min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Hour' icon='info_outline' expanded>
-          <MediaBox alt='' src={qps1hour} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='24 Hours' icon='info_outline' expanded>
-          <MediaBox alt='' src={qps24hours} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Week' icon='info_outline' expanded>
-          <MediaBox alt='' src={qps1week} width='100%'/>
-        </CollapsibleItem>
-        </Collapsible>
+        <ul className="collapsible popout" data-collapsible="expandable">
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Minute</div>
+            <div className="collapsible-body"><MediaBox alt='' src={qps1min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>10 Minutes</div>
+            <div className="collapsible-body"><MediaBox alt='' src={qps10min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Hour</div>
+            <div className="collapsible-body "><MediaBox alt='' src={qps1hour} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>24 Hours</div>
+            <div className="collapsible-body"><MediaBox alt='' src={qps24hours} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Week</div>
+            <div className="collapsible-body"><MediaBox alt='' src={qps1week} width='100%'/></div>
+          </li>
+        </ul>
         </Tab>
         <Tab title="User Activities">
         <h5>User Activities:</h5>
-        <Collapsible popout>
-        <CollapsibleItem header='1 Minute' icon='info_outline' expanded>
-          <MediaBox alt='' src={click1min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='10 Minutes' icon='info_outline' expanded>
-          <MediaBox alt='' src={click10min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Hour' icon='info_outline' expanded>
-          <MediaBox alt='' src={click1hour} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='24 Hours' icon='info_outline' expanded>
-          <MediaBox alt='' src={click24hours} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Week' icon='info_outline' expanded>
-          <MediaBox alt='' src={click1week} width='100%'/>
-        </CollapsibleItem>
-        </Collapsible>
+        <ul className="collapsible popout" data-collapsible="expandable">
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Minute</div>
+            <div className="collapsible-body"><MediaBox alt='' src={click1min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>10 Minutes</div>
+            <div className="collapsible-body"><MediaBox alt='' src={click10min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Hour</div>
+            <div className="collapsible-body "><MediaBox alt='' src={click1hour} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>24 Hours</div>
+            <div className="collapsible-body"><MediaBox alt='' src={click24hours} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Week</div>
+            <div className="collapsible-body"><MediaBox alt='' src={click1week} width='100%'/></div>
+          </li>
+        </ul>
         </Tab>
         <Tab title="CPU">
         <h5>CPU:</h5>
-        <Collapsible popout>
-        <CollapsibleItem header='1 Minute' icon='info_outline' expanded>
-          <MediaBox alt='' src={cpu1min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='10 Minutes' icon='info_outline' expanded>
-          <MediaBox alt='' src={cpu10min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Hour' icon='info_outline' expanded>
-          <MediaBox alt='' src={cpu1hour} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='24 Hours' icon='info_outline' expanded>
-          <MediaBox alt='' src={cpu24hours} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Week' icon='info_outline' expanded>
-          <MediaBox alt='' src={cpu1week} width='100%'/>
-        </CollapsibleItem>
-        </Collapsible>
+        <ul className="collapsible popout" data-collapsible="expandable">
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Minute</div>
+            <div className="collapsible-body"><MediaBox alt='' src={cpu1min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>10 Minutes</div>
+            <div className="collapsible-body"><MediaBox alt='' src={cpu10min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Hour</div>
+            <div className="collapsible-body "><MediaBox alt='' src={cpu1hour} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>24 Hours</div>
+            <div className="collapsible-body"><MediaBox alt='' src={cpu24hours} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Week</div>
+            <div className="collapsible-body"><MediaBox alt='' src={cpu1week} width='100%'/></div>
+          </li>
+        </ul>
         </Tab>
         <Tab title="Memory">
         <h5>Memory:</h5>
-        <Collapsible popout>
-        <CollapsibleItem header='1 Minute' icon='info_outline' expanded>
-          <MediaBox alt='' src={mem1min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='10 Minutes' icon='info_outline' expanded>
-          <MediaBox alt='' src={mem10min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Hour' icon='info_outline' expanded>
-          <MediaBox alt='' src={mem1hour} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='24 Hours' icon='info_outline' expanded>
-          <MediaBox alt='' src={mem24hours} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Week' icon='info_outline' expanded>
-          <MediaBox alt='' src={mem1week} width='100%'/>
-        </CollapsibleItem>
-        </Collapsible>
+        <ul className="collapsible popout" data-collapsible="expandable">
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Minute</div>
+            <div className="collapsible-body"><MediaBox alt='' src={mem1min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>10 Minutes</div>
+            <div className="collapsible-body"><MediaBox alt='' src={mem10min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Hour</div>
+            <div className="collapsible-body "><MediaBox alt='' src={mem1hour} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>24 Hours</div>
+            <div className="collapsible-body"><MediaBox alt='' src={mem24hours} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Week</div>
+            <div className="collapsible-body"><MediaBox alt='' src={mem1week} width='100%'/></div>
+          </li>
+        </ul>
         </Tab>
         <Tab title="System Log">
         <h5>System Log:</h5>
-        <Collapsible popout>
-        <CollapsibleItem header='1 Minute' icon='info_outline' expanded>
-          <MediaBox alt='' src={log1min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='10 Minutes' icon='info_outline' expanded>
-          <MediaBox alt='' src={log10min} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Hour' icon='info_outline' expanded>
-          <MediaBox alt='' src={log1hour} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='24 Hours' icon='info_outline' expanded>
-          <MediaBox alt='' src={log24hours} width='100%'/>
-        </CollapsibleItem>
-        <CollapsibleItem header='1 Week' icon='info_outline' expanded>
-          <MediaBox alt='' src={log1week} width='100%'/>
-        </CollapsibleItem>
-        </Collapsible>
+        <ul className="collapsible popout" data-collapsible="expandable">
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Minute</div>
+            <div className="collapsible-body"><MediaBox alt='' src={log1min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>10 Minutes</div>
+            <div className="collapsible-body"><MediaBox alt='' src={log10min} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Hour</div>
+            <div className="collapsible-body "><MediaBox alt='' src={log1hour} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>24 Hours</div>
+            <div className="collapsible-body"><MediaBox alt='' src={log24hours} width='100%'/></div>
+          </li>
+          <li>
+            <div className="collapsible-header active"><i className="material-icons">info_outline</i>1 Week</div>
+            <div className="collapsible-body"><MediaBox alt='' src={log1week} width='100%'/></div>
+          </li>
+        </ul>
         </Tab>
     </Tabs>
     </div>

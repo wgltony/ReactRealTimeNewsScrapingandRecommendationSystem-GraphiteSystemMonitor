@@ -72,6 +72,19 @@ def getNewsSummariesForUser(user_id, page_num):
         sliced_news_digests = news_digests[begin_index:end_index]
         #print sliced_news_digests
         sliced_news = list(db[NEWS_TABLE_NAME].find({'digest':{'$in':sliced_news_digests}}).sort([('publishedAt', -1)]))
+        if preference is not None and len(preference) > 0:
+            #Sort news by preference
+            level = config['operations']['CLASS_NUMBER']
+            for prefer in preference:
+                level-=1
+                for news in sliced_news:
+                    if(news['class'] == prefer):
+                        news['level'] = level
+                        if news['publishedAt'].date() == datetime.today().date():
+                            news['level'] += 0.5
+                        #print "news list: %s" % news
+
+            sliced_news.sort(key=lambda x: x['level'], reverse=True)
     else:
         total_news = list(db[NEWS_TABLE_NAME].find().sort([('publishedAt', -1)]).limit(NEWS_LIMITS))
         if preference is not None and len(preference) > 0:
@@ -163,14 +176,18 @@ def getSearchNewsSummariesForUser(user_id, page_num, search_key):
         tmp_total_news = list(db[NEWS_TABLE_NAME].find({'digest':{'$in':news_digests}}).sort([('publishedAt', -1)]))
         sliced_news = tmp_total_news[begin_index:end_index]
     else:
-        result = es.search(index="news", body={"size":80, "query": {"more_like_this":
-                                { "fields" : ["title", "description"],
+        try:
+            #print es
+            result = es.search(index="news", body={"size":80, "query": {"more_like_this":
+                                { "fields" : ["title", "description", "text", "class"],
                                 "like" : search_key,"min_term_freq" : 1,
                                 "max_query_terms": 100}}})
+        except Exception as e:
+            print str(e)
         hits = result['hits']['hits']
         #print '============================hits: %s' % hits
         total_news=[]
-        print 'len of hits %s' % len(hits)
+        #print 'len of hits %s' % len(hits)
         if hits is not None and len(hits)>0:
             for i in hits:
                 #print i['_source']

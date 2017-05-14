@@ -39,7 +39,7 @@ const modalButton = ({
            style={modalStyle}
         >
         <Button waves='light' className='right' modal='close' icon='close' flat onClick={handleCloseModal}/>
-        <Input s={8} label="Search" validate onChange={inputHandler} placeholder='Type anything you like...'><Icon>search</Icon></Input>
+        <Input s={8} label="Search" validate onKeyPress={inputHandler} placeholder='Type anything you like...'><Icon>search</Icon></Input>
         </ReactModal>
       </div>
 )

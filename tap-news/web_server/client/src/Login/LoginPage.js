@@ -33,7 +33,7 @@ class LoginPage extends React.Component {
     console.log('password:', password);
     var Config = require('Config')
     // Post login data
-    fetch(Config.serverUrl+ '/auth/login', {
+    fetch('http://98.224.216.111:3000/auth/login', {
       method: 'POST',
       cache: false,
       headers: {

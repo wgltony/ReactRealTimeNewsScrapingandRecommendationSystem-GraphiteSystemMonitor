@@ -38,7 +38,6 @@ class ProfilePage extends React.Component{
       intervalId: null,
       img_json:null
     };
-
   }
 
 // execute didMount function after constructe finished, react method
@@ -46,14 +45,13 @@ class ProfilePage extends React.Component{
     // this.loadUserPreference();
 
     this.reloadIMG();
-    this.reloadIMGSource();
+    //this.reloadIMGSource();
     let intervalId = setInterval(()=>{   //works
       this.reloadIMG()
-      this.reloadIMGSource()
-    }, 15000, true); // 15 seconds in milliseconds
+      //this.reloadIMGSource()
+    }, 30000, true); // 15 seconds in milliseconds
 
     this.setState({intervalId: intervalId});
-
   }
 
   componentWillUnmount() {
@@ -63,40 +61,44 @@ class ProfilePage extends React.Component{
 
 
   reloadIMG(e){
+    let Config = require('Config')
+    let graphiteUrl = "http://98.224.216.111:9090";
     //e.preventDefault();
     //console.log("Reload IMG...");
     this.setState({
-      cpu24hours: 'http://localhost/S/O?' + new Date().getTime(),
-      cpu1week: 'http://localhost/S/P?' + new Date().getTime(),
-      cpu1hour: 'http://localhost/S/R?' + new Date().getTime(),
-      cpu10min: 'http://localhost/S/S?' + new Date().getTime(),
-      cpu1min: 'http://localhost/S/Q?' + new Date().getTime(),
-      click24hours: 'http://localhost/S/a?' + new Date().getTime(),
-      click1week: 'http://localhost/S/9?' + new Date().getTime(),
-      click1hour: 'http://localhost/S/8?' + new Date().getTime(),
-      click10min: 'http://localhost/S/7?' + new Date().getTime(),
-      click1min: 'http://localhost/S/6?' + new Date().getTime(),
-      qps24hours: 'http://localhost/S/X?' + new Date().getTime(),
-      qps1week: 'http://localhost/S/Y?' + new Date().getTime(),
-      qps1hour: 'http://localhost/S/Z?' + new Date().getTime(),
-      qps10min: 'http://localhost/S/N?' + new Date().getTime(),
-      qps1min: 'http://localhost/S/0?' + new Date().getTime(),
-      log24hours: 'http://localhost/S/1?' + new Date().getTime(),
-      log1week: 'http://localhost/S/2?' + new Date().getTime(),
-      log1hour: 'http://localhost/S/4?' + new Date().getTime(),
-      log10min: 'http://localhost/S/5?' + new Date().getTime(),
-      log1min: 'http://localhost/S/3?' + new Date().getTime(),
-      mem24hours: 'http://localhost/S/f?' + new Date().getTime(),
-      mem1week: 'http://localhost/S/e?' + new Date().getTime(),
-      mem1hour: 'http://localhost/S/d?' + new Date().getTime(),
-      mem10min: 'http://localhost/S/c?' + new Date().getTime(),
-      mem1min: 'http://localhost/S/b?' + new Date().getTime()
+      cpu24hours: graphiteUrl+'/S/O?' + new Date().getTime(),
+      cpu1week: graphiteUrl+'/S/P?' + new Date().getTime(),
+      cpu1hour: graphiteUrl+'/S/R?' + new Date().getTime(),
+      cpu10min: graphiteUrl+'/S/S?' + new Date().getTime(),
+      cpu1min: graphiteUrl+'/S/Q?' + new Date().getTime(),
+      click24hours: graphiteUrl+'/S/a?' + new Date().getTime(),
+      click1week: graphiteUrl+'/S/9?' + new Date().getTime(),
+      click1hour: graphiteUrl+'/S/8?' + new Date().getTime(),
+      click10min: graphiteUrl+'/S/7?' + new Date().getTime(),
+      click1min: graphiteUrl+'/S/6?' + new Date().getTime(),
+      qps24hours: graphiteUrl+'/S/X?' + new Date().getTime(),
+      qps1week: graphiteUrl+'/S/Y?' + new Date().getTime(),
+      qps1hour: graphiteUrl+'/S/Z?' + new Date().getTime(),
+      qps10min: graphiteUrl+'/S/N?' + new Date().getTime(),
+      qps1min: graphiteUrl+'/S/0?' + new Date().getTime(),
+      log24hours: graphiteUrl+'/S/1?' + new Date().getTime(),
+      log1week: graphiteUrl+'/S/2?' + new Date().getTime(),
+      log1hour: graphiteUrl+'/S/4?' + new Date().getTime(),
+      log10min: graphiteUrl+'/S/5?' + new Date().getTime(),
+      log1min: graphiteUrl+'/S/3?' + new Date().getTime(),
+      mem24hours: graphiteUrl+'/S/f?' + new Date().getTime(),
+      mem1week: graphiteUrl+'/S/e?' + new Date().getTime(),
+      mem1hour: graphiteUrl+'/S/d?' + new Date().getTime(),
+      mem10min: graphiteUrl+'/S/c?' + new Date().getTime(),
+      mem1min: graphiteUrl+'/S/b?' + new Date().getTime()
     })
   }
 
 
   reloadIMGSource(){
-    let url = 'http://localhost/render/?width=586&height=308&from=-1minutes&tz=America%2FDetroit&target=stats.Click_News_Event&target=stats.Load_News_Event&format=json'
+    let Config = require('Config')
+    let graphiteUrl = Config.graphiteServerUrl;
+    let url = graphiteUrl+'/render/?width=586&height=308&from=-1minutes&tz=America%2FDetroit&target=stats.Click_News_Event&target=stats.Load_News_Event&format=json'
     let request = new Request(encodeURI(url), {
       method: 'GET',
       headers: {

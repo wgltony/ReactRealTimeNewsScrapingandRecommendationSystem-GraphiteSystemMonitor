@@ -7,11 +7,12 @@ import Auth from '../Auth/Auth';
 import NewsCard from '../NewsCard/NewsCard'
 import SearchModal from './SearchModal'
 import { Button, Col, Preloader, Row, Chip, Icon } from 'react-materialize';
-
+import Notifications, {notify} from 'react-notify-toast';
 
 class NewsPanel extends React.Component{
   constructor() {
     super();
+    //this.show = notify.createShowQueue();
     this.state = {news:null, pageNum:1, totalPages:1,loading:false,loadedAll:false,showModal: false,searchPageNum:1,searchText:null, searchNews: null};   // read state
     this.handleScroll = this.handleScroll.bind(this);  // bind call back function
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -24,7 +25,7 @@ class NewsPanel extends React.Component{
   // execute didMount function after constructe finished, react method
   componentDidMount() {
     this.loadMoreNews();
-    this.handleSearch = _.debounce(this.handleSearch, 3000); // execute function once per 3000ms
+    this.handleSearch = _.debounce(this.handleSearch, 1000); // execute function once per 3000ms
     this.loadMoreNews = _.debounce(this.loadMoreNews, 1000); // execute function once per 1000ms
     window.addEventListener('scroll', this.handleScroll);  //call back function need to bind
   }
@@ -40,14 +41,14 @@ class NewsPanel extends React.Component{
          loading:true
        })
       //this.forceUpdate();
-      this.state.searchNews?this.inputHandler():this.loadMoreNews();
+      this.state.searchNews?this.handleSearch():this.loadMoreNews();
     }
   }
 
   sendLoadNewsEvent() {
     //console.log('send monitor data...');
     let Config = require('Config')
-    let url = Config.serverUrl+'/monitor/process/'+Config.loadNewsMetric;
+    let url = 'http://98.224.216.111:3000/monitor/process/'+Config.loadNewsMetric;
 
     let request = new Request(encodeURI(url), {
       method: 'POST',
@@ -68,7 +69,7 @@ class NewsPanel extends React.Component{
     if(this.state.loadedAll === true){
       return;
     }
-    let url = Config.serverUrl + '/news/userId/' + Auth.getEmail()
+    let url = 'http://98.224.216.111:3000/news/userId/' + Auth.getEmail()
               + '/pageNum/' + this.state.pageNum;
     let request = new Request(encodeURI(url), {
       method: 'GET',
@@ -82,6 +83,7 @@ class NewsPanel extends React.Component{
       .then((news) => {
         //console.log(news);
         if(!news || news.length ===0){
+          this.renderNoResult();
           this.setState({loadedAll:true});
         }
 
@@ -108,21 +110,24 @@ class NewsPanel extends React.Component{
   inputHandler(e){
     if(typeof(e)!='undefined')
       if(e.target!=null){   //reset search status
-        this.toTop();
         this.state.loadedAll=false
         this.state.searchPageNum = 1;
         this.state.searchText = e.target.value;
         this.state.searchNews = null;
+        if (e.key === 'Enter') {
+            this.toTop();
+            this.handleSearch();
+            //console.log('Enter key pressed');
+          }
       }
     //console.log('input handler this.state.searchText: ' + this.state.searchText);
     //console.log('length of text ' +  this.state.searchText.length);
-    this.handleSearch();
   }
 
   sendSearchNewsEvent() {
     //console.log('send monitor data...');
     let Config = require('Config')
-    let url = Config.serverUrl+'/monitor/process/'+Config.searchNewsMetric;
+    let url = 'http://98.224.216.111:3000/monitor/process/'+Config.searchNewsMetric;
 
     let request = new Request(encodeURI(url), {
       method: 'POST',
@@ -135,8 +140,11 @@ class NewsPanel extends React.Component{
   }
 
   handleSearch(){
-    if(this.state.searchText.length===0 || this.state.loadedAll)  //avoid empty string value search
+    this.state.news=null; //zero search result
+    if(this.state.searchText.length===0 || this.state.loadedAll){  //avoid empty string value search
+      this.state.loading=false;
       return;
+    }
 
     this.sendSearchNewsEvent();
     // this.state.searchPageNum = 1
@@ -145,7 +153,7 @@ class NewsPanel extends React.Component{
 
     let Config = require('Config')
 
-    let url = Config.serverUrl + '/search/userId/' + Auth.getEmail()
+    let url = 'http://98.224.216.111:3000/search/userId/' + Auth.getEmail()
               + '/pageNum/' + this.state.searchPageNum+'/key/'+this.state.searchText;
     let request = new Request(encodeURI(url), {
       method: 'GET',
@@ -159,6 +167,7 @@ class NewsPanel extends React.Component{
       .then((news) => {
         console.log(news+" length: "+news.length);
         if(!news || news.length ===0){
+          this.renderNoResult();
           this.setState({
             loading:false,
             loadedAll:true
@@ -205,6 +214,11 @@ class NewsPanel extends React.Component{
     );
   }
 
+  renderNoResult(){
+    notify.show('No More Result!', 'error', 5000);
+    //this.state.loadedAll=false;
+  }
+
   renderNews() {
     //map function iterate all news as list, and loop display
     let news_list = this.state.news.map(news => {
@@ -217,32 +231,7 @@ class NewsPanel extends React.Component{
       );
     });
 
-    if(!this.state.loading){
-    return(
-      <div className="container-fluid">
-        <div className='list-group'>
-          {news_list}
-        </div>
-      </div>
-    );
-  }else if(this.state.loadedAll) {
-    return(
-      <div className="container-fluid">
-        <div className='list-group'>
-          {news_list}
-          <Row>
-          <Col s={4}></Col>
-          <Col s={4}>
-          <Chip className='light-blue'>
-          <Icon>report_problem</Icon>
-          No More News...
-          </Chip>
-          </Col>
-          <Col s={4}></Col>
-          </Row>
-        </div>
-      </div>);
-    }else{
+  if(this.state.loading && !this.state.loadedAll) {
     return(
       <div className="container-fluid">
         <div className='list-group'>
@@ -254,6 +243,14 @@ class NewsPanel extends React.Component{
           </Col>
           <Col s={5}></Col>
           </Row>
+        </div>
+      </div>
+    );
+  }else{
+    return(
+      <div className="container-fluid">
+        <div className='list-group'>
+          {news_list}
         </div>
       </div>
     );
@@ -273,34 +270,9 @@ class NewsPanel extends React.Component{
     });
 
 
-      if(!this.state.loading){
+    if(this.state.loading && !this.state.loadedAll) {
       return(
         <div className="container-fluid">
-        <div className='list-group'>
-          {news_list}
-        </div>
-      </div>);
-    }else if(this.state.loadedAll) {
-      return(
-        <div className="container-fluid">
-          <div className='list-group'>
-            {news_list}
-            <Row>
-            <Col s={4}></Col>
-            <Col s={4}>
-            <Chip className='light-blue'>
-            <Icon>report_problem</Icon>
-            No More News...
-            </Chip>
-            </Col>
-            <Col s={4}></Col>
-            </Row>
-          </div>
-        </div>);
-      }
-      else{
-        return(
-          <div className="container-fluid">
           <div className='list-group'>
             {news_list}
             <Row>
@@ -311,14 +283,29 @@ class NewsPanel extends React.Component{
             <Col s={5}></Col>
             </Row>
           </div>
-        </div>);
-      }
+        </div>
+      );
+    }else{
+      return(
+        <div className="container-fluid">
+          <div className='list-group'>
+            {news_list}
+          </div>
+        </div>
+      );
+    }
   }
 
   render() {
+    //console.log('this.state.loadedAll' + this.state.loadedAll);
+    //console.log('this.state.loading' + this.state.loading);
+    // if(this.state.loadedAll && this.state.loading){
+    //   this.renderNoResult();
+    // }
     if (this.state.searchNews) {  // if searchNews exist
         return(
           <div>
+            <Notifications />
             {this.controlButtonGroup()}
             {this.renderSearchNews()}
           </div>
@@ -327,14 +314,26 @@ class NewsPanel extends React.Component{
     else if (this.state.news) {  // if news exist
         return(
           <div>
+            <Notifications />
             {this.controlButtonGroup()}
             {this.renderNews()}
           </div>
         );
-    } else {
+    } else if(this.state.loadedAll){
       return(
         <div>
           <div id='msg-app-loading'>
+          <Notifications />
+          {this.controlButtonGroup()}
+        </div>
+        </div>
+      );
+    }else{
+      return(
+        <div>
+          <div id='msg-app-loading'>
+          <Notifications />
+          {this.controlButtonGroup()}
           <Row>
           <Col s={5}></Col>
           <Col s={2}>

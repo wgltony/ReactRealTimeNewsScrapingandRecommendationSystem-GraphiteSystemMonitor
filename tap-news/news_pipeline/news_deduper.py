@@ -92,7 +92,7 @@ def handle_message(msg):
         log_client.logger.warn('message is broken')
         #print 'message is broken'
         return
-
+    tmp_msg = msg
     task = msg
     text = str(task['text'].encode('utf-8'))
 
@@ -129,7 +129,7 @@ def handle_message(msg):
                 log_client.logger.info('Duplicate news, Ignore')
                 return
 
-    task['publishedAt'] = parser.parse(task['publishedAt'])
+
     # Classify news
     title = task['title']
     text = task['text']
@@ -139,11 +139,22 @@ def handle_message(msg):
         topic = news_topic_modeling_service_client.classify(data)
         task['class'] = topic
 
-    #print 'send news to db and elasticsearch queue... %s' % msg
+    try:
+        #msg['publishedAt'] = parser.parse(msg['publishedAt'])
+        #print 'send news to db and elasticsearch queue... msg: %s' % (msg)
+        elasticsearch_index_cloudAMQP_client.sendMessage(msg)
+    except Exception as e:
+        log_client.logger.error(str(e))
+
+    task['publishedAt'] = parser.parse(task['publishedAt'])
     db[NEWS_TABLE_NAME].replace_one({'digest': task['digest']}, task, upsert=True)
-    elasticsearch_index_cloudAMQP_client.sendMessage("1+1=?")
+
+
+
+
 
 while True:
+    #elasticsearch_index_cloudAMQP_client.sendMessage('[{news1234}]')
     if dedupe_cloudAMQP_client is not None:
         msg = dedupe_cloudAMQP_client.getMessage()
         if msg is not None:

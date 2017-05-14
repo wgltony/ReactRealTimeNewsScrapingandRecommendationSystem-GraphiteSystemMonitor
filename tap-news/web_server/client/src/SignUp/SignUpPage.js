@@ -41,7 +41,7 @@ class SignUpPage extends React.Component {
     var Config = require('Config')
 
     // Post registeration data
-    fetch(Config.serverUrl+'/auth/signup', {
+    fetch('http://98.224.216.111:3000/auth/signup', {
       method: 'POST',
       cache: false,
       headers: {
@@ -61,7 +61,7 @@ class SignUpPage extends React.Component {
         // change the current URL to /login
         //this.context.router.replace('/login');
         //login after success
-        fetch(Config.serverUrl+ '/auth/login', {
+        fetch('http://98.224.216.111:3000/auth/login', {
           method: 'POST',
           cache: false,
           headers: {

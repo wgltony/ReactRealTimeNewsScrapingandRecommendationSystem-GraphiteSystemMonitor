@@ -26,26 +26,30 @@ SLEEP_TIME_IN_SECONDS = config['elasticsearch']['SLEEP_TIME_IN_SECONDS']
 
 elasticsearch_index_cloudAMQP_client = CloudAMQPClient(ELASTICSEARCH_INDEX_TASK_QUEUE_URL, ELASTICSEARCH_INDEX_TASK_QUEUE_NAME)
 
-print elasticsearch_index_cloudAMQP_client
+#print elasticsearch_index_cloudAMQP_client
 
 es = Elasticsearch([{'host': config['elasticsearch']['ELASTICSEARCH_HOST'], 'port': config['elasticsearch']['ELASTICSEARCH_PORT']}])
 
 def handle_message(msg):
-    #print 'es %s' % es
-    if msg is None:
+    #print '------------------------------------msg: %s' % msg
+    if msg is None or not isinstance(msg, dict):
         log_client.logger.warn('message is broken')
         #print 'message is broken'
         return
     log_client.logger.info('handle message from queue to elasticsearch')
-    #print "handle message from queue to elasticsearch"
-    es.index(index='news',doc_type='news', body=msg)
+    #print "handle message from queue to elasticsearch index %s" % msg
+    try:
+        es.index(index='news',doc_type='news', body=msg)
+    except Exception as e:
+        print str(e)
+        log_client.logger.error(str(e))
 
 
 while True:
     if elasticsearch_index_cloudAMQP_client is not None:
         msg = elasticsearch_index_cloudAMQP_client.getMessage()
-        #print 'get message from queue %s' % msg
         if msg is not None:
+            #print 'elas get message from queue %s' % msg
             try:
                 handle_message(msg)
             except Exception as e:

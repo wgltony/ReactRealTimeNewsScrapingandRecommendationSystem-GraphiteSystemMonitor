@@ -49,6 +49,7 @@ def handle_message(msg):
     article.parse()
 
     task['text'] = article.text
+    #print 'send news to dedupe queue... %s' % task
     dedupe_news_queue_client.sendMessage(task)
 
 

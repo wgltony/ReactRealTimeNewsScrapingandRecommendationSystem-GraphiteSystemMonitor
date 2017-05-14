@@ -153,7 +153,7 @@ def main(unused_argv):
 
     n_words = len(vocab_processor.vocabulary_)
     logger.info('Total words: %d' % n_words)
-    #print('Total words: %d' % n_words)
+    print('Total words: %d' % n_words)
 
     # Saving n_words and vocab_processor:
     with open(VARS_FILE, 'w') as f:
@@ -176,7 +176,7 @@ def main(unused_argv):
 
     score = metrics.accuracy_score(y_test, y_predicted)
     logger.info('Accuracy: {0:f}'.format(score))
-    #print('Accuracy: {0:f}'.format(score))
+    print('Accuracy: {0:f}'.format(score))
 
 if __name__ == '__main__':
     try:
