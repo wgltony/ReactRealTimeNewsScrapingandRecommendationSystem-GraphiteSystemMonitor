@@ -1,0 +1,44 @@
+<div ng-show="exportConfig.isExportable()">
+  <div class="kuiLocalDropdownSection">
+    <div class="kuiLocalDropdownTitle">Reporting</div>
+    <div class="input-group generate-controls">
+      <button
+        class="generate btn btn-primary"
+        ng-click="exportConfig.export(exportConfig.selectedType)"
+        >
+        Generate Printable {{ exportConfig.exportTypes[exportConfig.selectedType].name }}
+      </button>
+    </div>
+  </div>
+
+  <div class="kuiLocalDropdownSection">
+
+    <!-- Header -->
+    <div class="kuiLocalDropdownHeader">
+      <div class="kuiLocalDropdownHeader__label">
+        Generation URL
+      </div>
+      <div class="kuiLocalDropdownHeader__actions">
+        <a
+          class="kuiLocalDropdownHeader__action"
+          ng-click="exportConfig.copyToClipboard('#reportGenerationUrl')"
+        >
+          Copy
+        </a>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <input
+      id="reportGenerationUrl"
+      class="kuiLocalDropdownInput"
+      type="text"
+      readonly
+      value="{{ exportConfig.exportTypes[exportConfig.selectedType].link }}"
+    />
+  </div>
+</div>
+
+<div ng-show="!exportConfig.isExportable()">
+  Please save your work before generating a report.
+</div>

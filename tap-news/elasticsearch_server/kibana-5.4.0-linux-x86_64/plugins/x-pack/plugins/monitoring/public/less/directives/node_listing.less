@@ -1,0 +1,10 @@
+/**
+ * Override base.less style that overrides pivotal-ui tooltip style
+ */
+.monitoring-view monitoring-nodes-listing {
+  .overlay-trigger,
+  .overlay-trigger:hover {
+    // override rule in base.less to show dark gray for the icon in node listing instead of blue
+    color: @esDarkerGray;
+  }
+}

@@ -34,7 +34,12 @@ const ProfileForm = ({
   <div className="container">
     <div className="row">
       <Tabs className='tab-demo z-depth-1'>
-        <Tab title="QPS" active>
+        <Tab title="News Data Structure" active>
+        <div className="video-container">
+        <iframe className="col s12" height="900" src="http://98.224.216.111:5656/app/kibana#/dashboard/a3264300-38d6-11e7-9275-577cd4c56e96?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-60d%2Cmode%3Aquick%2Cto%3Anow))"></iframe>
+        </div>
+        </Tab>
+        <Tab title="QPS">
         <h5>Request Per Second:</h5>
         <ul className="collapsible popout" data-collapsible="expandable">
           <li>

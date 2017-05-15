@@ -42,8 +42,8 @@ class ProfilePage extends React.Component{
 
 // execute didMount function after constructe finished, react method
   componentDidMount() {
-    // this.loadUserPreference();
-
+    //this.loadUserPreference();
+    //this.authKibana();
     this.reloadIMG();
     //this.reloadIMGSource();
     let intervalId = setInterval(()=>{   //works
@@ -92,6 +92,18 @@ class ProfilePage extends React.Component{
       mem10min: graphiteUrl+'/S/c?' + new Date().getTime(),
       mem1min: graphiteUrl+'/S/b?' + new Date().getTime()
     })
+  }
+
+  authKibana(){
+    let url="http://98.224.216.111:5601";
+    let request = new Request(encodeURI(url), {
+      method: 'GET',
+      headers: {
+        'Authorization': 'Basic ZWxhc3RpYzpjaGFuZ2VtZQ==',
+      },
+      cache: false});
+
+      fetch(request,{mode: 'no-cors'})
   }
 
 

@@ -1,6 +1,10 @@
 default_test:
   graphiteServerUrl: http://98.224.216.111
   common:
+    elasticsearch:
+      host: localhost
+      port: 9200
+      http_auth: elastic:changeme
     mongodb:
       MONGO_DB_HOST: localhost
       MONGO_DB_PORT: 27017
@@ -134,6 +138,10 @@ default_test:
 
 default:
   common:
+    elasticsearch:
+      host: localhost
+      port: 9200
+      http_auth: elastic:changeme
     mongodb:
       MONGO_DB_HOST: localhost
       MONGO_DB_PORT: 27017

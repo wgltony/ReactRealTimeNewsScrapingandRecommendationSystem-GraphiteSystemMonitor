@@ -10,7 +10,6 @@ import statsd
 
 from bson.json_util import dumps
 from datetime import datetime
-from elasticsearch import Elasticsearch
 
 stream = open("../config/config.yml", "r")
 load = yaml.load(stream)
@@ -23,8 +22,11 @@ import mongodb_client
 import news_recommendation_service_client
 from cloudAMQP_client import CloudAMQPClient
 import log_client
+import elastic_client
 
-es = Elasticsearch([{'host': config['operations']['ELASTICSEARCH_HOST'], 'port': config['operations']['ELASTICSEARCH_PORT']}])
+es = elastic_client.get_elastic();
+
+#es = Elasticsearch([{'host': config['elasticsearch']['ELASTICSEARCH_HOST'], 'port': config['elasticsearch']['ELASTICSEARCH_PORT'],'http_auth':'elastic:changeme'}])
 
 REDIS_HOST = config['operations']['REDIS_HOST']
 REDIS_PORT = config['operations']['REDIS_PORT']

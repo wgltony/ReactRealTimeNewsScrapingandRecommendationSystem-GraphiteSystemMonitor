@@ -1,0 +1,33 @@
+<div class="app-container">
+  <div class="monitoring-bread-crumbs">
+    <div class="monitoring-bread-crumbs">
+      <ul class="xpack-breadcrumbs" role="breadcrumbs"></ul>
+    </div>
+  </div>
+  <kbn-top-nav name="accessDenied-nav">
+    <div class="kuiLocalTabs" role="navigation">
+      <a class="kuiLocalTab">
+        Error
+      </a>
+    </div>
+  </kbn-top-nav>
+  <div class="monitoring-view">
+    <div class="col-md-12">
+      <h1>Access Denied</h1>
+      <p class="lead">
+        You are not authorized to access Monitoring. To use Monitoring, you
+        need the privileges granted by both the `kibana_user` and
+        `monitoring_user` roles.
+      </p>
+      <p class="lead">
+        If you are attempting to access a dedicated monitoring cluster, this
+        might be because you are logged in as a user that is not configured on
+        the monitoring cluster.
+      </p>
+      <p>
+        <button ng-click="accessDenied.goToKibana();" class="btn btn-primary">Back to Kibana</button>
+        <button ng-click="accessDenied.retry();" class="btn btn-default">Retry</button>
+      </p>
+    </div>
+  </div>
+</div>

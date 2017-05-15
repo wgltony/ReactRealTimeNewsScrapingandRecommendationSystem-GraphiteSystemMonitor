@@ -328,3 +328,231 @@
 [2017-05-12T00:25:01,188][WARN ][o.e.d.c.ParseField       ] Deprecated field [like_text] used, replaced by [like]
 [2017-05-12T00:27:49,749][WARN ][o.e.d.c.ParseField       ] Deprecated field [like_text] used, replaced by [like]
 [2017-05-12T00:27:55,826][WARN ][o.e.d.c.ParseField       ] Deprecated field [like_text] used, replaced by [like]
+[2017-05-14T14:00:57,454][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [buildNum]
+[2017-05-14T14:02:40,208][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:02:40,208][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:02:40,208][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [wsState]
+[2017-05-14T14:02:40,209][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:02:40,210][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:02:40,210][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:02:40,210][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [wsState]
+[2017-05-14T14:02:40,210][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:03:36,695][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:03:57,920][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:04:02,730][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:04:44,654][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:04:44,654][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [visState]
+[2017-05-14T14:04:44,655][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [uiStateJSON]
+[2017-05-14T14:04:44,655][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:04:44,655][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [savedSearchId]
+[2017-05-14T14:04:44,655][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:04:44,656][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:04:44,656][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [visState]
+[2017-05-14T14:04:44,656][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [uiStateJSON]
+[2017-05-14T14:04:44,657][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:04:44,657][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [savedSearchId]
+[2017-05-14T14:04:44,657][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:04:45,065][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:04:58,140][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:04:58,170][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:04:58,171][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:05:51,965][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:05:51,966][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:05:51,966][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timelion_sheet]
+[2017-05-14T14:05:51,970][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timelion_interval]
+[2017-05-14T14:05:51,971][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timelion_other_interval]
+[2017-05-14T14:05:51,971][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:05:51,972][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:05:51,973][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:05:51,973][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timelion_sheet]
+[2017-05-14T14:05:51,973][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timelion_interval]
+[2017-05-14T14:05:51,973][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timelion_other_interval]
+[2017-05-14T14:05:51,973][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:05:52,223][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-14T14:08:32,652][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,657][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,658][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,822][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,826][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,828][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,939][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,941][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,945][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,945][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,946][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:32,950][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:43,072][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:43,074][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:08:43,074][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T14:10:26,022][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:10:26,022][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:10:26,022][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [columns]
+[2017-05-14T14:10:26,022][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [sort]
+[2017-05-14T14:10:26,022][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:10:26,023][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:10:26,023][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:10:26,024][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [columns]
+[2017-05-14T14:10:26,024][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [sort]
+[2017-05-14T14:10:26,024][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:23:07,363][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T14:27:58,407][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:27:58,407][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:27:58,407][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [panelsJSON]
+[2017-05-14T14:27:58,407][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [optionsJSON]
+[2017-05-14T14:27:58,408][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [uiStateJSON]
+[2017-05-14T14:27:58,408][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timeTo]
+[2017-05-14T14:27:58,408][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timeFrom]
+[2017-05-14T14:27:58,408][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [display]
+[2017-05-14T14:27:58,408][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T14:27:58,409][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [title]
+[2017-05-14T14:27:58,409][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [description]
+[2017-05-14T14:27:58,410][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [panelsJSON]
+[2017-05-14T14:27:58,410][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [optionsJSON]
+[2017-05-14T14:27:58,410][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [uiStateJSON]
+[2017-05-14T14:27:58,410][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timeTo]
+[2017-05-14T14:27:58,410][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [timeFrom]
+[2017-05-14T14:27:58,410][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [display]
+[2017-05-14T14:27:58,411][WARN ][o.e.d.i.m.StringFieldMapper$TypeParser] The [string] field is deprecated, please use [text] or [keyword] instead on [searchSourceJSON]
+[2017-05-14T15:02:18,817][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-14T15:03:34,015][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,017][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,018][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,149][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,150][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,150][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,239][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,239][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,240][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,254][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,255][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:34,255][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:38,399][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:38,399][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:38,400][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:38,402][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:48,579][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:03:55,713][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:00,142][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:00,144][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:00,144][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:00,146][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:10,254][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:19,764][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:19,767][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:19,767][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:19,768][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:29,886][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:31,517][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:31,517][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:31,520][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:31,523][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:51,490][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:51,493][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:51,514][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:04:51,521][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:05:01,733][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T15:05:11,789][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T17:04:31,364][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T17:04:31,390][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T17:04:31,391][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T17:15:13,228][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T17:15:13,253][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T17:15:13,254][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T17:18:31,805][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:31,814][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:31,814][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:31,814][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:31,814][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:31,814][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:54,788][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:54,788][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:54,789][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:54,789][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:54,789][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:54,789][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:54,789][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:18:54,789][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:01,000][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:01,001][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:01,001][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:01,001][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:10,008][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:10,008][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:10,009][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:10,009][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:10,009][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:19:10,009][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:00,445][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:00,446][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:00,446][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:00,447][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:00,447][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:00,447][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:13,740][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:13,740][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:13,740][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:13,741][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:13,741][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:13,741][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:17,121][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:17,122][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:17,122][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:17,122][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:17,123][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:17,123][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:32,151][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:32,151][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:32,152][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:32,152][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:32,152][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:33:32,152][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:34:55,945][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:34:55,945][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:34:55,945][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:34:55,945][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:38:49,575][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:57:28,649][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:57:55,702][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T17:58:38,546][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T18:00:55,624][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T18:01:14,614][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T18:01:14,614][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T18:01:18,951][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T18:01:23,406][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T18:01:38,222][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T18:01:52,258][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T18:01:55,679][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T18:02:00,150][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:41:28,446][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:41:28,485][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:41:28,487][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:53:05,441][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:53:05,462][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:53:05,463][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:53:50,344][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:53:50,359][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T22:53:50,359][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-14T23:28:29,301][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:29,309][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:29,310][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:29,311][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:29,311][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:29,312][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:29,312][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:29,312][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:56,733][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:56,733][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:56,734][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:56,734][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:56,734][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:56,734][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:56,734][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:28:56,735][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:33:31,559][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:33:31,560][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:33:31,560][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:33:31,561][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:33:31,561][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:33:31,561][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:33:31,561][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-14T23:33:31,561][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]

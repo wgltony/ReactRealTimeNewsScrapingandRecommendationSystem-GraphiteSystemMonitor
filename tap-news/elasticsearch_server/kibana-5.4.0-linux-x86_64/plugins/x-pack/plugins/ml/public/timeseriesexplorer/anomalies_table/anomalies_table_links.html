@@ -1,0 +1,8 @@
+<div class="btn-group" dropdown>
+  <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle>
+    Open link  <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li ng-repeat="link in links"><a ng-click="openLink(link, source)">{{link.url_name}}</a></li>
+  </ul>
+</div>
