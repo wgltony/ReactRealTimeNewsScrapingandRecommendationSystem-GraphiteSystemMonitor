@@ -7,9 +7,13 @@ import sys
 import yaml
 import statsd
 
-
 from bson.json_util import dumps
 from datetime import datetime
+from dateutil import tz
+
+# Auto-detect zones:
+from_zone = tz.tzutc()
+to_zone = tz.tzlocal()
 
 stream = open("../config/config.yml", "r")
 load = yaml.load(stream)
@@ -58,7 +62,7 @@ def getNewsSummariesForUser(user_id, page_num):
     # print 'getNewsSummariesForUser, pageNum: %s' % page_num
     # print 'begin_index: %s' % begin_index
     # print 'end_index: %s' % end_index
-    #the final lisr of news to be returned
+    # the final lisr of news to be returned
     sliced_news = []
 
     #Get preference for the user_id
@@ -82,7 +86,7 @@ def getNewsSummariesForUser(user_id, page_num):
                 for news in sliced_news:
                     if(news['class'] == prefer):
                         news['level'] = level
-                        if news['publishedAt'].date() == datetime.today().date():
+                        if news['publishedAt'].replace(tzinfo=from_zone).astimezone(to_zone).date() == datetime.today().date():
                             news['level'] += 0.5
                         #print "news list: %s" % news
 
@@ -97,7 +101,8 @@ def getNewsSummariesForUser(user_id, page_num):
                 for news in total_news:
                     if(news['class'] == prefer):
                         news['level'] = level
-                        if news['publishedAt'].date() == datetime.today().date():
+                        #Use local time zone
+                        if news['publishedAt'].replace(tzinfo=from_zone).astimezone(to_zone).date() == datetime.today().date():
                             news['level'] += 0.5
                         #print "news list: %s" % news
 
@@ -115,10 +120,11 @@ def getNewsSummariesForUser(user_id, page_num):
         #print 'Create News class [%s] label, Current Top Preference is [%s]' % (news['class'], topPreference)
         #remove text field to save bandwidth
         del news['text']
-        if news['publishedAt'].date() == datetime.today().date():
+
+        if news['publishedAt'].replace(tzinfo=from_zone).astimezone(to_zone).date()== datetime.today().date():
             news['time'] = 'today'
         else:
-            news['time'] = news['publishedAt'].date().strftime("%A %d. %B %Y")
+            news['time'] = news['publishedAt'].replace(tzinfo=from_zone).astimezone(to_zone).date().strftime("%A %d. %B %Y")
 
         if news['class'] == topPreference and news['time'] == 'today':
             news['reason'] = 'Recommend'
@@ -150,7 +156,6 @@ def getPreferenceForUser(user_id):
 
 def logDataForGraphite(process_name):
     #print 'process_name: %s' % process_name
-    #graphitelog_cloudAMQP_client.sendMessage(process_name);
     counter = statsd.Counter(process_name)
     counter+=1
 
@@ -162,7 +167,6 @@ def getSearchNewsSummariesForUser(user_id, page_num, search_key):
     # print 'getSearchNewsSummariesForUser, pageNum: %s' % page_num
     # print 'begin_index: %s' % begin_index
     # print 'end_index: %s' % end_index
-    #the final lisr of news to be returned
     sliced_news = []
     #Get preference for the user_id
     preference = news_recommendation_service_client.getPreferenceForUser(user_id)
@@ -173,8 +177,8 @@ def getSearchNewsSummariesForUser(user_id, page_num, search_key):
         #print "len %s" % len(redis_client.get(search_key))
         #print "end_index %s" % end_index
         news_digests = pickle.loads(redis_client.get(search_key))
-        #print '9999999999999999999999999999999999999news_digests %s' % news_digests
-        #print '000000000000000000000000000000000redis sliced_news begin_index end_index: %s %s %s' % (sliced_news_digests,begin_index,end_index)
+        #print 'news_digests %s' % news_digests
+        #print 'redis sliced_news begin_index end_index: %s %s %s' % (sliced_news_digests,begin_index,end_index)
         tmp_total_news = list(db[NEWS_TABLE_NAME].find({'digest':{'$in':news_digests}}).sort([('publishedAt', -1)]))
         sliced_news = tmp_total_news[begin_index:end_index]
     else:
@@ -187,7 +191,7 @@ def getSearchNewsSummariesForUser(user_id, page_num, search_key):
         except Exception as e:
             print str(e)
         hits = result['hits']['hits']
-        #print '============================hits: %s' % hits
+        #print 'hits: %s' % hits
         total_news=[]
         #print 'len of hits %s' % len(hits)
         if hits is not None and len(hits)>0:
@@ -195,31 +199,30 @@ def getSearchNewsSummariesForUser(user_id, page_num, search_key):
                 #print i['_source']
                 total_news.append(i['_source'])
             #total_news = list(total_news)
-            #print '0000000000000000000000000000000000000total_news: %s' % len(total_news)
+            #print 'total_news: %s' % len(total_news)
             total_news_digest = map(lambda x:x['digest'], total_news)
             total_news = list(db[NEWS_TABLE_NAME].find({'digest':{'$in':total_news_digest}}).sort([('publishedAt', -1)]))
 
-            #print '1111111111111111111111111111111111111total_news: %s' % len(total_news)
-            #print '222222222222222222222222222222222222total_news_digest %s' % total_news_digest
+            #print 'total_news: %s' % len(total_news)
+            #print 'total_news_digest %s' % total_news_digest
             redis_client.set(search_key, pickle.dumps(total_news_digest))
             redis_client.expire(search_key, USER_NEWS_TIME_OUT_IN_SECONDS)
             sliced_news = total_news[begin_index:end_index]
-            #print '333333333333333++++++++++++++++before sliced_news begin end %s %s %s' % (sliced_news,begin_index, end_index)
+            #print 'before sliced_news begin end %s %s %s' % (sliced_news,begin_index, end_index)
         else:
             return json.loads(dumps(total_news));
-    #print '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
-    #print '++++++++++++++++before sliced_news %s' % sliced_news
+    #print 'before sliced_news %s' % sliced_news
     for news in sliced_news:
         log_client.logger.debug('Create News class [%s] label, Current Top Preference is [%s]' % (news['class'], topPreference))
         #print 'Create News class [%s] label, Current Top Preference is [%s]' % (news['class'], topPreference)
         #remove text field to save bandwidth
         del news['text']
-        if news['publishedAt'].date() == datetime.today().date():
+        if news['publishedAt'].replace(tzinfo=from_zone).astimezone(to_zone).date()== datetime.today().date():
             news['time'] = 'today'
         else:
-            news['time'] = news['publishedAt'].date().strftime("%A %d. %B %Y")
+            news['time'] = news['publishedAt'].replace(tzinfo=from_zone).astimezone(to_zone).date().strftime("%A %d. %B %Y")
 
         if news['class'] == topPreference and news['time'] == 'today':
             news['reason'] = 'Recommend'
-    #print '--------------------------after sliced_news %s' % sliced_news
+    #print 'after sliced_news %s' % sliced_news
     return json.loads(dumps(sliced_news))

@@ -62,7 +62,7 @@ class ProfilePage extends React.Component{
 
   reloadIMG(e){
     let Config = require('Config')
-    let graphiteUrl = "http://98.224.216.111:9090";
+    let graphiteUrl = Config.graphite_server;
     //e.preventDefault();
     //console.log("Reload IMG...");
     this.setState({

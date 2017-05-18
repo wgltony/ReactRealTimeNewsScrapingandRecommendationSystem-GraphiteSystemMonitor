@@ -9,7 +9,7 @@ const LoginForm = ({
   user,
 }) => (
   <div className="container">
-    <div className="card-panel login-panel">
+    <div className="card-panel login-panel col s12">
       <form className="col s12" action="/" onSubmit={onSubmit}>
         <h4 className="center-align">Login</h4>
         {errors.summary && <div className="row"><p className="error-message">{errors.summary}</p></div>}

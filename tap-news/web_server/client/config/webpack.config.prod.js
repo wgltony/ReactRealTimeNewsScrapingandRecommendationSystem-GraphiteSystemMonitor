@@ -52,7 +52,8 @@ module.exports = {
     userClickMetric: Config.web_server.Metrics.newsClick,
     loadNewsMetric: Config.web_server.Metrics.newsLoad,
     searchNewsMetric: Config.web_server.Metrics.newsSearch,
-    graphiteServerUrl: Config.graphiteServerUrl
+    production_server: Config.production_server_url+':'+Config.production_server_port,
+    graphite_server: Config.production_server_url+':'+Config.graphite_server_port
   })
 },
   // Don't attempt to continue if there are any errors.

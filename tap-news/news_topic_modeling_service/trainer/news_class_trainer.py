@@ -79,17 +79,17 @@ def data_clean( raw_review ):
     #   a list, so convert the stop words to a set
     stops = set(stopwords.words("english"))
     #
-    # 5. Remove stop words 35.33
+    # 5. Remove stop words
     meaningful_words = [w for w in words if not w in stops]
     #
-    # 6. Stem words(bad result) 24
+    # 6. Stem words(bad result)
     stemming_words = [ps.stem(w) for w in meaningful_words]
     #
-    # 7.lemmatize_words  30
+    # 7.lemmatize_words
     lemmatize_words = [wnl.lemmatize(w) for w in stemming_words]
     # 7. Join the words back into one string separated by space,
     # and return the result.
-    return  ( " ".join( stemming_words )).encode('utf-8')
+    return  ( " ".join( lemmatize_words )).encode('utf-8')
 
 def data_col_process(data):
     # Create an empty list and append the clean reviews one by one

@@ -13,9 +13,9 @@ const Base = ({ children }) => (
     <nav className="nav-bar indigo lighten-1">
       <div className="nav-wrapper">
         <a href="/" className="brand-logo">&nbsp;&nbsp;Tap News</a>
-        <ul id="nav-mobile" className="right col-s3">
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
           {Auth.isUserAuthenticated() ?
-            (<div>
+            (<div >
                <li><Link to="/profile">{Auth.getEmail()}</Link></li>
                <li><Link to="/logout">Log out</Link></li>
              </div>)

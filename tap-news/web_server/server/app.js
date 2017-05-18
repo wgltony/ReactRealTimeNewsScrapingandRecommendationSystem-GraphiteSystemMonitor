@@ -11,6 +11,9 @@ var search = require('./routes/search');
 var auth = require('./routes/auth');
 var preference = require('./routes/preference');
 var monitor = require('./routes/monitor');
+var fs = require('fs')
+var morgan = require('morgan')
+var rfs = require('rotating-file-stream')
 
 var app = express();
 
@@ -40,6 +43,19 @@ passport.use('local-login', localLoginStrategy);
 // pass the authenticaion checker middleware
 const authCheckMiddleware = require('./middleware/auth_checker');
 const requestPerSecondMiddleware = require('./middleware/request_per_second');
+
+var logDirectory = path.join(__dirname, 'log')
+
+// ensure log directory exists
+fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory)
+
+// create a rotating write stream
+var accessLogStream = rfs('access.log', {
+  interval: '1d', // rotate daily
+  path: logDirectory
+})
+
+app.use(morgan('combined', {stream: accessLogStream}))
 //Handle request before url address
 app.use('*', requestPerSecondMiddleware);
 app.use('/news', authCheckMiddleware);

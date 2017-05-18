@@ -556,3 +556,945 @@
 [2017-05-14T23:33:31,561][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
 [2017-05-14T23:33:31,561][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
 [2017-05-14T23:33:31,561][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T00:04:17,680][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-15T00:07:00,905][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:07:00,945][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:07:00,946][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,107][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,109][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,109][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,212][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,212][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,214][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,271][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,272][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,273][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,273][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,275][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:01,275][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:10,853][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:10,853][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:10,853][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:12,936][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:12,937][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:12,937][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:12,938][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:23,069][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:33,134][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:40,927][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:40,927][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:40,927][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:40,929][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:12:51,062][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:13:45,363][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:13:45,366][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:13:45,366][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:13:45,366][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:13:55,524][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:14:06,440][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:14:17,229][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:14:29,629][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:14:39,990][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:14:51,088][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:15:01,733][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:15:14,365][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:15:24,732][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:15:35,735][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:15:47,216][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:15:57,982][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:16:08,344][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:16:19,064][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:16:30,464][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:16:41,445][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T00:16:52,985][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:49:49,780][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:49:49,801][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,568][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,568][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,578][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,578][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,676][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,677][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,678][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,679][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,681][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,681][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,688][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,689][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,690][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,690][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,691][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,691][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,693][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,693][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,695][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,695][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,698][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,698][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,714][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,714][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,715][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,716][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,728][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,728][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,730][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:50:14,731][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T12:52:29,124][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,126][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,128][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,288][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,290][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,290][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,404][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,405][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,407][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,411][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,414][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:29,414][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:39,539][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:39,540][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:39,540][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:59,856][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:59,864][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:59,864][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:59,872][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:59,873][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:52:59,873][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:54:35,796][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:55:26,520][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:55:44,418][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T12:56:52,514][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:01:07,895][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:29:22,886][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:37:26,610][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:39:33,864][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:40:05,322][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:40:07,490][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:40:11,513][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:45:10,118][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T13:45:18,669][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T14:57:54,844][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T14:57:54,878][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T14:57:54,879][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:23,674][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:23,690][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:23,676][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:23,920][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:23,920][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:23,921][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:24,033][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:24,033][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:24,033][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:24,042][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:24,043][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:12:24,043][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:14:47,902][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:15:46,693][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:15:46,693][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:15:46,695][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:15:46,698][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:15:46,702][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:15:46,706][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T15:18:55,239][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:55,292][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:55,309][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:55,309][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,312][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,312][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,308][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,314][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,314][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,316][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,319][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,319][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,320][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,320][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,321][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,321][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,323][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,323][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,332][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,332][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,333][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,333][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,337][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,337][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,339][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,339][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,344][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,345][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,346][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,346][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,348][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:18:56,348][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T15:20:37,257][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-15T17:52:41,752][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,754][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,761][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,761][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,884][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,884][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,886][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,886][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,892][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,892][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,893][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,896][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,904][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,904][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,904][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,905][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,906][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,906][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,907][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,907][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,911][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,911][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,913][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,913][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,914][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,915][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,918][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,918][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,938][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,938][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,939][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,939][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,941][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,941][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,942][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,942][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,945][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,945][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,947][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,947][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,950][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,950][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,951][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,952][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,954][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,954][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,955][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,956][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,959][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:41,959][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:42,027][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:42,028][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:42,038][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T17:52:42,038][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:57:01,942][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:57:01,967][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:57:02,000][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:57:02,000][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:57:02,395][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:57:02,395][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:57:02,396][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:57:02,397][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,462][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,463][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,471][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,472][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,545][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,546][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,554][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,554][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,555][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,555][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,556][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,557][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,560][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T20:58:53,560][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-15T21:10:25,164][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T21:10:25,195][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T21:10:25,197][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T21:10:25,631][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T21:10:25,641][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T21:10:25,643][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T21:51:48,330][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,331][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,332][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,332][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,332][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,332][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,333][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,333][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,333][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:51:48,333][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:52:22,225][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:52:22,225][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:52:22,226][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:52:22,226][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:52:22,226][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:52:22,226][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:52:22,227][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T21:52:22,227][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-15T22:13:20,551][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T22:13:20,577][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T22:13:20,577][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T22:13:21,863][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T22:13:21,873][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T22:13:21,874][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,444][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,444][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,446][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,543][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,545][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,546][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,606][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,609][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,610][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,612][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,612][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:41,612][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:46,384][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:46,384][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:46,386][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:46,386][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:55,986][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:55,988][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:55,989][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:50:55,988][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:51:06,702][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:51:20,302][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:51:30,768][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:51:41,799][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:51:54,552][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:52:09,358][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:52:19,954][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:52:31,005][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:52:41,702][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:52:53,730][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:53:07,014][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:53:20,066][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:53:30,609][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:53:41,636][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:53:53,735][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:54:06,331][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:54:20,264][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:54:31,213][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:54:42,235][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:54:53,761][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:55:05,514][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:55:19,468][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:55:30,054][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:55:40,667][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:55:51,916][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:56:04,418][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:56:16,820][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:56:30,251][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:56:40,871][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:56:51,938][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:57:03,904][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:57:17,187][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:57:29,852][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:57:40,725][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:57:51,876][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:58:03,877][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:58:17,478][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:58:27,688][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:58:39,678][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:58:49,878][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:59:00,978][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:59:11,579][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:59:23,580][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:59:37,085][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:59:49,286][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-15T23:59:59,930][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:00:10,981][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:00:21,572][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:00:33,705][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:00:45,029][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:00:55,553][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:01:10,224][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:01:20,604][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:01:32,681][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:01:44,576][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:01:58,488][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:02:09,084][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:02:19,987][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:02:30,984][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:02:41,583][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:02:53,682][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:03:07,210][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:03:17,273][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:48:43,453][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:48:43,478][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:48:43,478][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T00:57:06,510][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:06,510][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:06,510][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:06,511][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:06,511][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:06,511][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:06,511][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:06,511][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:28,099][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:28,099][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:28,099][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:28,099][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:28,100][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:28,100][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:28,100][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T00:57:28,100][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:00:12,750][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T01:00:12,767][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T01:00:12,767][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T01:02:08,403][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:08,404][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:08,404][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:08,404][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:08,404][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:08,404][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:08,404][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:08,405][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:15,128][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:15,128][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:15,129][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:15,129][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:15,129][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:15,129][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:15,129][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:15,129][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:16,679][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:16,680][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:16,680][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:16,680][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:16,680][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:16,680][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:16,680][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:16,681][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:19,671][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:19,671][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:19,672][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:19,672][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:19,672][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:19,672][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:19,672][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:19,672][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:21,857][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:21,857][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:21,858][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:21,858][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:21,858][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:21,858][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:21,858][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:21,859][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:28,120][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:28,120][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:28,120][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:28,120][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:28,120][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:28,121][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:28,121][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:28,121][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:45,724][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:45,724][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:45,725][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:45,725][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:45,725][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:45,725][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:45,725][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:45,725][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:48,140][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:48,140][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:48,140][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:48,140][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:48,140][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:48,141][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:48,141][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:02:48,141][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:14,982][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:14,983][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:14,983][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:14,983][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:14,983][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:14,983][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:14,984][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:14,984][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,457][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,457][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,457][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,457][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,457][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,457][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,458][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,458][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,458][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,458][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,458][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,458][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,458][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,458][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,459][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:37,459][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:41,977][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:41,977][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:41,977][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:41,977][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:41,977][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:41,978][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:41,978][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T01:04:41,978][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T11:25:50,360][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,368][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,377][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,377][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,390][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,390][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,392][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,392][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,761][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,761][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,762][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:50,762][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:51,534][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:51,534][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:51,536][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:25:51,537][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:44:58,102][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:44:58,115][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:44:58,127][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:44:58,129][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:44:58,191][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T11:44:58,191][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,156][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,159][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,167][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,167][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,260][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,260][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,261][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,262][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,861][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,861][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,863][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:51,863][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:52,769][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:52,769][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:52,770][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T12:47:52,770][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,282][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,290][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,350][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,350][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,478][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,478][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,479][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,479][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,845][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,845][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,846][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:52,846][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:53,272][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:53,272][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:53,273][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:03:53,273][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,326][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,327][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,329][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,329][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,330][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,330][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,336][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,337][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,341][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,342][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,343][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,343][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,360][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,360][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,387][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,388][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,402][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,402][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,404][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,404][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,408][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,408][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,410][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,410][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,426][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,426][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,468][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,468][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,470][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,471][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,475][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,475][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,478][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,478][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,480][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,480][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,506][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,507][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,509][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,510][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,512][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,513][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,514][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,514][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,524][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,524][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,525][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:21,526][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:46,868][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:46,868][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:46,870][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:46,870][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:46,871][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:46,871][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:46,877][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:06:46,877][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T16:47:12,348][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T16:49:12,251][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-16T16:50:33,714][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T16:51:07,830][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T16:59:42,969][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T17:18:12,388][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T17:18:12,388][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T17:18:12,389][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T17:18:12,389][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T17:18:12,389][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T17:18:12,390][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T17:18:12,390][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T17:18:12,390][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T20:27:51,149][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,152][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,162][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,163][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,165][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,166][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,209][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,209][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,211][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,211][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,610][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,611][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,612][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,612][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,613][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:51,613][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:52,014][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:52,014][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:52,015][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:27:52,015][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,617][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,617][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,649][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,649][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,803][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,803][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,812][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,812][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,812][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,812][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,817][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,818][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,824][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,824][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,826][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,826][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,829][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,830][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,832][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,832][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,837][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,837][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,870][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,870][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,872][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,872][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,874][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,874][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,883][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:28:51,884][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,685][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,686][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,704][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,704][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,705][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,705][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,706][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,706][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,707][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,707][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,711][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T20:51:56,711][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-16T23:23:27,371][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,389][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,390][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,390][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,391][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,391][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,391][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,391][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,391][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:23:27,391][WARN ][o.e.d.c.ParseField       ] Deprecated field [type] used, replaced by [match_phrase and match_phrase_prefix query]
+[2017-05-16T23:28:54,971][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-17T00:48:44,150][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T00:48:44,254][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T00:48:44,256][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T00:48:44,822][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T00:48:44,835][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T00:48:44,836][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:44:32,109][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,116][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,125][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,125][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,127][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,127][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,164][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,164][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,165][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,165][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,167][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,167][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,189][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,189][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,191][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,191][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,523][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,523][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,524][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,524][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,526][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,526][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,920][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,920][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,922][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,922][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,924][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:32,924][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:33,140][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:33,140][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:33,141][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:44:33,142][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T11:45:19,764][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:19,769][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:19,771][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,062][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,067][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,069][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,202][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,210][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,210][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,214][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,218][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:20,220][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:30,390][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:30,392][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:30,392][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:37,002][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:37,005][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:37,007][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:37,009][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:39,977][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:39,981][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:39,981][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:39,984][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:41,118][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:41,118][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:41,121][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:41,123][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:42,281][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:42,281][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:42,282][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:42,282][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:43,556][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:43,562][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:43,562][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:43,572][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,504][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,504][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,504][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,594][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,597][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,599][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,694][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,696][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,703][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,716][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,716][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:45:45,722][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:46:02,883][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:46:02,883][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:46:02,883][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:46:02,884][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:46:02,887][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:46:02,887][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:46:10,302][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-17T11:46:42,070][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-17T11:46:59,825][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-17T11:47:03,655][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:47:22,046][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-17T11:47:32,148][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:49:57,889][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:49:57,911][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:49:57,914][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T11:55:07,641][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-17T12:04:12,928][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:12,929][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:12,940][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:12,940][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:12,944][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:12,945][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,070][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,070][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,071][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,071][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,073][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,073][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,092][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,092][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,093][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,093][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,463][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,463][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,464][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,464][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,465][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,466][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,805][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,805][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,806][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,806][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,807][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:13,807][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:14,042][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:14,042][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:14,043][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:14,043][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T12:04:41,118][WARN ][o.e.d.i.q.QueryParseContext] query malformed, empty clause found at [1:143]
+[2017-05-17T12:04:43,526][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:43,533][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:43,535][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:43,543][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:43,545][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:43,548][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:50,643][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:50,643][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:50,647][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:50,648][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:50,652][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:50,659][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:56,110][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:56,113][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:56,117][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:04:56,125][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,230][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,230][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,232][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,352][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,352][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,356][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,459][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,461][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,462][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,466][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,471][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:04,473][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:14,587][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:14,587][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:14,589][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:24,670][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:24,671][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T12:05:24,671][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T13:36:22,842][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T13:36:22,855][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T13:36:22,856][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T13:36:22,857][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T13:36:22,857][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T13:36:22,858][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T13:36:22,905][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T13:36:22,906][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:49,925][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,017][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,041][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,041][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,533][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,649][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,655][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,655][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,675][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,675][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,676][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,676][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,678][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:08:50,678][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,218][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,218][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,235][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,235][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,236][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,236][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,236][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,237][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,237][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,237][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,239][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:11:07,239][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,608][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,610][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,625][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,627][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,629][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,629][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,715][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,716][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,717][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,717][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,728][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,728][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,839][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,839][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,849][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,849][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,884][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,885][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,886][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,886][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,887][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:32,887][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:33,564][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:33,564][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:33,565][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:33,566][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:33,568][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:33,569][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,402][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,402][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,403][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,403][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,404][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,405][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,757][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,758][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,758][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,759][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,760][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:34,760][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:35,273][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:35,274][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:35,276][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:47:35,277][WARN ][o.e.d.i.m.TypeParsers    ] field [include_in_all] is deprecated, as [_all] is deprecated, and will be disallowed in 6.0, use [copy_to] instead.
+[2017-05-17T20:55:10,479][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T20:55:10,518][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T20:55:10,520][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:23:18,482][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:23:18,501][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:23:18,501][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:23:51,893][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:23:51,916][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:23:51,916][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:24:00,962][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:24:00,977][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:24:00,978][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:24:01,501][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:24:01,514][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:24:01,514][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:26:15,967][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:26:15,979][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:26:15,979][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:26:17,027][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:26:17,036][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.
+[2017-05-17T22:26:17,037][WARN ][o.e.d.r.a.RestFieldStatsAction] [_field_stats] endpoint is deprecated! Use [_field_caps] instead or run a min/max aggregations on the desired fields.

@@ -1,0 +1,304 @@
+[2017-05-16T00:31:50,170][INFO ][o.e.x.m.MlDailyMaintenanceService] triggering scheduled [ML] maintenance tasks
+[2017-05-16T00:31:50,182][INFO ][o.e.x.m.a.DeleteExpiredDataAction$TransportAction] [idAwBkj] Deleting expired data
+[2017-05-16T00:59:40,071][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.16/klAJgU7US1uMzOobapgJBA] update_mapping [kibana_stats]
+[2017-05-16T01:18:05,694][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2017-05-16T01:18:05,698][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-16T01:18:05,747][INFO ][o.e.x.w.w.WatchStore     ] [idAwBkj] stopped watch store
+[2017-05-16T01:18:05,957][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-16T01:18:05,957][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-16T01:18:05,998][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-16T11:25:40,990][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-16T11:25:41,074][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [25gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-16T11:25:41,074][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-16T11:25:41,112][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-16T11:25:41,113][INFO ][o.e.n.Node               ] version[5.4.0], pid[24323], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-16T11:25:42,614][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-16T11:25:42,614][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-16T11:25:42,614][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-16T11:25:42,614][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-16T11:25:42,615][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-16T11:25:42,615][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-16T11:25:42,615][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-16T11:25:42,615][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-16T11:25:42,615][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-16T11:25:42,615][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-16T11:25:42,616][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded plugin [x-pack]
+[2017-05-16T11:25:44,964][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.XPackPlugin
+[2017-05-16T11:25:45,409][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/24509] [Main.cc@128] controller (64 bit): Version 5.4.0 (Build 120b96fa7f6fa7) Copyright (c) 2017 Elasticsearch BV
+[2017-05-16T11:25:45,453][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-16T11:25:46,587][INFO ][o.e.n.Node               ] initialized
+[2017-05-16T11:25:46,587][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-16T11:25:46,968][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-16T11:25:46,982][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-16T11:25:50,064][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{uw8Ea8mDQmyGqnrk4sdfjg}{127.0.0.1}{127.0.0.1:9300}{ml.enabled=true}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-16T11:25:50,096][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-16T11:25:50,099][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-16T11:25:50,722][INFO ][o.e.l.LicenseService     ] [idAwBkj] license [4ad9ac60-5cd2-43d0-8862-8360171af0c3] mode [trial] - valid
+[2017-05-16T11:25:50,733][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [17] indices into cluster_state
+[2017-05-16T11:25:52,230][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][0], [news][2]] ...]).
+[2017-05-16T11:44:58,170][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [logstash-2017.05.16/O89oByBlRva39vk6mvPd5g] update_mapping [node_apache_log]
+[2017-05-16T12:18:47,547][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2017-05-16T12:18:47,549][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-16T12:18:47,731][INFO ][o.e.x.w.w.WatchStore     ] [idAwBkj] stopped watch store
+[2017-05-16T12:18:47,891][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-16T12:18:47,891][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-16T12:18:47,912][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-16T12:47:36,874][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-16T12:47:36,990][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [25gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-16T12:47:36,991][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-16T12:47:37,051][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-16T12:47:37,052][INFO ][o.e.n.Node               ] version[5.4.0], pid[51233], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-16T12:47:41,376][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-16T12:47:41,376][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-16T12:47:41,376][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-16T12:47:41,376][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-16T12:47:41,376][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-16T12:47:41,376][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-16T12:47:41,376][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-16T12:47:41,376][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-16T12:47:41,377][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-16T12:47:41,377][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-16T12:47:41,377][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded plugin [x-pack]
+[2017-05-16T12:47:44,925][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.XPackPlugin
+[2017-05-16T12:47:45,405][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/51304] [Main.cc@128] controller (64 bit): Version 5.4.0 (Build 120b96fa7f6fa7) Copyright (c) 2017 Elasticsearch BV
+[2017-05-16T12:47:45,450][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-16T12:47:47,162][INFO ][o.e.n.Node               ] initialized
+[2017-05-16T12:47:47,163][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-16T12:47:47,658][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-16T12:47:47,669][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-16T12:47:50,805][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{sgZKOvJ-SeGgzzNwTxfnIw}{127.0.0.1}{127.0.0.1:9300}{ml.enabled=true}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-16T12:47:50,907][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-16T12:47:50,916][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-16T12:47:51,732][INFO ][o.e.l.LicenseService     ] [idAwBkj] license [4ad9ac60-5cd2-43d0-8862-8360171af0c3] mode [trial] - valid
+[2017-05-16T12:47:51,782][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [17] indices into cluster_state
+[2017-05-16T12:47:54,080][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][2], [news][0], [news][3]] ...]).
+[2017-05-16T13:10:17,990][INFO ][o.e.m.j.JvmGcMonitorService] [idAwBkj] [gc][1349] overhead, spent [310ms] collecting in the last [1s]
+[2017-05-16T13:26:28,921][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2017-05-16T13:26:29,052][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-16T13:26:29,669][INFO ][o.e.x.w.w.WatchStore     ] [idAwBkj] stopped watch store
+[2017-05-16T13:26:30,176][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-16T13:26:30,176][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-16T13:26:30,226][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-16T16:03:39,630][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-16T16:03:39,811][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [25gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-16T16:03:39,812][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-16T16:03:39,916][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-16T16:03:39,916][INFO ][o.e.n.Node               ] version[5.4.0], pid[57660], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-49-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-16T16:03:43,986][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-16T16:03:43,986][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-16T16:03:43,986][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-16T16:03:43,986][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-16T16:03:43,986][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-16T16:03:43,986][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-16T16:03:43,986][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-16T16:03:43,986][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-16T16:03:43,987][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-16T16:03:43,987][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-16T16:03:43,987][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded plugin [x-pack]
+[2017-05-16T16:03:47,035][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.XPackPlugin
+[2017-05-16T16:03:47,364][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/58016] [Main.cc@128] controller (64 bit): Version 5.4.0 (Build 120b96fa7f6fa7) Copyright (c) 2017 Elasticsearch BV
+[2017-05-16T16:03:47,392][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-16T16:03:48,226][INFO ][o.e.n.Node               ] initialized
+[2017-05-16T16:03:48,226][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-16T16:03:48,602][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-16T16:03:48,608][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-16T16:03:51,685][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{XhC-2mq4TCKAJBHFXLlfTQ}{127.0.0.1}{127.0.0.1:9300}{ml.enabled=true}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-16T16:03:51,727][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-16T16:03:51,730][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-16T16:03:51,845][WARN ][o.e.x.s.a.AuthenticationService] [idAwBkj] An unexpected error occurred while attempting to authenticate [kibana] against realm [reserved]
+org.elasticsearch.ElasticsearchSecurityException: failed to authenticate user [kibana]
+	at org.elasticsearch.xpack.security.support.Exceptions.authenticationError(Exceptions.java:39) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.lambda$null$2(ReservedRealm.java:106) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.lambda$doAuthenticate$3(ReservedRealm.java:110) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.getUserInfo(ReservedRealm.java:214) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.doAuthenticate(ReservedRealm.java:89) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.doAuthenticateAndCache(CachingUsernamePasswordRealm.java:141) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.authenticateWithCache(CachingUsernamePasswordRealm.java:107) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.authenticate(CachingUsernamePasswordRealm.java:92) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$consumeToken$10(AuthenticationService.java:264) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.common.IteratingActionListener.run(IteratingActionListener.java:93) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:288) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$6(AuthenticationService.java:239) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:247) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:194) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:100) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.rest.SecurityRestFilter.handleRequest(SecurityRestFilter.java:78) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:260) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:199) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.http.netty4.Netty4HttpServerTransport.dispatchRequest(Netty4HttpServerTransport.java:504) [transport-netty4-5.4.0.jar:5.4.0]
+	at org.elasticsearch.http.netty4.Netty4HttpRequestHandler.channelRead0(Netty4HttpRequestHandler.java:72) [transport-netty4-5.4.0.jar:5.4.0]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler.channelRead(HttpPipeliningHandler.java:63) [transport-netty4-5.4.0.jar:5.4.0]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:111) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:624) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:524) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:478) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.9.Final.jar:4.1.9.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-16T16:03:52,139][WARN ][o.e.x.s.a.AuthenticationService] [idAwBkj] An unexpected error occurred while attempting to authenticate [kibana] against realm [reserved]
+org.elasticsearch.ElasticsearchSecurityException: failed to authenticate user [kibana]
+	at org.elasticsearch.xpack.security.support.Exceptions.authenticationError(Exceptions.java:39) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.lambda$null$2(ReservedRealm.java:106) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.lambda$doAuthenticate$3(ReservedRealm.java:110) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.getUserInfo(ReservedRealm.java:214) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.esnative.ReservedRealm.doAuthenticate(ReservedRealm.java:89) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.doAuthenticateAndCache(CachingUsernamePasswordRealm.java:141) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.authenticateWithCache(CachingUsernamePasswordRealm.java:107) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.support.CachingUsernamePasswordRealm.authenticate(CachingUsernamePasswordRealm.java:92) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$consumeToken$10(AuthenticationService.java:264) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.common.IteratingActionListener.run(IteratingActionListener.java:93) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:288) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$6(AuthenticationService.java:239) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:247) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:194) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:100) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.rest.SecurityRestFilter.handleRequest(SecurityRestFilter.java:78) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:260) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:199) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.http.netty4.Netty4HttpServerTransport.dispatchRequest(Netty4HttpServerTransport.java:504) [transport-netty4-5.4.0.jar:5.4.0]
+	at org.elasticsearch.http.netty4.Netty4HttpRequestHandler.channelRead0(Netty4HttpRequestHandler.java:72) [transport-netty4-5.4.0.jar:5.4.0]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler.channelRead(HttpPipeliningHandler.java:63) [transport-netty4-5.4.0.jar:5.4.0]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:111) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) [netty-codec-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:624) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:524) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:478) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438) [netty-transport-4.1.9.Final.jar:4.1.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.9.Final.jar:4.1.9.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-16T16:03:52,803][INFO ][o.e.l.LicenseService     ] [idAwBkj] license [4ad9ac60-5cd2-43d0-8862-8360171af0c3] mode [trial] - valid
+[2017-05-16T16:03:52,815][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [17] indices into cluster_state
+[2017-05-16T16:03:54,279][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][4]] ...]).
+[2017-05-16T16:06:21,406][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [logstash-2017.05.16/O89oByBlRva39vk6mvPd5g] create_mapping [system_log]
+[2017-05-16T16:06:46,875][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [logstash-2017.05.16/O89oByBlRva39vk6mvPd5g] update_mapping [system_log]
+[2017-05-16T17:16:55,615][INFO ][o.e.m.j.JvmGcMonitorService] [idAwBkj] [gc][young][4382][136] duration [879ms], collections [1]/[1.2s], total [879ms]/[3s], memory [715.5mb]->[313.7mb]/[1.9gb], all_pools {[young] [399.3mb]->[2.3mb]/[399.4mb]}{[survivor] [13.2mb]->[9.5mb]/[49.8mb]}{[old] [302.9mb]->[302.9mb]/[1.5gb]}
+[2017-05-16T17:16:55,619][WARN ][o.e.m.j.JvmGcMonitorService] [idAwBkj] [gc][4382] overhead, spent [879ms] collecting in the last [1.2s]
+[2017-05-16T17:25:01,566][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2017-05-16T17:25:01,575][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-16T17:25:01,798][INFO ][o.e.x.w.w.WatchStore     ] [idAwBkj] stopped watch store
+[2017-05-16T17:25:02,073][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-16T17:25:02,073][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-16T17:25:02,165][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-16T20:27:42,472][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-16T20:27:42,551][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [24.9gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-16T20:27:42,551][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-16T20:27:42,606][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-16T20:27:42,607][INFO ][o.e.n.Node               ] version[5.4.0], pid[4568], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-52-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-16T20:27:44,221][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-16T20:27:44,222][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-16T20:27:44,222][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-16T20:27:44,222][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-16T20:27:44,222][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-16T20:27:44,222][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-16T20:27:44,222][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-16T20:27:44,223][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-16T20:27:44,223][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-16T20:27:44,223][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-16T20:27:44,224][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded plugin [x-pack]
+[2017-05-16T20:27:46,229][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.XPackPlugin
+[2017-05-16T20:27:46,611][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/4743] [Main.cc@128] controller (64 bit): Version 5.4.0 (Build 120b96fa7f6fa7) Copyright (c) 2017 Elasticsearch BV
+[2017-05-16T20:27:46,655][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-16T20:27:47,545][INFO ][o.e.n.Node               ] initialized
+[2017-05-16T20:27:47,545][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-16T20:27:47,828][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-16T20:27:47,836][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-16T20:27:50,904][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{tMhygeFWR_KG9LbdeDCdQw}{127.0.0.1}{127.0.0.1:9300}{ml.enabled=true}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-16T20:27:50,961][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-16T20:27:50,964][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-16T20:27:51,577][INFO ][o.e.l.LicenseService     ] [idAwBkj] license [4ad9ac60-5cd2-43d0-8862-8360171af0c3] mode [trial] - valid
+[2017-05-16T20:27:51,587][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [17] indices into cluster_state
+[2017-05-16T20:27:52,849][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][4]] ...]).
+[2017-05-16T20:27:57,864][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [.monitoring-es-2-2017.05.17] creating index, cause [auto(bulk api)], templates [.monitoring-es-2], shards [1]/[1], mappings [_default_, shards, node, index_stats, index_recovery, cluster_state, cluster_stats, indices_stats, node_stats]
+[2017-05-16T20:27:58,000][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.17/Z9vXDDf2RCqp5lwvAy8Evw] update_mapping [index_recovery]
+[2017-05-16T20:27:58,067][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.17/Z9vXDDf2RCqp5lwvAy8Evw] update_mapping [cluster_state]
+[2017-05-16T20:27:58,091][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.17/Z9vXDDf2RCqp5lwvAy8Evw] update_mapping [node]
+[2017-05-16T20:27:58,112][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.17/Z9vXDDf2RCqp5lwvAy8Evw] update_mapping [shards]
+[2017-05-16T20:27:58,177][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.17/Z9vXDDf2RCqp5lwvAy8Evw] update_mapping [cluster_stats]
+[2017-05-16T20:27:58,201][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.17/Z9vXDDf2RCqp5lwvAy8Evw] update_mapping [indices_stats]
+[2017-05-16T20:27:58,239][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.17/Z9vXDDf2RCqp5lwvAy8Evw] update_mapping [node_stats]
+[2017-05-16T20:27:58,271][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.17/Z9vXDDf2RCqp5lwvAy8Evw] update_mapping [index_stats]
+[2017-05-16T20:28:14,477][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [.monitoring-kibana-2-2017.05.17] creating index, cause [auto(bulk api)], templates [.monitoring-kibana-2], shards [1]/[1], mappings [_default_, kibana_stats]
+[2017-05-16T20:28:14,538][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.17/VJNbSy4zTcGPJigd40gEuA] update_mapping [kibana_stats]
+[2017-05-16T20:28:51,619][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [logstash-2017.05.17] creating index, cause [auto(bulk api)], templates [logstash], shards [5]/[1], mappings [_default_]
+[2017-05-16T20:28:51,828][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [logstash-2017.05.17/BHklvn08Q5iSlLVXo0vlNw] create_mapping [system_log]
+[2017-05-16T20:28:53,144][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [.watcher-history-3-2017.05.17] creating index, cause [auto(bulk api)], templates [watch_history_3], shards [1]/[1], mappings [watch_record]
+[2017-05-16T20:28:53,326][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.watcher-history-3-2017.05.17/UAoI52GxRFWjIPwYLOwheg] update_mapping [watch_record]
+[2017-05-16T20:28:53,424][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.watcher-history-3-2017.05.17/UAoI52GxRFWjIPwYLOwheg] update_mapping [watch_record]
+[2017-05-16T20:51:56,708][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [logstash-2017.05.17/BHklvn08Q5iSlLVXo0vlNw] create_mapping [node_apache_log]
+[2017-05-16T20:53:37,120][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.17/VJNbSy4zTcGPJigd40gEuA] update_mapping [kibana_stats]
+[2017-05-16T20:56:47,162][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.17/VJNbSy4zTcGPJigd40gEuA] update_mapping [kibana_stats]

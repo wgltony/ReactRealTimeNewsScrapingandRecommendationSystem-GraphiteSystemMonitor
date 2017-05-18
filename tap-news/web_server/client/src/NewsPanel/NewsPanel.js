@@ -48,7 +48,7 @@ class NewsPanel extends React.Component{
   sendLoadNewsEvent() {
     //console.log('send monitor data...');
     let Config = require('Config')
-    let url = 'http://98.224.216.111:3000/monitor/process/'+Config.loadNewsMetric;
+    let url = Config.production_server+'/monitor/process/'+Config.loadNewsMetric;
 
     let request = new Request(encodeURI(url), {
       method: 'POST',
@@ -64,12 +64,12 @@ class NewsPanel extends React.Component{
   loadMoreNews() {
     this.sendLoadNewsEvent()
     //console.log('Loading news...');
-    let Config = require('Config')
+    let Config = require('Config');
 
     if(this.state.loadedAll === true){
       return;
     }
-    let url = 'http://98.224.216.111:3000/news/userId/' + Auth.getEmail()
+    let url = Config.production_server+'/news/userId/' + Auth.getEmail()
               + '/pageNum/' + this.state.pageNum;
     let request = new Request(encodeURI(url), {
       method: 'GET',
@@ -127,7 +127,7 @@ class NewsPanel extends React.Component{
   sendSearchNewsEvent() {
     //console.log('send monitor data...');
     let Config = require('Config')
-    let url = 'http://98.224.216.111:3000/monitor/process/'+Config.searchNewsMetric;
+    let url = Config.production_server+'/monitor/process/'+Config.searchNewsMetric;
 
     let request = new Request(encodeURI(url), {
       method: 'POST',
@@ -153,7 +153,7 @@ class NewsPanel extends React.Component{
 
     let Config = require('Config')
 
-    let url = 'http://98.224.216.111:3000/search/userId/' + Auth.getEmail()
+    let url = Config.production_server+'/search/userId/' + Auth.getEmail()
               + '/pageNum/' + this.state.searchPageNum+'/key/'+this.state.searchText;
     let request = new Request(encodeURI(url), {
       method: 'GET',

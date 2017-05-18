@@ -61,18 +61,18 @@ default_test:
       port: 6060
     trainer:
       REMOVE_PREVIOUS_MODEL: True
-      STEPS: 210
+      STEPS: 180
     key_config:
       MODEL_DIR: ../model
       MODEL_UPDATE_LAG: 10
-      MAX_DOCUMENT_LENGTH: 380
+      MAX_DOCUMENT_LENGTH: 300
       #Line 29 68
       CLASSES_NUMS: 17
       VARS_FILE_ADDRESS: ../model/vars
       VOCAB_PROCESSOR_SAVE_FILE_ADDRESS: ../model/vocab_procesor_save_file
       Labeled_news_cvs_address: ../labeled_news.csv
       #Labeled_news_random_address: ../random_labeled_news.csv
-      NUM_OF_TEST_DATA: 150
+      NUM_OF_TEST_DATA: 200
 
   news_recommendation_service:
     recommende_server:
@@ -137,6 +137,9 @@ default_test:
     ELASTICSEARCH_PORT: 9200
 
 default:
+  production_server_url: http://98.224.216.111
+  production_server_port: 3000
+  graphite_server_port: 9090
   common:
     elasticsearch:
       host: localhost

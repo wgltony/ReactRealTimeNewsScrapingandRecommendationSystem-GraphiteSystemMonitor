@@ -30,9 +30,9 @@ class SignUpPage extends React.Component {
     const password = this.state.user.password;
     const confirm_password = this.state.user.confirm_password;
 
-    console.log('email:', email);
-    console.log('password:', password);
-    console.log('confirm_assword:', confirm_password);
+    //console.log('email:', email);
+    //console.log('password:', password);
+    //console.log('confirm_assword:', confirm_password);
 
     if (password !== confirm_password) {
       return;
@@ -41,7 +41,7 @@ class SignUpPage extends React.Component {
     var Config = require('Config')
 
     // Post registeration data
-    fetch('http://98.224.216.111:3000/auth/signup', {
+    fetch(Config.production_server+'/auth/signup', {
       method: 'POST',
       cache: false,
       headers: {
@@ -61,7 +61,7 @@ class SignUpPage extends React.Component {
         // change the current URL to /login
         //this.context.router.replace('/login');
         //login after success
-        fetch('http://98.224.216.111:3000/auth/login', {
+        fetch(Config.production_server+'/auth/login', {
           method: 'POST',
           cache: false,
           headers: {
@@ -75,7 +75,7 @@ class SignUpPage extends React.Component {
         }).then(response => {
           if (response.status === 200) {
             response.json().then(function(json) {
-              console.log(json);
+              //console.log(json);
               Auth.authenticateUser(json.token, email);
               this.context.router.replace('/');
             }.bind(this));
@@ -86,10 +86,10 @@ class SignUpPage extends React.Component {
 
       } else {
         response.json().then(function(json) {
-          console.log(json);
+          //console.log(json);
           const errors = json.errors ? json.errors : {};
           errors.summary = json.message;
-          console.log(this.state.errors);
+          //console.log(this.state.errors);
           this.setState({errors});
         }.bind(this));
       }

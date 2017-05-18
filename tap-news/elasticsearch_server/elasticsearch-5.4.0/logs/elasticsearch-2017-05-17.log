@@ -1,0 +1,1461 @@
+[2017-05-17T00:30:23,440][INFO ][o.e.x.m.MlDailyMaintenanceService] triggering scheduled [ML] maintenance tasks
+[2017-05-17T00:30:23,476][INFO ][o.e.x.m.a.DeleteExpiredDataAction$TransportAction] [idAwBkj] Deleting expired data
+[2017-05-17T01:11:53,498][INFO ][o.e.m.j.JvmGcMonitorService] [idAwBkj] [gc][17010] overhead, spent [299ms] collecting in the last [1s]
+[2017-05-17T01:34:46,905][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-17T01:34:46,931][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2017-05-17T01:34:47,365][INFO ][o.e.x.w.w.WatchStore     ] [idAwBkj] stopped watch store
+[2017-05-17T01:34:48,363][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-17T01:34:48,364][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-17T01:34:48,302][DEBUG][o.e.a.a.i.s.TransportIndicesStatsAction] [idAwBkj] failed to execute [indices:monitor/stats] on node [idAwBkjhTkmpnca_WTgKiA]
+org.elasticsearch.transport.SendRequestTransportException: [idAwBkj][127.0.0.1:9300][indices:monitor/stats[n]]
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:579) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.sendWithUser(SecurityServerTransportInterceptor.java:146) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.access$600(SecurityServerTransportInterceptor.java:63) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$1.sendRequest(SecurityServerTransportInterceptor.java:128) ~[?:?]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:502) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:477) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction$AsyncAction.sendNodeRequest(TransportBroadcastByNodeAction.java:322) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction$AsyncAction.start(TransportBroadcastByNodeAction.java:311) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction.doExecute(TransportBroadcastByNodeAction.java:234) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeAction.doExecute(TransportBroadcastByNodeAction.java:79) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:170) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$apply$1(SecurityActionFilter.java:128) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$authorizeRequest$4(SecurityActionFilter.java:203) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:102) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.authorizeRequest(SecurityActionFilter.java:205) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$applyInternal$3(SecurityActionFilter.java:181) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$handleNullToken$12(AuthenticationService.java:326) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.handleNullToken(AuthenticationService.java:336) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:258) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$5(AuthenticationService.java:234) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:247) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:194) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.applyInternal(SecurityActionFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:140) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:168) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:142) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:83) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:72) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.execute(AbstractClient.java:1256) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient$IndicesAdmin.stats(AbstractClient.java:1577) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateIndicesStats(InternalClusterInfoService.java:270) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:321) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:277) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$500(InternalClusterInfoService.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob.lambda$run$0(InternalClusterInfoService.java:224) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:563) ~[elasticsearch-5.4.0.jar:5.4.0]
+	... 49 more
+[2017-05-17T01:34:48,302][DEBUG][o.e.a.a.c.n.s.TransportNodesStatsAction] [idAwBkj] failed to execute on node [idAwBkjhTkmpnca_WTgKiA]
+org.elasticsearch.transport.SendRequestTransportException: [idAwBkj][127.0.0.1:9300][cluster:monitor/nodes/stats[n]]
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:579) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.sendWithUser(SecurityServerTransportInterceptor.java:146) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.access$600(SecurityServerTransportInterceptor.java:63) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$1.sendRequest(SecurityServerTransportInterceptor.java:128) ~[?:?]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:502) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:490) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.start(TransportNodesAction.java:204) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:89) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:52) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:170) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$apply$1(SecurityActionFilter.java:128) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$authorizeRequest$4(SecurityActionFilter.java:203) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:102) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.authorizeRequest(SecurityActionFilter.java:205) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$applyInternal$3(SecurityActionFilter.java:181) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$handleNullToken$12(AuthenticationService.java:326) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.handleNullToken(AuthenticationService.java:336) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:258) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$5(AuthenticationService.java:234) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:247) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:194) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.applyInternal(SecurityActionFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:140) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:168) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:142) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:83) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:72) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient$ClusterAdmin.execute(AbstractClient.java:730) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient$ClusterAdmin.nodesStats(AbstractClient.java:826) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:256) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:292) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:277) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$500(InternalClusterInfoService.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob.lambda$run$0(InternalClusterInfoService.java:224) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:563) ~[elasticsearch-5.4.0.jar:5.4.0]
+	... 48 more
+[2017-05-17T01:34:48,445][WARN ][o.e.a.a.c.n.s.TransportNodesStatsAction] [idAwBkj] not accumulating exceptions, excluding exception from response
+org.elasticsearch.action.FailedNodeException: Failed node [idAwBkjhTkmpnca_WTgKiA]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.onFailure(TransportNodesAction.java:246) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.access$200(TransportNodesAction.java:160) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction$1.handleException(TransportNodesAction.java:218) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1041) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$6.doRun(TransportService.java:600) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: org.elasticsearch.transport.SendRequestTransportException: [idAwBkj][127.0.0.1:9300][cluster:monitor/nodes/stats[n]]
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:579) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.sendWithUser(SecurityServerTransportInterceptor.java:146) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.access$600(SecurityServerTransportInterceptor.java:63) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$1.sendRequest(SecurityServerTransportInterceptor.java:128) ~[?:?]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:502) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:490) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.start(TransportNodesAction.java:204) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:89) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:52) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:170) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$apply$1(SecurityActionFilter.java:128) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$authorizeRequest$4(SecurityActionFilter.java:203) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:102) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.authorizeRequest(SecurityActionFilter.java:205) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$applyInternal$3(SecurityActionFilter.java:181) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$handleNullToken$12(AuthenticationService.java:326) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.handleNullToken(AuthenticationService.java:336) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:258) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$5(AuthenticationService.java:234) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:247) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:194) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.applyInternal(SecurityActionFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:140) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:168) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:142) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:83) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:72) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient$ClusterAdmin.execute(AbstractClient.java:730) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient$ClusterAdmin.nodesStats(AbstractClient.java:826) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:256) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:292) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:277) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$500(InternalClusterInfoService.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob.lambda$run$0(InternalClusterInfoService.java:224) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) ~[elasticsearch-5.4.0.jar:5.4.0]
+	... 3 more
+Caused by: org.elasticsearch.transport.TransportException: TransportService is closed stopped can't send request
+	at org.elasticsearch.transport.TransportService.sendRequestInternal(TransportService.java:563) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.sendWithUser(SecurityServerTransportInterceptor.java:146) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor.access$600(SecurityServerTransportInterceptor.java:63) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$1.sendRequest(SecurityServerTransportInterceptor.java:128) ~[?:?]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:502) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService.sendRequest(TransportService.java:490) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.start(TransportNodesAction.java:204) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:89) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.doExecute(TransportNodesAction.java:52) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:170) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$apply$1(SecurityActionFilter.java:128) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$authorizeRequest$4(SecurityActionFilter.java:203) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:102) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.authorizeRequest(SecurityActionFilter.java:205) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.lambda$applyInternal$3(SecurityActionFilter.java:181) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$handleNullToken$12(AuthenticationService.java:326) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.handleNullToken(AuthenticationService.java:336) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.consumeToken(AuthenticationService.java:258) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$extractToken$5(AuthenticationService.java:234) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.extractToken(AuthenticationService.java:247) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:194) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) ~[?:?]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.applyInternal(SecurityActionFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.action.filter.SecurityActionFilter.apply(SecurityActionFilter.java:140) ~[?:?]
+	at org.elasticsearch.action.support.TransportAction$RequestFilterChain.proceed(TransportAction.java:168) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:142) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.support.TransportAction.execute(TransportAction.java:84) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.node.NodeClient.executeLocally(NodeClient.java:83) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.node.NodeClient.doExecute(NodeClient.java:72) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient.execute(AbstractClient.java:408) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient$ClusterAdmin.execute(AbstractClient.java:730) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.client.support.AbstractClient$ClusterAdmin.nodesStats(AbstractClient.java:826) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.updateNodeStats(InternalClusterInfoService.java:256) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.refresh(InternalClusterInfoService.java:292) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.maybeRefresh(InternalClusterInfoService.java:277) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService.access$500(InternalClusterInfoService.java:67) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.cluster.InternalClusterInfoService$SubmitReschedulingClusterInfoUpdatedJob.lambda$run$0(InternalClusterInfoService.java:224) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) ~[elasticsearch-5.4.0.jar:5.4.0]
+	... 3 more
+[2017-05-17T01:34:48,511][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-17T11:44:23,752][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-17T11:44:23,828][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [25gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-17T11:44:23,828][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-17T11:44:23,863][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-17T11:44:23,863][INFO ][o.e.n.Node               ] version[5.4.0], pid[5294], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-52-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-17T11:44:25,244][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-17T11:44:25,244][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-17T11:44:25,244][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-17T11:44:25,245][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-17T11:44:25,245][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-17T11:44:25,245][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-17T11:44:25,245][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-17T11:44:25,245][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-17T11:44:25,245][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-17T11:44:25,245][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-17T11:44:25,246][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded plugin [x-pack]
+[2017-05-17T11:44:26,993][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.XPackPlugin
+[2017-05-17T11:44:27,448][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/5443] [Main.cc@128] controller (64 bit): Version 5.4.0 (Build 120b96fa7f6fa7) Copyright (c) 2017 Elasticsearch BV
+[2017-05-17T11:44:27,497][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-17T11:44:28,430][INFO ][o.e.n.Node               ] initialized
+[2017-05-17T11:44:28,430][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-17T11:44:28,707][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-17T11:44:28,715][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-17T11:44:31,782][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{kEeiY_mOSMm3p0kCjKKVTg}{127.0.0.1}{127.0.0.1:9300}{ml.enabled=true}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-17T11:44:31,829][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-17T11:44:31,838][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-17T11:44:32,473][INFO ][o.e.l.LicenseService     ] [idAwBkj] license [4ad9ac60-5cd2-43d0-8862-8360171af0c3] mode [trial] - valid
+[2017-05-17T11:44:32,486][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [21] indices into cluster_state
+[2017-05-17T11:44:33,980][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][1]] ...]).
+[2017-05-17T11:46:22,752][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.17/VJNbSy4zTcGPJigd40gEuA] update_mapping [kibana_stats]
+[2017-05-17T11:53:20,373][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.16][2], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=Uj65a6vCTv2Tw7uRFt0dUg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,372][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.16][3], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=EiAQnw3vRFuoQGoMVFmd6g]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,374][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.17][0], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=tg5YlytETXeamhAZJAnH1Q]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,379][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.16][0], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=Ih9_Q--NQiewQH6elhP86w]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,372][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.16][4], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=_Ot1xxpJQP2IaC5SuZexFQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,371][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.17][3], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=nTlygc2zQQmJldndf9r2Gg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,380][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.16][1], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=fpvKFOBuSz6WrLroRvJpTQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,379][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.17][2], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=vVT3E1vVQRWLULdJJNmkzQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,371][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.17][4], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=EWHaUJ6WRU-D3khRoJtZoA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:53:20,378][DEBUG][o.e.a.s.TransportSearchAction] [idAwBkj] [logstash-2017.05.17][1], node[idAwBkjhTkmpnca_WTgKiA], [P], s[STARTED], a[id=QCRFuS9UREiLvP17vf3Yrg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[logstash-2017.05.15, logstash-2017.05.16, logstash-2017.05.17], indicesOptions=IndicesOptions[id=4, ignore_unavailable=false, allow_no_indices=false, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=false], types=[], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "size" : 0,
+  "timeout" : "5000ms",
+  "query" : {
+    "bool" : {
+      "must" : [
+        {
+          "query_string" : {
+            "query" : "error",
+            "fields" : [ ],
+            "use_dis_max" : true,
+            "tie_breaker" : 0.0,
+            "default_operator" : "or",
+            "auto_generate_phrase_queries" : false,
+            "max_determinized_states" : 10000,
+            "enable_position_increments" : true,
+            "fuzziness" : "AUTO",
+            "fuzzy_prefix_length" : 0,
+            "fuzzy_max_expansions" : 50,
+            "phrase_slop" : 0,
+            "escape" : false,
+            "split_on_whitespace" : true,
+            "boost" : 1.0
+          }
+        }
+      ],
+      "disable_coord" : false,
+      "adjust_pure_negative" : true,
+      "boost" : 1.0
+    }
+  },
+  "aggregations" : {
+    "sample" : {
+      "sampler" : {
+        "shard_size" : 2000
+      },
+      "aggregations" : {
+        "field0" : {
+          "significant_terms" : {
+            "field" : "log-level",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        },
+        "field1" : {
+          "significant_terms" : {
+            "field" : "file.keyword",
+            "size" : 5,
+            "min_doc_count" : 3,
+            "shard_min_doc_count" : 2,
+            "execution_hint" : "map",
+            "jlh" : { }
+          }
+        }
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [idAwBkj][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: Fielddata is disabled on text fields by default. Set fielddata=true on [log-level] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory. Alternatively use a keyword field instead.
+	at org.elasticsearch.index.mapper.TextFieldMapper$TextFieldType.fielddataBuilder(TextFieldMapper.java:336) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.fielddata.IndexFieldDataService.getForField(IndexFieldDataService.java:111) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.index.query.QueryShardContext.getForField(QueryShardContext.java:166) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceConfig.resolve(ValuesSourceConfig.java:97) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.resolveConfig(ValuesSourceAggregationBuilder.java:297) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:290) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.support.ValuesSourceAggregationBuilder.doBuild(ValuesSourceAggregationBuilder.java:39) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactory.<init>(AggregatorFactory.java:183) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregatorFactory.<init>(SamplerAggregatorFactory.java:38) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:78) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.bucket.sampler.SamplerAggregationBuilder.doBuild(SamplerAggregationBuilder.java:36) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AbstractAggregationBuilder.build(AbstractAggregationBuilder.java:126) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.aggregations.AggregatorFactories$Builder.build(AggregatorFactories.java:333) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:638) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:468) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:444) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:331) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:328) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler$1.doRun(SecurityServerTransportInterceptor.java:245) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.EsExecutors$1.execute(EsExecutors.java:110) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.lambda$messageReceived$0(SecurityServerTransportInterceptor.java:294) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$authorizeAsync$4(ServerTransportFilter.java:180) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.maybeRun(AuthorizationUtils.java:127) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.setRunAsRoles(AuthorizationUtils.java:121) ~[?:?]
+	at org.elasticsearch.xpack.security.authz.AuthorizationUtils$AsyncAuthorizer.authorize(AuthorizationUtils.java:109) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.authorizeAsync(ServerTransportFilter.java:182) ~[?:?]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.lambda$inbound$3(ServerTransportFilter.java:170) ~[?:?]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:59) ~[elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$authenticateAsync$0(AuthenticationService.java:192) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lambda$lookForExistingAuthentication$2(AuthenticationService.java:212) ~[x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.lookForExistingAuthentication(AuthenticationService.java:224) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.authenticateAsync(AuthenticationService.java:190) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService$Authenticator.access$000(AuthenticationService.java:147) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.authc.AuthenticationService.authenticate(AuthenticationService.java:118) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.ServerTransportFilter$NodeProfile.inbound(ServerTransportFilter.java:144) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$ProfileSecuredRequestHandler.messageReceived(SecurityServerTransportInterceptor.java:301) [x-pack-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.0.jar:5.4.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.0.jar:5.4.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-05-17T11:54:42,842][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.17/VJNbSy4zTcGPJigd40gEuA] update_mapping [kibana_stats]
+[2017-05-17T12:01:22,221][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2017-05-17T12:01:22,224][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-17T12:01:22,683][INFO ][o.e.x.w.w.WatchStore     ] [idAwBkj] stopped watch store
+[2017-05-17T12:01:22,827][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-17T12:01:22,827][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-17T12:01:22,841][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-17T12:04:05,347][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-17T12:04:05,410][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [24.9gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-17T12:04:05,411][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-17T12:04:05,461][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-17T12:04:05,461][INFO ][o.e.n.Node               ] version[5.4.0], pid[9202], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-52-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-17T12:04:06,546][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-17T12:04:06,546][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-17T12:04:06,546][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-17T12:04:06,546][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-17T12:04:06,546][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-17T12:04:06,547][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-17T12:04:06,547][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-17T12:04:06,547][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-17T12:04:06,547][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-17T12:04:06,547][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-17T12:04:06,548][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded plugin [x-pack]
+[2017-05-17T12:04:07,979][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.XPackPlugin
+[2017-05-17T12:04:08,339][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/9255] [Main.cc@128] controller (64 bit): Version 5.4.0 (Build 120b96fa7f6fa7) Copyright (c) 2017 Elasticsearch BV
+[2017-05-17T12:04:08,366][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-17T12:04:09,383][INFO ][o.e.n.Node               ] initialized
+[2017-05-17T12:04:09,383][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-17T12:04:09,667][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-17T12:04:09,677][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-17T12:04:12,744][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{ItLlnYjqTb6j_jvJjb8Nlg}{127.0.0.1}{127.0.0.1:9300}{ml.enabled=true}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-17T12:04:12,795][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-17T12:04:12,799][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-17T12:04:13,420][INFO ][o.e.l.LicenseService     ] [idAwBkj] license [4ad9ac60-5cd2-43d0-8862-8360171af0c3] mode [trial] - valid
+[2017-05-17T12:04:13,430][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [21] indices into cluster_state
+[2017-05-17T12:04:14,482][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][1], [news][4]] ...]).
+[2017-05-17T12:04:43,798][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [.monitoring-logstash-2-2017.05.17] creating index, cause [auto(bulk api)], templates [.monitoring-logstash-2], shards [1]/[1], mappings [_default_, logstash_stats]
+[2017-05-17T12:04:43,884][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-logstash-2-2017.05.17/n_lTnWmwQ8yj4JadaEmBNw] update_mapping [logstash_stats]
+[2017-05-17T13:36:22,861][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [logstash-2017.05.17/BHklvn08Q5iSlLVXo0vlNw] update_mapping [node_apache_log]
+[2017-05-17T20:07:23,323][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [.watcher-history-3-2017.05.18] creating index, cause [auto(bulk api)], templates [watch_history_3], shards [1]/[1], mappings [watch_record]
+[2017-05-17T20:07:23,709][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.watcher-history-3-2017.05.18/UtAHdCzKS_mhf-9WrnaT8w] update_mapping [watch_record]
+[2017-05-17T20:07:24,249][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [.monitoring-logstash-2-2017.05.18] creating index, cause [auto(bulk api)], templates [.monitoring-logstash-2], shards [1]/[1], mappings [_default_, logstash_stats]
+[2017-05-17T20:07:24,283][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-logstash-2-2017.05.18/N0AzDDV6Qji5IlOKISnVsg] update_mapping [logstash_stats]
+[2017-05-17T20:07:26,017][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [.monitoring-kibana-2-2017.05.18] creating index, cause [auto(bulk api)], templates [.monitoring-kibana-2], shards [1]/[1], mappings [_default_, kibana_stats]
+[2017-05-17T20:07:26,050][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.18/YGkhyNXbQm2Bx105tFPz_g] update_mapping [kibana_stats]
+[2017-05-17T20:07:27,365][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [.monitoring-es-2-2017.05.18] creating index, cause [auto(bulk api)], templates [.monitoring-es-2], shards [1]/[1], mappings [node, _default_, shards, index_stats, index_recovery, cluster_state, cluster_stats, node_stats, indices_stats]
+[2017-05-17T20:07:27,413][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.18/Sei2IURJSZq4xSQhWXFB-A] update_mapping [index_recovery]
+[2017-05-17T20:07:27,438][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.18/Sei2IURJSZq4xSQhWXFB-A] update_mapping [cluster_state]
+[2017-05-17T20:07:27,470][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.18/Sei2IURJSZq4xSQhWXFB-A] update_mapping [node]
+[2017-05-17T20:07:27,503][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.18/Sei2IURJSZq4xSQhWXFB-A] update_mapping [shards]
+[2017-05-17T20:07:27,528][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.18/Sei2IURJSZq4xSQhWXFB-A] update_mapping [cluster_stats]
+[2017-05-17T20:07:27,547][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.18/Sei2IURJSZq4xSQhWXFB-A] update_mapping [indices_stats]
+[2017-05-17T20:07:27,580][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.18/Sei2IURJSZq4xSQhWXFB-A] update_mapping [node_stats]
+[2017-05-17T20:07:27,603][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-es-2-2017.05.18/Sei2IURJSZq4xSQhWXFB-A] update_mapping [index_stats]
+[2017-05-17T20:08:50,018][INFO ][o.e.c.m.MetaDataCreateIndexService] [idAwBkj] [logstash-2017.05.18] creating index, cause [auto(bulk api)], templates [logstash], shards [5]/[1], mappings [_default_]
+[2017-05-17T20:08:50,677][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [logstash-2017.05.18/SFsiXBmgR8W994b0mutaTw] create_mapping [system_log]
+[2017-05-17T20:10:28,807][INFO ][o.e.m.j.JvmGcMonitorService] [idAwBkj] [gc][20887] overhead, spent [284ms] collecting in the last [1s]
+[2017-05-17T20:11:07,238][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [logstash-2017.05.18/SFsiXBmgR8W994b0mutaTw] create_mapping [node_apache_log]
+[2017-05-17T20:11:47,800][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.18/YGkhyNXbQm2Bx105tFPz_g] update_mapping [kibana_stats]
+[2017-05-17T20:34:02,285][INFO ][o.e.x.m.j.p.NativeController] Native controller process has stopped - no new native processes can be started
+[2017-05-17T20:34:02,318][INFO ][o.e.n.Node               ] [idAwBkj] stopping ...
+[2017-05-17T20:34:02,676][INFO ][o.e.x.w.w.WatchStore     ] [idAwBkj] stopped watch store
+[2017-05-17T20:34:03,088][INFO ][o.e.n.Node               ] [idAwBkj] stopped
+[2017-05-17T20:34:03,089][INFO ][o.e.n.Node               ] [idAwBkj] closing ...
+[2017-05-17T20:34:03,282][INFO ][o.e.n.Node               ] [idAwBkj] closed
+[2017-05-17T20:47:24,074][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-17T20:47:24,156][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [24.9gb], net total_space [56.9gb], spins? [possibly], types [ext4]
+[2017-05-17T20:47:24,156][INFO ][o.e.e.NodeEnvironment    ] [idAwBkj] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-17T20:47:24,259][INFO ][o.e.n.Node               ] node name [idAwBkj] derived from node ID [idAwBkjhTkmpnca_WTgKiA]; set [node.name] to override
+[2017-05-17T20:47:24,259][INFO ][o.e.n.Node               ] version[5.4.0], pid[5690], build[780f8c4/2017-04-28T17:43:27.229Z], OS[Linux/4.8.0-52-generic/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-05-17T20:47:25,714][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [aggs-matrix-stats]
+[2017-05-17T20:47:25,714][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [ingest-common]
+[2017-05-17T20:47:25,714][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-expression]
+[2017-05-17T20:47:25,714][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-groovy]
+[2017-05-17T20:47:25,714][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-mustache]
+[2017-05-17T20:47:25,714][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [lang-painless]
+[2017-05-17T20:47:25,714][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [percolator]
+[2017-05-17T20:47:25,715][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [reindex]
+[2017-05-17T20:47:25,715][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty3]
+[2017-05-17T20:47:25,715][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded module [transport-netty4]
+[2017-05-17T20:47:25,716][INFO ][o.e.p.PluginsService     ] [idAwBkj] loaded plugin [x-pack]
+[2017-05-17T20:47:27,736][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.XPackPlugin
+[2017-05-17T20:47:28,088][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/5753] [Main.cc@128] controller (64 bit): Version 5.4.0 (Build 120b96fa7f6fa7) Copyright (c) 2017 Elasticsearch BV
+[2017-05-17T20:47:28,130][INFO ][o.e.d.DiscoveryModule    ] [idAwBkj] using discovery type [zen]
+[2017-05-17T20:47:28,941][INFO ][o.e.n.Node               ] initialized
+[2017-05-17T20:47:28,941][INFO ][o.e.n.Node               ] [idAwBkj] starting ...
+[2017-05-17T20:47:29,221][INFO ][o.e.t.TransportService   ] [idAwBkj] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2017-05-17T20:47:29,230][WARN ][o.e.b.BootstrapChecks    ] [idAwBkj] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2017-05-17T20:47:32,305][INFO ][o.e.c.s.ClusterService   ] [idAwBkj] new_master {idAwBkj}{idAwBkjhTkmpnca_WTgKiA}{8MCRlaRGQDGVFXgD0-ZGMg}{127.0.0.1}{127.0.0.1:9300}{ml.enabled=true}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-17T20:47:32,380][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [idAwBkj] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2017-05-17T20:47:32,384][INFO ][o.e.n.Node               ] [idAwBkj] started
+[2017-05-17T20:47:33,463][INFO ][o.e.l.LicenseService     ] [idAwBkj] license [4ad9ac60-5cd2-43d0-8862-8360171af0c3] mode [trial] - valid
+[2017-05-17T20:47:33,483][INFO ][o.e.g.GatewayService     ] [idAwBkj] recovered [27] indices into cluster_state
+[2017-05-17T20:47:36,539][INFO ][o.e.c.r.a.AllocationService] [idAwBkj] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][4], [news][0]] ...]).
+[2017-05-17T20:53:14,309][INFO ][o.e.c.m.MetaDataMappingService] [idAwBkj] [.monitoring-kibana-2-2017.05.18/YGkhyNXbQm2Bx105tFPz_g] update_mapping [kibana_stats]

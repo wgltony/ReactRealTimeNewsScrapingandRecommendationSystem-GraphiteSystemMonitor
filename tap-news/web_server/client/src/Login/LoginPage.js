@@ -29,11 +29,11 @@ class LoginPage extends React.Component {
     const email = this.state.user.email;
     const password = this.state.user.password;
 
-    console.log('email:', email);
-    console.log('password:', password);
-    var Config = require('Config')
+    //console.log('email:', email);
+    //console.log('password:', password);
+    let Config = require('Config');
     // Post login data
-    fetch('http://98.224.216.111:3000/auth/login', {
+    fetch(Config.production_server+'/auth/login', {
       method: 'POST',
       cache: false,
       headers: {

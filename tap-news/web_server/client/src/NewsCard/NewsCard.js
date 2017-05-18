@@ -14,7 +14,7 @@ class NewsCard extends React.Component{
 
   sendClickLog() {
     let Config = require('Config')
-    let url = 'http://98.224.216.111:3000/news/userId/' + Auth.getEmail()
+    let url = Config.production_server+'/news/userId/' + Auth.getEmail()
               + '/newsId/' + this.props.news.digest;
 
     let request = new Request(encodeURI(url), {
@@ -28,9 +28,9 @@ class NewsCard extends React.Component{
   }
 
   sendClickMonitor() {
-    console.log('send monitor data...');
+    //console.log('send monitor data...');
     let Config = require('Config')
-    let url = 'http://98.224.216.111:3000/monitor/process/'+Config.userClickMetric;
+    let url = Config.production_server+'/monitor/process/'+Config.userClickMetric;
 
     let request = new Request(encodeURI(url), {
       method: 'POST',
