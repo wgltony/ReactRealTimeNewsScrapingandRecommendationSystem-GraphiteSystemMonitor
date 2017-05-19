@@ -1,0 +1,86 @@
+<ml-nav-menu name="timeseriesexplorer"></ml-nav-menu>
+<div class="ml-time-series-explorer" ng-controller="MlTimeSeriesExplorerController">
+  <navbar ng-show="jobs.length > 0 && chrome.getVisible()">
+    <div class="ml-job-select-btn-label">Job</div>
+    <div style="flex:0 0 auto;">
+      <button ng-if="selectedJobs.length == 1 && selectedJobs[0].id === '*'"
+              popover-placement="bottom" popover-html-unsafe="{{unsafeHtml}}" popover-append-to-body="false" popover-trigger="click"
+              class="btn btn-default ml-job-select-btn" tooltip="All jobs selected">
+        <span class="ml-job-select-btn-text">All jobs</span>
+        <span class="caret"></span>
+      </button>
+
+      <button ng-if="selectedJobs.length == 1 && selectedJobs[0].id !== '*'" popover-placement="bottom"
+              popover-placement="bottom" popover-html-unsafe="{{unsafeHtml}}" popover-append-to-body="false" popover-trigger="click"
+              class="btn btn-default ml-job-select-btn" tooltip="{{selectedJobs[0].id}} selected">
+        <span class="ml-job-select-btn-text">{{selectedJobs[0].id}}</span>
+        <span class="caret"></span>
+      </button>
+
+      <button ng-if="selectedJobs.length == 2" popover-placement="bottom"
+              popover-placement="bottom" popover-html-unsafe="{{unsafeHtml}}" popover-append-to-body="false" popover-trigger="click"
+              class="btn btn-default ml-job-select-btn" tooltip="{{selectedJobs[0].id}} and 1 other job selected">
+        <span class="ml-job-select-btn-text">{{selectJobBtnJobIdLabel}} and 1 other</span>
+        <span class="caret"></span>
+      </button>
+
+      <button ng-if="selectedJobs.length > 2" popover-placement="bottom"
+              popover-placement="bottom" popover-html-unsafe="{{unsafeHtml}}" popover-append-to-body="false" popover-trigger="click"
+              class="btn btn-default ml-job-select-btn" tooltip="{{selectedJobs[0].id}} and {{selectedJobs.length-1}} other jobs selected">
+        <span class="ml-job-select-btn-text">{{selectJobBtnJobIdLabel}} and {{selectedJobs.length-1}} others</span>
+        <span class="caret"></span>
+      </button>
+    </div>
+  </navbar>
+
+  <div class="no-results-container" ng-if="jobs.length === 0">
+    <div class="no-results">
+      <div><i class="fa fa-exclamation-triangle"></i>No single metric jobs found</div>
+      <div><a href="ml#/jobs">Create new single metric job</a></div>
+    </div>
+  </div>
+
+  <div class="loading-container" ng-show="loading === true">
+    <div class="loading-spinner"><i class='fa fa-spinner fa-spin'></i></div>
+    <div>Loading</div>
+  </div>
+
+  <div class="no-results-container" ng-show="jobs.length > 0 && loading === false && hasResults === false">
+    <div class="no-results">
+      <div><i class="fa fa-info-circle" ></i>No results found</div>
+      <div>Try widening the time selection or moving further back in time</div>
+    </div>
+  </div>
+
+  <div ng-show="loading === false && hasResults === true">
+    <div class="results-container">
+
+      <span class="panel-title">
+        Time series analysis
+      </span>
+      <div class="ml-model-plot-chart">
+        <ml-model-plot-chart  style="width: 1200px; height: 400px;"
+          context-chart-data="contextChartData"
+          context-aggregation-interval="contextAggregationInterval"
+          focus-aggregation-interval="focusAggregationInterval"
+          swimlane-data="swimlaneData"
+          focus-chart-data="focusChartData"
+          zoom-from="zoomFrom"
+          zoom-to="zoomTo"
+          auto-zoom-duration="autoZoomDuration">
+        </ml-model-plot-chart>
+      </div>
+
+      <span class="panel-title">
+        Anomalies
+      </span>
+      <ml-anomalies-table
+        anomaly-records="anomalyRecords"
+        index-pattern-id="indexPatternId"
+        time-field-name="timeFieldName">
+      </ml-anomalies-table>
+
+    </div>
+  </div>
+
+</div>
